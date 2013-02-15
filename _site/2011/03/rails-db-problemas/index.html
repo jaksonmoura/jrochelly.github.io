@@ -2,7 +2,7 @@
 <head>
 	<meta charset=utf-8 />
 	<link rel="stylesheet" href="/css/style.css">
-	<title> Tá pra mudar Jakson Rochelly's Blog </title>
+	<title> Rails, BDs e seu problemas Jakson Rochelly's Blog </title>
 </head>
 <body>
 
@@ -27,20 +27,18 @@
 		<section class="blog_posts">
 			<article class="post">
 
-    <h1>Tá pra mudar</h1>
-    <p class="post_info">08 January, 2013</p>
+    <h1>Rails, BDs e seu problemas</h1>
+    <p class="post_info">22 March, 2011</p>
 
-    <p>Este ano, as coisas vão ficar bastante diferentes pra mim, vou morar fora de casa, em outro estado, além disso, terei um novo emprego como Analista de TI.</p>
+    <p>Nesses últimos dias, tentei instalar um banco de dados no lugar do SQLite, Primeiramente o PostgreSQL, sem sucesso, pois os drives para rails simplesmente não instalavam e os que instalavam não conseguia ativar sua execução. Mudei para o MySQL, não consegui e não faço ideia de por que não.</p>
 
-<p>Essa mudança, apesar de que será dura, vai ser muito boa, pois estarei lutando pelo que é meu do meu jeito. Poderei investir mais em coisas que gosto, como camisetas geek e tecnologia.</p>
+<p>Nisso tentei mudei o projeto para o Windows 7, e consegui, depois de muita peleja, instalar o MySQL e seu driver.</p>
 
-<p>Outra ponto excelente é que estarei junto de bons amigos e minha namorada, já que todos vamos para o mesmo lugar. Será uma “bagunça divertida” =P</p>
+<p>Depois de ter conseguido, pensei, se consegui no Windows, consigo no Linux, e lá fui eu tentar. Por incrível que parece, ele aceitou numa boa.</p>
 
-<p>Algumas das coisas que quero adquirir esse são na área tecnológica são, um Macbook e se possível um iPhone. Vou usar o Macbook pra codar em rails e também aprender sobre a plataforma, ideologia e tudo mais do mundo Apple.</p>
+<p>O meu erro foi ter usado o adapter configurado para mysql, sendo que o certo é usa-lo com mysql2. Tive esse problema pois o projeto foi começado com o SQLite, e não sabia os termos corretos para configurar o MySQL.</p>
 
-<p>Bem, essas são mudanças no quesito externo, no interno, terá muito mais.</p>
-
-<p>Espero blogar mais esse ano!</p>
+<p>E O PostgreSQL? Não consegui, o ruby-pg que é padrão, nem instala. Aí força a amizade!</p>
 
 
 </article>

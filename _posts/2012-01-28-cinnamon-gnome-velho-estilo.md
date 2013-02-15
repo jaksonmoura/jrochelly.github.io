@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: "Cinnamon: GNOME-Shell no velho estilo"
 ---

@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Conheça Can_be_flagged gem
 ---

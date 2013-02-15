@@ -145,6 +145,28 @@ Espero que tenha sido útil! Em breve posto mais! Abraços!</p>
 			</article>
 
         
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/03/rails-db-problemas">Rails, BDs e seu problemas</a></h1>
+				    <p class="post_info">22 March, 2011</p>
+
+				    <p>Nesses últimos dias, tentei instalar um banco de dados no lugar do SQLite, Primeiramente o PostgreSQL, sem sucesso, pois os drives para rails simplesmente não instalavam e os que instalavam não conseguia ativar sua execução. Mudei para o MySQL, não consegui e não faço ideia de por que não.</p>
+
+<p>Nisso tentei mudei o projeto para o Windows 7, e consegui, depois de muita peleja, instalar o MySQL e seu driver.</p>
+
+<p>Depois de ter conseguido, pensei, se consegui no Windows, consigo no Linux, e lá fui eu tentar. Por incrível que parece, ele aceitou numa boa.</p>
+
+<p>O meu erro foi ter usado o adapter configurado para mysql, sendo que o certo é usa-lo com mysql2. Tive esse problema pois o projeto foi começado com o SQLite, e não sabia os termos corretos para configurar o MySQL.</p>
+
+<p>E O PostgreSQL? Não consegui, o ruby-pg que é padrão, nem instala. Aí força a amizade!</p>
+
+			    </div>
+
+			</article>
+
+        
 
 <ol class="nav_pagination">
     <li class="pagination_prev">

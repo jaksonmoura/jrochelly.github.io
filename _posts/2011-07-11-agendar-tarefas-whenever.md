@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: "Agendar tarefas com whenever gem"
 ---

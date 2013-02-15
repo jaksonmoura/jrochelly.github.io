@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 date: 2011-06-07 07:40:02
 title: Não há código mais flexível que nenhum código
