@@ -1,0 +1,11 @@
+auto: true
+server: true
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:title
+paginate: 7
+safe: true
+source: jrochelly.github.com/jrochellyblog/
+destination: https://github.com/jrochelly/jrochellyblog
+lsi: false
+pygments: true
