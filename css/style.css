@@ -5,9 +5,12 @@ body{
 	font-family: Arial, sans-serif;
 	font-size: 62.5%;
 	margin: 0 auto;
-	border-left: 4px solid #2c5aa0;
 	color: #444;
 	background: #f9f9f9;
+}
+
+html{
+	border-left: 4px solid #2c5aa0;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -242,7 +245,7 @@ footer a{
 
 @media screen and (min-width: 800px){
 
-	body{
+	html{
 		border-left: 8px solid #2c5aa0;
 	}
 }
