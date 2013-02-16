@@ -10,7 +10,7 @@ body{
 }
 
 html{
-	border-left: 4px solid #2c5aa0;
+	border-top: 4px solid #2c5aa0;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -247,5 +247,6 @@ footer a{
 
 	html{
 		border-left: 8px solid #2c5aa0;
+		border-top: 0;
 	}
 }
