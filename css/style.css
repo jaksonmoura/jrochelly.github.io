@@ -5,11 +5,13 @@ body{
 	font-family: Arial, sans-serif;
 	font-size: 62.5%;
 	margin: 0 auto;
+	padding: 0;
 	color: #444;
 	background: #f9f9f9;
 }
 
 html{
+	border: 0;
 	border-top: 4px solid #2c5aa0;
 }
 
@@ -155,7 +157,12 @@ footer{
 	background: #333;
 	color: #f1f1f1;
 	font-size: 1.1em;
-	padding: 5px;
+	padding: 5px 0 5px 0;
+}
+
+footer p{
+	width: 98%;
+	padding: 0 0 0 5px;
 }
 
 footer a{
