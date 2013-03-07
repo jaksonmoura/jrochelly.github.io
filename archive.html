@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: /archive/
+---
+<h1>Arquivo do blog</h1>
+<section>
+	{% for post in site.posts %}
+    
+        <article class="archive">
+
+		    <div class="archive_content">
+		    	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			    <p class="archive_info">{{ post.date | date: "%d %B, %Y" }}</p>
+		    </div>
+
+		</article>
+
+    {% endfor %}
+</section>
+
+<ol class="nav_pagination">
+    <li class="pagination_prev">
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+            <a href="/arquivo">« Anterior</a>
+        {% else %}
+            <a href="/arquivo/page{{paginator.previous_page}}">« Anterior</a>
+        {% endif %}
+        {% else %}
+            « Anterior
+        {% endif %}
+    </li><!--
+    
+ --><li class="pagination_next">
+        {% if paginator.next_page %}
+            <a href="/arquivo/page{{paginator.next_page}}">Próxima »</a>
+        {% else %}
+            Próxima »
+        {% endif %}
+    </li>
+</ol>

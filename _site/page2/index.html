@@ -1,0 +1,269 @@
+<html lang="pt-BR">
+<head>
+	<meta charset=utf-8 />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>  Jakson Rochelly's Blog </title>
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<header>
+			<a href="/" id="logo">
+				<img src="/img/logo.png" alt="Jakson Rochelly's Blog logo">
+			</a>
+
+			<nav>
+				<ul>
+					<li><a href="/">Início</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="/archive/">Arquivo</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="blog_posts">
+					
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/07/can-be-flagged">Conheça Can_be_flagged gem</a></h1>
+				    <p class="post_info">10 July, 2011</p>
+
+				    <p>Gostaria de apresentar a vocês a Gem <a href="https://github.com/danhixon/can_be_flagged">can_be_flagged</a>.</p>
+
+<p>Ela permite que você tenha uma opção como “sinalizar” um conteúdo. É bastante útil quando se trata de conteúdo vindo dos usuários do sistema, assim, os próprios usuários podem sinalizar como spam ou algo parecido.</p>
+
+<p>Para instalar é muito fácil:</p>
+
+<p>rode <i>gem install can_be_flagged</i> ou então, adicione <i>gem ‘can_be_flagged’</i> para o arquivo Gemfile e então rode “bundle install”</p>
+
+<p>Depois disso, você já pode gerar sua model:</p>
+
+<p>Rails 3:</p>
+
+<pre><code>rails g flags
+</code></pre>
+
+<p>Em seguida migre seu banco de dados:</p>
+
+<pre><code>rake db:migrate
+</code></pre>
+
+<p>Sua configuração é bem simples, dá uma olhada:</p>
+
+<p>Na model Post:</p>
+
+<pre><code>class Post &lt; ActiveRecord::Base 
+    can_be_flagged
+end
+</code></pre>
+
+<p>é também interessante adicionar uma coluna para contagem de flags:</p>
+
+<pre><code>add_column :posts, :flags_count, :integer
+</code></pre>
+
+<p> por último, edite o model Flag para:</p>
+
+<pre><code>class Flag &lt; ActiveRecord::Base
+    belongs_to :flaggable, :polymorphic=&gt;true, :counter_cache=&gt;true
+end
+</code></pre>
+
+<p>A implementação na model fica por sua conta, veja o exemplo que fiz:</p>
+
+<pre><code>class PropertiesController &lt; ApplicationController
+  def denunciar
+    @last_user_flag = Flag.where("user_id = ? AND flaggable_id = ?", current_user.id, params[:pid]).last
+    if @last_user_flag.nil?
+      @flag = Flag.create(:comment =&gt; "I am offended by that!", :flaggable_id =&gt; params[:pid], :user_id =&gt; current_user.id)
+      @flag.save
+      redirect_to :back, :notice =&gt; "Obrigado por colaborar!"
+    else
+      @last_user_flag.destroy
+      redirect_to :back, :notice =&gt; "Sua denuncia foi exluída!"
+    end
+  end
+end
+</code></pre>
+
+<p>Para mais detalhes de implementação, clique aqui!
+Espero que tenha sido útil! Em breve posto mais! Abraços!</p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/06/lado-nerd">O lado Nerd</a></h1>
+				    <p class="post_info">07 June, 2011</p>
+
+				    <p>Existem razões para qualquer coisas que se faça, amor, ódio, vingança, são os mais comuns. Mas existem um lado que me impede de por exemplo seguir numa rodovia a 80km/h sendo o certo 40km/h, este lado é o lado Nerd.</p>
+
+<p><img src="/img/posts/lado_nerd.gif"></p>
+
+<p>Pode parecer estranho, mas tem sempre algo me dizendo que eu não deveria fazer isso ou aquilo, apesar de ser legal ou interessante, a sensação de estar errado ou não seguir a lei em determinadas ocasiões me proíbe de continuar. Estou sendo paranóico ou só mais nerd? Bem que eu queria saber.</p>
+
+<p>De fato, nerds fazem coisas erradas também. Mas você sabe o ditado popular “Existe o lado certo e o lado Nerd”… ok, não existe tal ditado, mas… olhando de um jeito nerd, nós fazemos várias coisas erradas, só que a chamamos de arranjo técnico/workaround ou guambiarra para os íntimos.</p>
+
+<p>Bem, resumindo tudo Certo != Nerd!</p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/06/nao-ha-codigo-mais-flexivel-que">Não há código mais flexível que nenhum código</a></h1>
+				    <p class="post_info">07 June, 2011</p>
+
+				    <p><img src="/img/posts/codigo_flexivel.gif"></p>
+
+<p>Essa postagem é tirada do blog do Brad Appleton, pois achei o texto bastande interessante e importante de ser repassado. Vale a pena a leitura!</p>
+
+<p>Brad fala que o que ele acredita sobre o “espaço negativo” - chamado por Christopher Alexander - na arquitetura de software é:</p>
+
+<blockquote><p>Não há CÓDIGO mais flexível que NENHUM código!</p></blockquote>
+
+<p>O “segredo” para um bom design de software não é saber o que por no código e sim, o que não por lá. É saber reconhecer onde estão os locais certos e também deixar um espaço ao invés de tentar se entupir em mais design.</p>
+
+<p>Fonte: <a href="bradapp.blogspot.com">bradapp.blogspot.com</a></p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/03/rails-db-problemas">Rails, BDs e seu problemas</a></h1>
+				    <p class="post_info">22 March, 2011</p>
+
+				    <p>Nesses últimos dias, tentei instalar um banco de dados no lugar do SQLite, Primeiramente o PostgreSQL, sem sucesso, pois os drives para rails simplesmente não instalavam e os que instalavam não conseguia ativar sua execução. Mudei para o MySQL, não consegui e não faço ideia de por que não.</p>
+
+<p>Nisso tentei mudei o projeto para o Windows 7, e consegui, depois de muita peleja, instalar o MySQL e seu driver.</p>
+
+<p>Depois de ter conseguido, pensei, se consegui no Windows, consigo no Linux, e lá fui eu tentar. Por incrível que parece, ele aceitou numa boa.</p>
+
+<p>O meu erro foi ter usado o adapter configurado para mysql, sendo que o certo é usa-lo com mysql2. Tive esse problema pois o projeto foi começado com o SQLite, e não sabia os termos corretos para configurar o MySQL.</p>
+
+<p>E O PostgreSQL? Não consegui, o ruby-pg que é padrão, nem instala. Aí força a amizade!</p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/03/palestra-empreendemia">Palestra Empreendemia</a></h1>
+				    <p class="post_info">19 March, 2011</p>
+
+				    <p><img src="/img/posts/empreendemia_1.jpg"></p>
+
+<p><img src="/img/posts/empreendemia_2.jpg"></p>
+
+<p>Ontem às 18h aconteceu um palestra no IFPI do <a href="http://marcuslinhares.blogspot.com/">Marcus Linhares</a> de Picos, a palestra foi muito boa! Ele abordou sobre as encubadoras e empresas júnior, um passo muito bom pra quem quer começar. Claro que eu marquei presença, afinal estou montando minha empresa (juntamente com o <a href="http://www.twitter.com/valterlles">Fernando</a> e o <a href="http://www.twitter.com/oRenne">Rennê</a>), a Conptus.</p>
+
+<p>Tirando as encubadoras de lado, também é possível ir nesse mundão dos negócios dando a cara a tapas. Meu amigo Luciano não tem muito tempo que monteu seu site de notícias com seus amigos, o <a href="http://florianoblitz.com/">FlorianoBlitz</a>. Assim também, espero que a Conptus também siga seu caminho com sucesso.</p>
+
+<p>Também desejo que meus colegas <a href="http://jamessilva.com.br/">James</a> e Johlânio consigam e, principalmente, me convidem pro churrasco de inauguração =P.</p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
+			    	<h1><a href="/2011/03/simplicidade-e-tudo">Simplicidade é tudo!</a></h1>
+				    <p class="post_info">09 March, 2011</p>
+
+				    <p>Esse ditado é meio antigo mais reflete bem o que vou lhes passar hoje.
+Atualmente estamos sendo “informados demais”, não que a gente tenha muito conteúdo para ler ou saber, mas que apenas temos muito conteúdo e esse conteúdo nem sempre é aproveitado ou aproveitável.</p>
+
+<p><img src="/img/posts/onde_x.png"></p>
+
+<p>A partir desta linha de raciocínio o que mais precisamos é menos coisas sendo jogadas na nossa cara, certo?</p>
+
+<p>Certo, fiz um discurso danado, mas o que quero dizer com isso? Seja simples! Se você tem algo a dizer para seu cliente no conteúdo de seu site diga logo. É importante enfatizar o que deve ser enfatizado, isto é, o <b>conteúdo</b>.</p>
+
+<p>Não é necessário enfeitar para manter um site bonito, afinal, ninguém vai entrar no seu site apenas para admirar a beleza e organização ou a disposição dos elementos ali inseridos, eles buscam conteúdo.</p>
+
+<h2>Minimalismo</h2>
+
+<p>Uma moda largamente utilizada pelo mundo afora. O minimalismo emprega exatamente o que estou falando, a importância está no conteúdo. E os designers utilizam essa técnica sem deixar de tornar o site bonito e elegante. Um exemplo é o site G1.com.</p>
+
+<p>Você pode encontrar vários outros sites <a href="http://www.ladodesign.com.br/2010/03/25-exemplos-de-sites-minimalistas.html">aqui</a>.</p>
+
+<h2>KISS</h2>
+
+<p>Não, não é a banda de rock! KISS (nesse caso) é uma sigla em inglês que significa – Keep it simple, stupid! – que numa tradução pro nordestino fica mais ou menos assim – Deixa simples, bocó! :). Brincadeiras a parte,  essa sigla é usada no desenvolvimento de software, planejamento tático, etc. Direto da Wikipédia a gente tem o princípio:</p>
+
+<p>Este princípio teve a sua inspiração diretamente do princípio da Navalha de Occam e das máximas de Albert Einstein (“tudo deve ser feito da forma mais simples possível, mas não mais simples que isso”) e de Antoine de Saint-Exupéry (“A perfeição é alcançada não quando não há mais nada para adicionar, mas quando não há mais nada que se possa retirar”).</p>
+
+<p>Se Antoine estivesse falando de mulheres pra um amigo a frase seria assim: se você gostar de uma que você não consegue enxergar o que precisaria tirar pra ela ser perfeita pra você, não perca tempo!</p>
+
+<h2>Vantagens</h2>
+
+<p>Não importa como seu sistema é, mante-lo simples…</p>
+
+<p><em>é mais fácil pra se construir.
+</em>é mais rápido para consertar.
+<em>torna as mudanças ágeis.
+</em>prioriza funcionalidades.
+<em>é mais fácil de manter o foco ao desenvolver.
+</em>mais rápido pra acabar e você pode ir pro barzinho mais vezes com os amigos :).</p>
+
+<p>Essas poucas vantagens que citei fazem muita diferença, pois você poderá satisfazer seu cliente melhor, além disso, quase inexistirá a perca de tempo no desenvolvimento de funcionalidades não importantes e seu bolso vai agradecer.</p>
+
+			    </div>
+
+			</article>
+
+        
+
+<ol class="nav_pagination">
+    <li class="pagination_prev">
+        
+        
+            <a href="/">« Anterior</a>
+        
+        
+    </li><!--
+    
+ --><li class="pagination_next">
+        
+            Próxima »
+        
+    </li>
+</ol>
+		</section>
+
+	</div>
+
+	<footer>
+		<p>&copy; 2013 <a href="http://twitter.com/jrochelly">Jakson Rochelly</a>.
+       Built with <a href="https://github.com/mojombo/jekyll/">Jekyll</a>.
+       The source of this blog is <a href="https://github.com/jrochelly/jrochelly.github.com/">on GitHub</a>.<br>
+       You can <a href="http://feeds.feedburner.com/jrochelly">grab the RSS feed</a> and really <a href="http://twitter.com/jrochelly">follow me on Twitter</a>.</p>
+	</footer>
+
+</body>
+</html>
