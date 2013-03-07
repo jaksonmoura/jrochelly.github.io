@@ -190,7 +190,6 @@ footer a{
 		width: 250px;
 	}
 
-
 	nav li{
 		margin-bottom: -50px;
 	}
@@ -202,7 +201,7 @@ footer a{
 }
 
 @media screen and (min-width: 660px){
-	
+
 	header{
 		padding-bottom: 80px;
 	}
@@ -214,11 +213,6 @@ footer a{
 	nav ul{
 		width: 300px;
 	}
-
-}
-
-@media screen and (min-width: 660px){
-
 
 	.post h2, .archive h2{
 		font-size: 1.1em;
