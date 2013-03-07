@@ -29,6 +29,66 @@
 	        <article class="post">
 
 			    <div class="content">
+			    	<h1><a href="/2011/07/agendar-tarefas-whenever">Agendar tarefas com whenever gem</a></h1>
+				    <p class="post_info">11 July, 2011</p>
+
+				    <p>A utilização de tarefas agendadas é bastante útil para, por exemplo, excluir logs a cada 15 dias, indexar mecanismos de busca e vários outros.</p>
+
+<p>Quero mostrar pra vocês uma gema que estou utilizando no meu mais novo projeto, <a href="https://github.com/javan/whenever">Whenever</a>.</p>
+
+<p>Do github:</p>
+
+<blockquote><p>Whenever is a Ruby gem that provides a clear syntax for writing and deploying cron jobs.</p></blockquote>
+
+<p>Assim, você não precisa aprender ou colar toda vez que precisar de um Cron job.</p>
+
+<p>Comparação:</p>
+
+<p>Cron job</p>
+
+<pre><code>0 23 1,15 * * /bin/bash -i -l -c ‘cd /home/jrochelly/Projetos/myapp &amp;&amp; rails runner -e development MyModel.method » /home/jrochelly/Projetos/myapp/log/cron.log 2&gt;&amp;1’
+</code></pre>
+
+<p>Whenever</p>
+
+<pre><code>every 1.minute do
+    runner “MyModel.method”
+end 
+</code></pre>
+
+<p>Muito semelhante né?
+Para instalar a gem siga os passos que estão <a href="https://github.com/javan/whenever">aqui</a>! (Não vou reescrever o que está escrito =P )</p>
+
+<p>Dica: Se quiser rodar um método de um Model, você precisa adicionar self.</p>
+
+<p>Assim um método <b>def nome_metodo</b> fica <b>def self.nome_metodo</b>. Por quê?
+Porque é necessário um class method ao invés de uma instância.</p>
+
+<p>Eu bati cabeça nessa parte, pois nada é explicado nesse sentido no README da gema. A minha salvação foi quando pesquisava sobre o mesmo problema para a gem rufus-scheduler e encontrei <a href="https://groups.google.com/forum/#!topic/rufus-ruby/BzSzC2X6XXc">esse post</a> no google groups.</p>
+
+<p>UPDATE:</p>
+
+<p>Caso você tenha algum problema como script/rails não funcionar, você adicionar as seguintes linhas no config/schedule.rb:</p>
+
+<pre><code>set :output, “#{path}/log/cron.log”
+set :environment, ‘development’ # Para funcionar em desenvolvimento
+job_type :runner, “cd :path &amp;&amp; rails runner -e :environment :task :output”
+set :job_template, “/bin/bash -i -l -c ‘:job’” 
+</code></pre>
+
+<p>Uma alternativa ao whenever é o <a href="https://github.com/jmettraux/rufus-scheduler/">rufus-scheduler</a> que tem uma sintaxe similar e vale a pena dar uma conferida!</p>
+
+<p>É isso pessoal, espero que esse post sirva de ajuda!</p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
 			    	<h1><a href="/2011/07/can-be-flagged">Conheça Can_be_flagged gem</a></h1>
 				    <p class="post_info">10 July, 2011</p>
 
@@ -192,46 +252,23 @@ Espero que tenha sido útil! Em breve posto mais! Abraços!</p>
 	        <article class="post">
 
 			    <div class="content">
-			    	<h1><a href="/2011/03/simplicidade-e-tudo">Simplicidade é tudo!</a></h1>
+			    	<h1><a href="/2011/03/media-queries">Flexibilidade com CSS Media Queries</a></h1>
 				    <p class="post_info">09 March, 2011</p>
 
-				    <p>Esse ditado é meio antigo mais reflete bem o que vou lhes passar hoje.
-Atualmente estamos sendo “informados demais”, não que a gente tenha muito conteúdo para ler ou saber, mas que apenas temos muito conteúdo e esse conteúdo nem sempre é aproveitado ou aproveitável.</p>
+				    <p>Bem, esse assunto não é muito novo, mas gostaria de compartilhar com vocês.</p>
 
-<p><img src="/img/posts/onde_x.png"></p>
+<p><img src="/img/posts/mediaquery.png"></p>
 
-<p>A partir desta linha de raciocínio o que mais precisamos é menos coisas sendo jogadas na nossa cara, certo?</p>
+<p>Nas minhas navegadas pela net encontrei uma apresentação em slides muito boa sobre Media Queries no CSS3 e resolvi postar sobre o assunto.</p>
 
-<p>Certo, fiz um discurso danado, mas o que quero dizer com isso? Seja simples! Se você tem algo a dizer para seu cliente no conteúdo de seu site diga logo. É importante enfatizar o que deve ser enfatizado, isto é, o <b>conteúdo</b>.</p>
+<p>Uma Media query permite que você mude o layout sem mudar o conteúdo. Simples Assim! Dessa forma, seu site pode ser visto em vários dispositivos e resoluções diferentes, por exemplo, no iPhone não apareceria as barras de rolagem horizontais pois seu site estaria ajustado à largura do aparelho.</p>
 
-<p>Não é necessário enfeitar para manter um site bonito, afinal, ninguém vai entrar no seu site apenas para admirar a beleza e organização ou a disposição dos elementos ali inseridos, eles buscam conteúdo.</p>
+<p>Abaixo o slide que eu vi. Confira:</p>
 
-<h2>Minimalismo</h2>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/4072954" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 
-<p>Uma moda largamente utilizada pelo mundo afora. O minimalismo emprega exatamente o que estou falando, a importância está no conteúdo. E os designers utilizam essa técnica sem deixar de tornar o site bonito e elegante. Um exemplo é o site G1.com.</p>
 
-<p>Você pode encontrar vários outros sites <a href="http://www.ladodesign.com.br/2010/03/25-exemplos-de-sites-minimalistas.html">aqui</a>.</p>
-
-<h2>KISS</h2>
-
-<p>Não, não é a banda de rock! KISS (nesse caso) é uma sigla em inglês que significa – Keep it simple, stupid! – que numa tradução pro nordestino fica mais ou menos assim – Deixa simples, bocó! :). Brincadeiras a parte,  essa sigla é usada no desenvolvimento de software, planejamento tático, etc. Direto da Wikipédia a gente tem o princípio:</p>
-
-<p>Este princípio teve a sua inspiração diretamente do princípio da Navalha de Occam e das máximas de Albert Einstein (“tudo deve ser feito da forma mais simples possível, mas não mais simples que isso”) e de Antoine de Saint-Exupéry (“A perfeição é alcançada não quando não há mais nada para adicionar, mas quando não há mais nada que se possa retirar”).</p>
-
-<p>Se Antoine estivesse falando de mulheres pra um amigo a frase seria assim: se você gostar de uma que você não consegue enxergar o que precisaria tirar pra ela ser perfeita pra você, não perca tempo!</p>
-
-<h2>Vantagens</h2>
-
-<p>Não importa como seu sistema é, mante-lo simples…</p>
-
-<p><em>é mais fácil pra se construir.
-</em>é mais rápido para consertar.
-<em>torna as mudanças ágeis.
-</em>prioriza funcionalidades.
-<em>é mais fácil de manter o foco ao desenvolver.
-</em>mais rápido pra acabar e você pode ir pro barzinho mais vezes com os amigos :).</p>
-
-<p>Essas poucas vantagens que citei fazem muita diferença, pois você poderá satisfazer seu cliente melhor, além disso, quase inexistirá a perca de tempo no desenvolvimento de funcionalidades não importantes e seu bolso vai agradecer.</p>
+<p> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/maxdesign/css3-media-queries" title="CSS3 Media Queries" target="_blank">CSS3 Media Queries</a> </strong> from <strong><a href="http://www.slideshare.net/maxdesign" target="_blank">Russ Weakley</a></strong> </div></p>
 
 			    </div>
 
@@ -250,7 +287,7 @@ Atualmente estamos sendo “informados demais”, não que a gente tenha muito c
     
  --><li class="pagination_next">
         
-            Próxima »
+            <a href="/page3">Próxima »</a>
         
     </li>
 </ol>

@@ -29,6 +29,32 @@
 	        <article class="post">
 
 			    <div class="content">
+			    	<h1><a href="/2013/03/ambiente">Ambiente</a></h1>
+				    <p class="post_info">07 March, 2013</p>
+
+				    <p>O local onde uma pessoa habita, seja no trabalho, seja em casa. Até onde ele pode moldar um indivíduo?</p>
+
+<p>A resposta é: <b>Depende</b>.</p>
+
+<p>Hoje eu entendo que isso varia de pessoa pra pessoa. Algumas se deixam levar pela correnteza, outras, lutam contra ela, criando o seu próprio ambiente para "fugir" do que vive.</p>
+
+<p>A dependência de se você vai contra a correnteza ou está relacionada a uma pergunta: O que você quer ser? Se você não quer ser nada além das possibilidades visíveis à olho nu, acomode-se e se deixe levar. Porém, uma vez que você almeja algo grande e <b>diferente</b> você precisa de coragem e ousadia.</p>
+
+<p>É um caminho difícil, mas que no fim compensa. Ou então vai passar o fim da vida se lamentando pelo que não fez. Às vezes, no seu percurso, pedras vão aparecer, umas pequenas, outras enormes. Perseverança é necessário.</p>
+
+<p>Se você sonha grande, não se acomode! Não deixe o ambiente moldar você, molde o ambiente!</p>
+
+<p>Esse post é mais pra mim que pra quem o lê.</p>
+
+			    </div>
+
+			</article>
+
+        
+	        
+	        <article class="post">
+
+			    <div class="content">
 			    	<h1><a href="/2013/01/ociosidade">Ociosidade.</a></h1>
 				    <p class="post_info">15 January, 2013</p>
 
@@ -152,66 +178,6 @@ sudo apt-get install cinnamon
 				    <p>Depois que cheguei do concurso tirei uns dias para descansar a mente, mas quem disse que ela quer descanso? Enquanto jogava Prince of Persia minha mente ficou frisando “Você está perdendo seu tempo, vá estudar!”. Acho que seja o peso da responsabilidade da busca de um futuro melhor.</p>
 
 <p>Bem, próxima segunda começo meu preparo para um novo concurso, são mais dois meses de estudos. Vou simplesmente estudar!</p>
-
-			    </div>
-
-			</article>
-
-        
-	        
-	        <article class="post">
-
-			    <div class="content">
-			    	<h1><a href="/2011/07/agendar-tarefas-whenever">Agendar tarefas com whenever gem</a></h1>
-				    <p class="post_info">11 July, 2011</p>
-
-				    <p>A utilização de tarefas agendadas é bastante útil para, por exemplo, excluir logs a cada 15 dias, indexar mecanismos de busca e vários outros.</p>
-
-<p>Quero mostrar pra vocês uma gema que estou utilizando no meu mais novo projeto, <a href="https://github.com/javan/whenever">Whenever</a>.</p>
-
-<p>Do github:</p>
-
-<blockquote><p>Whenever is a Ruby gem that provides a clear syntax for writing and deploying cron jobs.</p></blockquote>
-
-<p>Assim, você não precisa aprender ou colar toda vez que precisar de um Cron job.</p>
-
-<p>Comparação:</p>
-
-<p>Cron job</p>
-
-<pre><code>0 23 1,15 * * /bin/bash -i -l -c ‘cd /home/jrochelly/Projetos/myapp &amp;&amp; rails runner -e development MyModel.method » /home/jrochelly/Projetos/myapp/log/cron.log 2&gt;&amp;1’
-</code></pre>
-
-<p>Whenever</p>
-
-<pre><code>every 1.minute do
-    runner “MyModel.method”
-end 
-</code></pre>
-
-<p>Muito semelhante né?
-Para instalar a gem siga os passos que estão <a href="https://github.com/javan/whenever">aqui</a>! (Não vou reescrever o que está escrito =P )</p>
-
-<p>Dica: Se quiser rodar um método de um Model, você precisa adicionar self.</p>
-
-<p>Assim um método <b>def nome_metodo</b> fica <b>def self.nome_metodo</b>. Por quê?
-Porque é necessário um class method ao invés de uma instância.</p>
-
-<p>Eu bati cabeça nessa parte, pois nada é explicado nesse sentido no README da gema. A minha salvação foi quando pesquisava sobre o mesmo problema para a gem rufus-scheduler e encontrei <a href="https://groups.google.com/forum/#!topic/rufus-ruby/BzSzC2X6XXc">esse post</a> no google groups.</p>
-
-<p>UPDATE:</p>
-
-<p>Caso você tenha algum problema como script/rails não funcionar, você adicionar as seguintes linhas no config/schedule.rb:</p>
-
-<pre><code>set :output, “#{path}/log/cron.log”
-set :environment, ‘development’ # Para funcionar em desenvolvimento
-job_type :runner, “cd :path &amp;&amp; rails runner -e :environment :task :output”
-set :job_template, “/bin/bash -i -l -c ‘:job’” 
-</code></pre>
-
-<p>Uma alternativa ao whenever é o <a href="https://github.com/jmettraux/rufus-scheduler/">rufus-scheduler</a> que tem uma sintaxe similar e vale a pena dar uma conferida!</p>
-
-<p>É isso pessoal, espero que esse post sirva de ajuda!</p>
 
 			    </div>
 
