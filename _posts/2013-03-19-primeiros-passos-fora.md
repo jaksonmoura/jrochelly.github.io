@@ -2,7 +2,7 @@
 comments: true
 layout: post
 title: Primeiros passos fora
-date: 2013-03-19 21:20:00
+date: 2013-03-19 21:23:00
 ---
 
 Hoje faz uma semana que estou em Palmas. A mudança veio rápido e forte, mas nada incrívelmente difícil como havia pensado.
