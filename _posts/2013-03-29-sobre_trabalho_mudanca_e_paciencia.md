@@ -1,9 +1,9 @@
---
+---
 comments: true
 layout: post
 date: 2013-03-29 08:47:00
-title: Sorbe trabalho, mudanças e paciência
---
+title: Sobre trabalho, mudanças e paciência
+---
 
 Achei que conseguiria rapidamente o que queria, me mudei com essa sede. Mas não aconteceu bem como imaginei, tive problemas de adaptação ao novo emprego, pois não estava fazendo o que gostaria de fazer, pelo menos nesse primeiro momento.
 
