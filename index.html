@@ -23,20 +23,20 @@ layout: default
     <li class="pagination_prev">
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-            <a href="/">« Anterior</a>
+            <a href="/">« Previous</a>
         {% else %}
-            <a href="/page{{paginator.previous_page}}">« Anterior</a>
+            <a href="/page{{paginator.previous_page}}">« Previous</a>
         {% endif %}
         {% else %}
-            « Anterior
+            « Previous
         {% endif %}
     </li><!--
     
  --><li class="pagination_next">
         {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Próxima »</a>
+            <a href="/page{{paginator.next_page}}">Next »</a>
         {% else %}
-            Próxima »
+            Next »
         {% endif %}
     </li>
 </ol>
