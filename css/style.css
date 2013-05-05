@@ -15,7 +15,7 @@ html{
 	border-top: 4px solid #2c5aa0;
 }
 
-h1{
+h1, .archive h2{
 	font-weight: normal;
 }
 
