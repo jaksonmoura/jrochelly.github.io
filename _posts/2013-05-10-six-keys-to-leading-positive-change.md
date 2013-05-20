@@ -8,7 +8,7 @@ title: Six Keys to Leading Positive Change
 <iframe class="youtube-player" type="text/html" width="660" height="395" src="http://www.youtube.com/embed/owU5aTNPJbs" allowfullscreen frameborder="0">
 </iframe>
 
-"Being there makes the difference[...]"
+"Being there makes the difference[...]"<br/>
 Rosabeth Moss Kanter fala sobre as chaves para uma mudança positiva no mundo. Oportunidades existem, mas sem ação nada acontece. Assista o vídeo.
 
 By the way, as 6 chaves são:
