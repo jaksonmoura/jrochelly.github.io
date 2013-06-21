@@ -1,43 +1,49 @@
----
-layout: default
-title: Home
----
-
-		{% for post in paginator.posts %}
-	        
-	        <article class="post">
-
-			    <div class="content">
-			    	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-				    <div class="post_info">
-                        <time datetime="{{ post.date | date: "%d %B, %Y" }}">{{ post.date | date: "%d %B, %Y" }}</time>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jakson Rochelly - Apps I've made</title>
+        <link rel="stylesheet" href="layout.css"/>
+    </head>
+    <body>
+        <header>JAKSON ROCHELLY</header>
+        <div id="about">
+            <div class="main">
+                <img src="me.jpg" alt="That's me!">
+                <div>
+                    <p>I'm just a guy who really likes to develop apps. This is a list of apps I've made.
+                    Your can mail me whenever you want. I'll enjoy your contact.</p>
+                    <ul>
+                        <li><a href="mailto://jrochelly@gmail.com">email</a></li>
+                        <li><a href="http://jrochely.com">blog</a></li>
+                        <li><a href="http://twitter.com/jrochelly">twitter</a></li>
+                        <li><a href="http://facebook.com/jrochelly">facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <div id="apps_list">
+                    <div class="app">
+                        <div class="logo"><a href="http://jrochelly.github.io/multilinks/"><img src="multilinks.png"></a></div>
+                        <div class="info">
+                            <h3><a href="http://jrochelly.github.io/multilinks/">Multilinks Shortcut</a> <img src="chrome_icon.png" alt="Chrome extension"></h3>
+                            <p>Open your daily common pages at once with this extension for Google Chrome.</p>
+                        </div>
                     </div>
-
-				    {{ post.content }}
-			    </div>
-
-			</article>
-
-        {% endfor %}
-
-<ol class="nav_pagination">
-    <li class="pagination_prev">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/">« Previous</a>
-        {% else %}
-            <a href="/page{{paginator.previous_page}}">« Previous</a>
-        {% endif %}
-        {% else %}
-            « Previous
-        {% endif %}
-    </li><!--
-    
- --><li class="pagination_next">
-        {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Next »</a>
-        {% else %}
-            Next »
-        {% endif %}
-    </li>
-</ol>
+                    <div class="app">
+                        <div class="logo"><a href="#"><img src="convercy.png"></a></div>
+                        <div class="info">
+                            <h3><a href="#">Convercy</a> <img src="firefox_icon.png" alt="Firefox app"></h3>
+                            <p>Just another Currency converter for Firefox OS.</p>
+                            <div class="note">not published yet.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

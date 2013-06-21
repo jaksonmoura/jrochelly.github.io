@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700);
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #333; }
+
+body {
+  background: url("bg.png");
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 70px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold; }
+
+#about {
+  color: #AFBFDB;
+  float: left;
+  width: 100%;
+  background: #3873B6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset; }
+  #about ul {
+    list-style: none;
+    margin: 70px 0 0 0;
+    padding: 0; }
+    #about ul li {
+      display: inline;
+      margin: 0 20px 0 0; }
+  #about a {
+    color: #eee;
+    font-style: italic; }
+  #about .main {
+    width: 60%;
+    margin: 0 auto; }
+    #about .main > img {
+      margin: 0 10px 0 0;
+      padding: 0;
+      float: left; }
+    #about .main > div {
+      float: left;
+      width: 78%; }
+
+#wrapper {
+  width: 100%;
+  float: left; }
+  #wrapper #content {
+    width: 60%;
+    margin: 0 auto; }
+
+#apps_list {
+  margin-top: 50px; }
+
+.app {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px 0;
+  background: #fff;
+  box-shadow: 3px 3px 1px #ccc;
+  padding: 10px 0; }
+  .app a {
+    color: #3873B6; }
+  .app .logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 10px; }
+    .app .logo a > img {
+      width: 100px;
+      height: 100px; }
+  .app .info {
+    width: 75%;
+    float: left;
+    margin: 0; }
+    .app .info h3, .app .info p {
+      margin: 0;
+      padding: 0; }
+    .app .info p {
+      line-height: 20px; }
+    .app .info h3 {
+      margin: 0 0 10px 0; }
+  .app .note {
+    background: #eee;
+    width: 50%;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: #aaa;
+    font-style: italic;
+    font-family: georgia; }
+
+.app:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  box-shadow: 3px 3px 5px #ccc; }
