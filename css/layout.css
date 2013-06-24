@@ -120,6 +120,6 @@ header {
   box-shadow: 3px 3px 5px #ccc; }
 
 #img404 {
-  background: url("img/404.jpg");
+  background: url("../img/404.jpg");
   width: 660px;
   height: 440px; }
