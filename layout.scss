@@ -35,12 +35,16 @@ header{
 	float: left;
 	width: 100%;
 
+	p{
+		margin: 12px 0;
+	}
+
 	ul{
 		list-style: none;
-		margin: 60px 0 0 0;
+		margin: 0;
 		padding: 0;
 
-		li{
+		li{ 
 			display: inline;
 			margin: 0;
 			opacity: .6;
