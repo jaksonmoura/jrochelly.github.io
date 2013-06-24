@@ -126,7 +126,7 @@ header {
   margin: 0 auto; }
 
 footer {
+  float: left;
   width: 100%;
-  background: #333;
-  color: #fff;
-  margin: 0 auto; }
+  text-align: center;
+  font-size: 12px; }
