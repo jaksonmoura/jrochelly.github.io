@@ -50,13 +50,13 @@ header {
   #about .main {
     width: 60%;
     margin: 0 auto; }
-    #about .main > img {
-      margin: 0 10px 0 0;
+    #about .main #me {
+      margin: 0 10px -5px 0;
       padding: 0;
       float: left; }
-    #about .main > div {
+    #about .main #myinfo {
       float: left;
-      width: 78%; }
+      width: 73%; }
 
 #wrapper {
   width: 100%;
@@ -116,3 +116,52 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 12px; }
+
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 40px; }
+
+  #content {
+    min-width: 95%; }
+
+  .logo {
+    max-width: 48px;
+    max-height: 48px; }
+    .logo a > img {
+      max-width: 48px;
+      max-height: 48px; }
+
+  .app .info {
+    width: 80%; }
+
+  #about .main {
+    text-align: center;
+    width: 95%; }
+    #about .main #me, #about .main #myinfo {
+      width: 100%; } }
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  header {
+    font-size: 40px; }
+
+  #content {
+    min-width: 90%; }
+
+  .logo {
+    max-width: 80px;
+    max-height: 80px; }
+    .logo a > img {
+      max-width: 80px;
+      max-height: 80px; }
+
+  .app .info {
+    width: 80%; }
+
+  #about .main {
+    width: 95%; }
+    #about .main #me {
+      float: left;
+      width: auto;
+      margin: 0 5px -5px 0; }
+    #about .main #myinfo {
+      float: left;
+      width: 75%; } }
