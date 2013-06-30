@@ -71,14 +71,14 @@ header{
 		width: 60%;
 		margin: 0 auto;
 
-		>img{
-			margin: 0 10px 0 0;
+		#me{
+			margin: 0 10px -5px 0;
 			padding: 0;
 			float: left;
 		}
-		>div{
+		#myinfo{
 			float: left;
-			width: 78%;
+			width: 73%;
 		}
 	}
 }
@@ -166,4 +166,72 @@ footer{
 	width: 100%;
 	text-align: center;
 	font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+	header{
+		font-size: 40px;
+	}
+	#content{
+		min-width: 95%;
+	}
+
+	.logo{
+			max-width: 48px;
+			max-height: 48px;
+
+		a>img{
+			max-width: 48px;
+			max-height: 48px;	
+		}
+	}
+
+	.app .info{
+		width: 80%;
+	}
+
+	#about .main{
+		text-align: center;
+		width: 95%;
+		#me, #myinfo{
+			width: 100%;
+			
+		}
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px){
+	header{
+		font-size: 40px;
+	}
+	#content{
+		min-width: 90%;
+	}
+
+	.logo{
+			max-width: 80px;
+			max-height: 80px;
+
+		a>img{
+			max-width: 80px;
+			max-height: 80px;	
+		}
+	}
+
+	.app .info{
+		width: 80%;
+	}
+
+	#about .main{
+		width: 95%;
+		#me{
+			float: left;
+			width: auto;
+			margin: 0 5px -5px 0;
+		}
+		#myinfo{
+			float: left;
+			width: 75%;
+		}
+	}	
 }
