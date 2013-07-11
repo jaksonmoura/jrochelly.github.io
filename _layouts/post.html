@@ -6,7 +6,7 @@ layout: default
 
     <h1>{{ page.title }}</h1>
     <div class="post_info">
-        <time datetime="{{ page.date | date: "%d %B, %Y" }}">{{ page.date | date: "%d %B, %Y" }}</time>
+        <time datetime="{{ page.date | date: "%d %B, %Y hh:mm:ss" }}">{{ page.date | date: "%d %B, %Y" }}</time>
     </div>
 
     {{ content }}
