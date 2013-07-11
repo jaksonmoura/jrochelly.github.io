@@ -72,7 +72,7 @@ nav {
   margin: 50px 0 0 0;
   padding: 0; }
 
-.post, .archive {
+.post {
   font-family: 'Roboto', Arial, Helvetica, serif;
   width: 100%;
   border-bottom: 1px dotted #ccc; }
@@ -93,7 +93,8 @@ nav {
   text-align: left;
   font-style: normal;
   padding-bottom: 0px;
-  margin: -5px 0 0 0; }
+  margin: -5px 0 0 0;
+  color: #3498db; }
 
 .post_index {
   margin: 0 0 20px 0; }
