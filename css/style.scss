@@ -116,9 +116,10 @@ nav{
 	padding-bottom: 10px;
 }
 
-.post h1, .archive h1, .post_index h1{
+.post h1, .post_index h1{
 	font-size: 1.6em;
-	text-align: center;
+	text-align: left;
+	font-style: normal;
 	padding-bottom: 0px;
 	margin: -5px 0 0 0;
 }
@@ -130,49 +131,24 @@ nav{
 .post_index h1{
 	margin: -5px 0 0 0;
 	font-size: 1.3em;
-	text-align: left;
-	font-style: normal;
 }
 
-.post h1 a, .archive h1 a, .post_index h1 a{
+.post h1 a, .post_index h1 a{
 	color: #162d50;
 }
 
-.post h1 a:hover, .archive h1 a:hover, .post_index h1 a:hover{
+.post h1 a:hover, .post_index h1 a:hover{
 	color: $blue_1;
 }
 
 .post_info, .archive_info{
 	color: #666;
-	font-style: italic;
 	margin: 0;
 }
 
-.post_info{
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-.post_index .post_info{
+.post_info, .post_index .post_info{
 	text-align: left;
 	padding-bottom: 20px;
-}
-
-.archive{
-	padding-bottom: 20px;
-}
-
-.archive p{
-	padding-top: 0;
-	margin-top: -20px;
-}
-
-article a{
-	text-decoration: none;
-}
-
-article a:hover{
-	text-decoration: underline;
 }
 
 .nav_pagination{
