@@ -260,7 +260,7 @@ footer a{
 	font-family: georgia; 
 }
 
-@media screen and (max-width: 480px){
+@media all and (max-width: 480px){
 	header{
 		width: 100%;
 
@@ -286,7 +286,7 @@ footer a{
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 1000px){
+@media all and (min-width: 480px) and (max-width: 1000px){
 
 	.post h2, .archive h2{
 		font-size: 1.1em;
@@ -326,7 +326,7 @@ footer a{
 	}
 }
 
-@media screen and (min-width: 660px) and (max-width: 1000px){
+@media all and (min-width: 660px) and (max-width: 1000px){
 	header{
 		float: none;
 		margin: 10px auto 20px auto;
@@ -355,7 +355,7 @@ footer a{
 	}
 }
 
-@media screen and (max-width: 1000px){
+@media all and (max-width: 1000px){
 
 	.post_index, .post_index h1, .post_index .post_info{
 		text-align: center;
@@ -369,7 +369,7 @@ footer a{
 
 }
 
-@media screen and (min-width: 1000px){
+@media all and (min-width: 1000px){
 
 	#wrapper{
 		width: 1000px;
