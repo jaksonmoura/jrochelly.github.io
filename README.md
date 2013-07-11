@@ -1,2 +1,2 @@
-This is the code of my app list.
-The same you see on the view source of your browser (BTW :D).
+Source code of my blog. Design following the minimal style.
+http://jrochelly.com/
