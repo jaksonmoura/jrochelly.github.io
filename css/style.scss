@@ -135,13 +135,15 @@ nav{
 
 .post h1 a, .post_index h1 a{
 	color: #162d50;
+	text-decoration: none;
 }
 
 .post h1 a:hover, .post_index h1 a:hover{
 	color: $blue_1;
+	text-decoration: underline;
 }
 
-.post_info, .archive_info{
+.post_info{
 	color: #666;
 	margin: 0;
 }
