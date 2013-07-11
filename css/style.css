@@ -107,8 +107,7 @@ nav {
   text-decoration: none; }
 
 .post h1 a:hover, .post_index h1 a:hover {
-  color: #3498db;
-  text-decoration: underline; }
+  color: #3498db; }
 
 .post_info {
   color: #666;
