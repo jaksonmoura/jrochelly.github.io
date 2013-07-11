@@ -217,7 +217,7 @@ footer a {
   font-style: italic;
   font-family: georgia; }
 
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
   header {
     width: 100%; }
     header nav a {
@@ -229,7 +229,7 @@ footer a {
     width: 100%; }
     .blog_posts .post img, .blog_posts .post iframe {
       max-width: 100%; } }
-@media screen and (min-width: 480px) and (max-width: 1000px) {
+@media all and (min-width: 480px) and (max-width: 1000px) {
   .post h2, .archive h2 {
     font-size: 1.1em; }
 
@@ -255,7 +255,7 @@ footer a {
   footer p {
     width: 100%;
     margin: 0 auto; } }
-@media screen and (min-width: 660px) and (max-width: 1000px) {
+@media all and (min-width: 660px) and (max-width: 1000px) {
   header {
     float: none;
     margin: 10px auto 20px auto;
@@ -272,7 +272,7 @@ footer a {
       width: 300px;
       float: right;
       margin: 0; } }
-@media screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
   .post_index, .post_index h1, .post_index .post_info {
     text-align: center; }
 
@@ -280,7 +280,7 @@ footer a {
     clear: both;
     margin: 0 auto;
     width: 100%; } }
-@media screen and (min-width: 1000px) {
+@media all and (min-width: 1000px) {
   #wrapper {
     width: 1000px; }
 
