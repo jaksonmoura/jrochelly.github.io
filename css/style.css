@@ -1,5 +1,4 @@
 @import url(misc.css);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(http://weloveiconfonts.com/api/?family=brandico);
 /* brandico */
 [class*="brandico-"]:before {
@@ -19,7 +18,7 @@
 
 body {
   width: 100%;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 62.5%;
   margin: 0 auto;
   padding: 0;
@@ -76,7 +75,7 @@ nav {
     background: #e1e1e1;
     text-decoration: none;
     margin-top: 50px;
-    padding: 10px 40px;
+    padding: 10px 35px;
     box-shadow: 0 3px 0px #ccc; }
   nav a:hover, nav a:active {
     color: #f9f9f9;
@@ -90,7 +89,7 @@ nav {
   padding: 0; }
 
 .post {
-  font-family: 'Roboto', Arial, Helvetica, serif;
+  font-family: 'Open Sans', Arial, Helvetica, serif;
   width: 100%;
   border-bottom: 1px dotted #ccc; }
 
