@@ -10,7 +10,6 @@
 
 #social_links{
 	float: left;
-	display: inline;
 	margin: 0;
 	padding: 0;
 
@@ -42,7 +41,7 @@ html{
 	border-top: 7px solid $blue_1;
 }
 
-h1, .archive h2{
+h1{
 	font-weight: normal;
 }
 
@@ -288,7 +287,7 @@ footer a{
 
 @media all and (min-width: 480px) and (max-width: 1000px){
 
-	.post h2, .archive h2{
+	.post h2{
 		font-size: 1.1em;
 	}
 
@@ -308,11 +307,11 @@ footer a{
 		}
 	}
 
-	.post, .archive{
+	.post{
 		font-size: 1.1em;
 	}
 
-	.post_info, .archive_info{
+	.post_info{
 		font-size: .8em;
 	}
 
