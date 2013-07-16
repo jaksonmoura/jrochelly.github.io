@@ -1,6 +1,10 @@
 @import "misc.css";
 @import url(http://weloveiconfonts.com/api/?family=brandico);
 
+$blue_1: #3498db;
+$blue_2: #2980b9;
+$blue_dark: #2c3e50;
+
 /* brandico */
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
@@ -17,14 +21,11 @@
 		margin-right: 5px;
 
 		a{
-			color:#2c3e50;
+			color:$blue_dark;
 			text-decoration: none;
 		}
 	}
 }
-
-$blue_1: #3498db;
-$blue_2: #2980b9;
 
 body{
 	width: 100%;
@@ -32,7 +33,7 @@ body{
 	font-size: 62.5%;
 	margin: 0 auto;
 	padding: 0;
-	color: #2c3e50;
+	color: $blue_dark;
 	background: #f9f9f9;
 }
 
@@ -195,22 +196,22 @@ nav{
 
 footer{
 	width: 100%;
-	background: #333;
-	color: #f1f1f1;
+	color: #777;
 	font-size: 1.1em;
-	padding: 5px 0 5px 0;
-	margin: 5px 0 0 0;
+	padding: 0px;
+	margin: 30px 0 0 0;
 	position: relative;
 	bottom: 0px;
 }
 
 footer p{
 	width: 98%;
-	padding: 0 0 0 5px;
+	padding: 40px 0;
+	border-top: 1px solid #CCC;
 }
 
 footer a{
-	color: #c5c5c5;
+	color: $blue_2;
 }
 
 #apps_list {
@@ -316,10 +317,6 @@ footer a{
 		font-size: .8em;
 	}
 
-	footer{
-		padding: 20px 0;
-	}
-
 	footer p{
 		width: 100%;
 		margin: 0 auto;
@@ -378,7 +375,6 @@ footer a{
 	footer p{
 		width: 1000px;
 		margin: 0 auto;
-		padding: 10px 0;
 	}
 
 }
