@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   padding: 0;
   color: #2c3e50;
-  background: #f9f9f9 url("/img/bg.png"); }
+  background: #f9f9f9; }
 
 html {
   border-top: 7px solid #3498db; }
