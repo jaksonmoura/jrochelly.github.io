@@ -109,7 +109,8 @@ nav {
   text-align: left;
   font-style: normal;
   padding-bottom: 0px;
-  margin: -8px 0 0 0; }
+  margin: -8px 0 0 0;
+  font-weight: bold; }
 
 .post_index {
   margin: 0 0 20px 0; }
