@@ -9,7 +9,7 @@
 	<!--[if IE]> <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="/css/style.css"/>
-	<title>Jakson Rochelly &ndash; {{ page.title }}</title>
+	<title>Jakson Rochelly &ndash; Home</title>
 </head>
 <body>
 	<div id="wrapper">
@@ -37,12 +37,54 @@
 		</header>
 		
 		<section class="blog_posts">
-			{{ content }}
+					
+	        <article class="post_index">
+			    <div class="content">
+			    	<h1><a href="/2011/03/simplicidade-e-tudo">Simplicidade é tudo!</a></h1>
+				    <div class="post_info">
+                        <time datetime="2011-03-09T00:00:00">09 March, 2011</time>
+                    </div>
+			    </div>
+			</article>
+        
+	        <article class="post_index">
+			    <div class="content">
+			    	<h1><a href="/2011/03/thoughts">Life is hard</a></h1>
+				    <div class="post_info">
+                        <time datetime="2011-03-07T00:00:00">07 March, 2011</time>
+                    </div>
+			    </div>
+			</article>
+        
+	        <article class="post_index">
+			    <div class="content">
+			    	<h1><a href="/2011/03/pensamento-just-in-time">Pensamento Just-in-time</a></h1>
+				    <div class="post_info">
+                        <time datetime="2011-03-06T00:00:00">06 March, 2011</time>
+                    </div>
+			    </div>
+			</article>
+        
+
+<ol class="nav_pagination">
+    <li class="pagination_prev">
+        
+        
+            <a href="/">« Previous</a>
+        
+        
+    </li>
+    <li class="pagination_next">
+        
+            Next »
+        
+    </li>
+</ol>
 		</section>
 	</div>
 
 	<footer>
-		<p>&copy; {{ site.time | date: "%Y" }} <a href="http://twitter.com/jrochelly">Jakson Rochelly</a>.
+		<p>&copy; 2013 <a href="http://twitter.com/jrochelly">Jakson Rochelly</a>.
        Built with <a href="https://github.com/mojombo/jekyll/">Jekyll</a>.
        The source of this blog is <a href="https://github.com/jrochelly/jrochelly.github.com/">on GitHub</a>.<br>
        You can <a href="http://feeds.feedburner.com/jrochelly">grab the RSS feed</a> and maybe <a href="http://twitter.com/jrochelly">follow me on Twitter</a>.</p>
