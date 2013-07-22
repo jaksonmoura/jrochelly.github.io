@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title></title>
+		<description></description>
+		<link></link>
+		<atom:link href="/rss.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Descobertas do cotidiano</title>
+				<description>&lt;p&gt;Descobri hoje que o caminho que estou seguindo está dependendo quase que em sua totalidade de mim (é óbvio quando te contam).&lt;/p&gt;
+
+&lt;p&gt;O que realmente quero dizer necessita de mais palavras. Estou indenpendente (apenas eu, quero dizer), o que às vezes pode parecer ruim, mas, se seguido da forma correta, pode se tornar uma ótima oportunidade. Nesse ponto em que me abriram os olhos. Estou digerindo as mudanças, mas certamente foi bom ter sabido disso.&lt;/p&gt;
+
+&lt;p&gt;O que quero agora é continuar a fazer um bom trabalho e alavancar projetos interessantes.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 29 Jun 2013 14:35:00 -0300</pubDate>
+				<link>/2013/06/descobertas-do-cotidiano</link>
+				<guid isPermaLink="true">/2013/06/descobertas-do-cotidiano</guid>
+			</item>
+		
+			<item>
+				<title>Errar</title>
+				<description>&lt;p&gt;Uma coisa tão frustrante mas que ensina muito, isso é errar. Estamos sempre nos deparando com situações em que por medo de errar, ficamos parados e não seguimos adiante. Errar é sempre uma opção, mas não é definido que isso vai acontecer. Tente, não desista no primeiro obstáculo.&lt;/p&gt;
+
+&lt;p&gt;Todos nós já erramos, e ainda vamos errar, o que temos a fazer é aprender com ele e seguir adiante. Colocar na sua mente que errar é uma forma de aprendizado é importante para a vida. Sei que é bem clichê, mas os grandes cientistas, engenheiros, etc.. já erraram em algum projeto, o que fez eles terem sucesso foi sua perseverança, aprendendo mesmo no fracasso.&lt;/p&gt;
+
+&lt;p&gt;Eu erro bastante, e sempre tenho aquele frio na barriga, mas eu tenho que continuar pois o caminho que escolhi seguir não tem como acertar tudo de primeira, e se eu acertasse tudo de primeira, ao primeiro sinal de fracasso eu fugiria, já que nunca teria sabido o que é errar antes.&lt;/p&gt;
+
+&lt;p&gt;No vídeo abaixo, David Damberger mostra como aprender pelo erro. Assista.&lt;/p&gt;
+
+&lt;iframe class=&quot;youtube-player&quot; type=&quot;text/html&quot; width=&quot;660&quot; height=&quot;395&quot; src=&quot;http://www.youtube.com/embed/HGiHU-agsGY&quot; allowfullscreen frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+
+</description>
+				<pubDate>Mon, 20 May 2013 07:40:00 -0300</pubDate>
+				<link>/2013/05/errar</link>
+				<guid isPermaLink="true">/2013/05/errar</guid>
+			</item>
+		
+			<item>
+				<title>Criando</title>
+				<description>&lt;p&gt;Meu trabalho está me proporcionando uma experiência ótima, montar um framework e evoluir com ele. Estou muito contente com o que venho fazendo ao longo dessas 2 semanas que uso o &lt;a href=&quot;https://github.com/gilbitron/PIP&quot;&gt;PIP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mas não foi tão fácil encontrá-lo. Pesquisei muito sobre outros frameworks, vi muitas vantagens, mas tinha medo de uma coisa: &lt;u&gt;banco legado&lt;/u&gt;. Parte do projeto trabalha com isso, será que frameworks como CakePHP, Laravel teriam uma fácil implementação? E ainda, seria a curva de aprendizagem curta? Bem, achei que não e cogitei criar meu próprio framework. Felizmente(?) achei essa alternativa bastante interessante.&lt;/p&gt;
+
+&lt;p&gt;Ele é justamente o que procurava: &lt;b&gt;um framework simples&lt;/b&gt; para se ter uma organização básica. A partir daí, com a dica do &lt;a href=&quot;http://twitter.com/mateuspontes&quot;&gt;@mateuspontes&lt;/a&gt; instalei o &lt;a href=&quot;phpactiverecord.org&quot;&gt;phpActiveRecord&lt;/a&gt; e tudo está indo muito bem. A documentação do phpAR é muito bom e me ajuda bastante quando eu empanco.&lt;/p&gt;
+
+&lt;p&gt;A evolução que tive ao usar PIP com o AR é espetacular e nunca me senti tão feliz com tão pouco :).&lt;/p&gt;
+
+&lt;p&gt;As modificações que fiz no PIP estão no meu fork &lt;a href=&quot;https://github.com/jrochelly/ActivePIP&quot;&gt;ActivePIP&lt;/a&gt;. Sinta-se a vontade para modificá-lo.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 25 Apr 2013 06:17:00 -0300</pubDate>
+				<link>/2013/04/criando</link>
+				<guid isPermaLink="true">/2013/04/criando</guid>
+			</item>
+		
+			<item>
+				<title>Sobre trabalho, mudanças e paciência</title>
+				<description>&lt;p&gt;Achei que conseguiria rapidamente o que queria, me mudei com essa sede. Mas não aconteceu bem como imaginei, tive problemas de adaptação ao novo emprego, pois não estava fazendo o que gostaria de fazer, pelo menos nesse primeiro momento.&lt;/p&gt;
+
+&lt;p&gt;Após algumas conversas, ouvi que iria melhorar e que eu seria designado para minha área correta, com a ampliação e mudança no setor. Alguns dias após essas conversas, percebi que o fato de eu não ter começado de cara na minha área teve um efeito bom, pois como estou de mudança, tenho poucas coisas, o que me faz não ter comodidade para estudar e me aperfeiçoar.&lt;/p&gt;
+
+&lt;p&gt;Existe sempre alguma coisa nas mudanças de na nossa vida que não nos agrada. Aprendi que ser paciente nos ajuda a analisarmos o que está acontecendo com calma e ver como isso está realmente nos afetando. Por vezes, tais mudanças, no final das contas, chegam até a serem boas mudanças. Claro que não estou dizendo para se acomodarem e deixar o vento levar. Temos que lutar, buscar nosso caminho ou pelo menos o caminho que achamos mais correto/divertido/recompensador pra nossa vida.&lt;/p&gt;
+
+&lt;p&gt;Desde pequeno, quando precisava analisar algo na minha vida, sempre buscava vê-la com outros olhos. Isso me ajudava e continua ajudando bastante a encarrar a vida e seguir em frente, tomar decisões, e por aí vai. É como ver uma moeda pelos dois lados, é um mesmo objeto, mas cada lado observado vai lhe apresentar uma informação diferente. Além, disso uma boa conversa com pessoas que confia é muito importante.&lt;/p&gt;
+
+&lt;p&gt;Agora, é conseguir me acomodar direito, enfiar a cabeça nos livros, comprar um monte deles que estão faltando, aprender bastante e dar o melhor de mim.&lt;/p&gt;
+
+&lt;p&gt;P.S.: Espero que role um PS3 de vez em quando. =P&lt;/p&gt;
+</description>
+				<pubDate>Fri, 29 Mar 2013 05:47:00 -0300</pubDate>
+				<link>/2013/03/sobre-trabalho-mudanca-e-paciencia</link>
+				<guid isPermaLink="true">/2013/03/sobre-trabalho-mudanca-e-paciencia</guid>
+			</item>
+		
+			<item>
+				<title>Primeiros passos fora</title>
+				<description>&lt;p&gt;Hoje faz uma semana que estou em Palmas. A mudança veio rápido e forte, mas nada incrívelmente difícil como havia pensado.&lt;/p&gt;
+
+&lt;p&gt;Os primeiros passos que tive aqui definiram minha opinião sobre como vejo a cidade e como ela me comporta. Vejo esse primeiros passos como algo bastante importante, pois quando começamos com o pé esquerdo, nos vem a sensação de que até o fim será assim e isso pode ser uma barreira mental para o novo.&lt;/p&gt;
+
+&lt;p&gt;A primeira grande diferença da minha cidade natal é a necessidade de usar transporte público. Recebi tranquilamente essa mudança. O fato de eu estar aberto para isso, me fez ter uma experiência positiva.&lt;br&gt;Imagine-se mudando de cidade e ficar totamente &quot;preso&quot; nas ideias e costumes da cidade de onde você vem. O fato de ter que pegar ônibus para ir trabalhar não seria de muito agrado.&lt;/p&gt;
+
+&lt;p&gt;Infelizmente, mudanças vem carregadas de esperanças. Há sempre espectativas que você quer que sejam supridas e às vezes não tem sucesso. Minha mudança me deixou feliz de saber que poderia ter uma conexão de banda larga melhor e mais rápida. Esta foi rapidamente subtraida da minha realidade. Na verdade, internet aqui está sendo uma questão bastante complicada, mas consegui alguma coisa, no final.&lt;/p&gt;
+
+&lt;p&gt;O que se deve fazer é não desistir e continuar lutando pelo que deseja. Estudar bastante e buscar se divertir enquanto batalha.&lt;/p&gt;
+
+&lt;p&gt;A felicidade está na jornada. :)&lt;/p&gt;
+</description>
+				<pubDate>Tue, 19 Mar 2013 18:23:00 -0300</pubDate>
+				<link>/2013/03/primeiros-passos-fora</link>
+				<guid isPermaLink="true">/2013/03/primeiros-passos-fora</guid>
+			</item>
+		
+			<item>
+				<title>Ambiente</title>
+				<description>&lt;p&gt;O local onde uma pessoa habita, seja no trabalho, seja em casa. Até onde ele pode moldar um indivíduo?&lt;/p&gt;
+
+&lt;p&gt;A resposta é: &lt;b&gt;Depende&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hoje eu entendo que isso varia de pessoa pra pessoa. Algumas se deixam levar pela correnteza, outras, lutam contra ela, criando o seu próprio ambiente para &quot;fugir&quot; do que vive.&lt;/p&gt;
+
+&lt;p&gt;A dependência de se você vai contra a correnteza ou está relacionada a uma pergunta: O que você quer ser? Se você não quer ser nada além das possibilidades visíveis à olho nu, acomode-se e se deixe levar. Porém, uma vez que você almeja algo grande e &lt;b&gt;diferente&lt;/b&gt; você precisa de coragem e ousadia.&lt;/p&gt;
+
+&lt;p&gt;É um caminho difícil, mas que no fim compensa. Ou então vai passar o fim da vida se lamentando pelo que não fez. Às vezes, no seu percurso, pedras vão aparecer, umas pequenas, outras enormes. Perseverança é necessário.&lt;/p&gt;
+
+&lt;p&gt;Se você sonha grande, não se acomode! Não deixe o ambiente moldar você, molde o ambiente!&lt;/p&gt;
+</description>
+				<pubDate>Thu, 07 Mar 2013 00:00:00 -0300</pubDate>
+				<link>/2013/03/ambiente</link>
+				<guid isPermaLink="true">/2013/03/ambiente</guid>
+			</item>
+		
+			<item>
+				<title>Ociosidade.</title>
+				<description>&lt;p&gt;Esta é a palavra que impera ultimamente, digo isso com o sentido de trabalho. “Não estou trabalhando em nada!”, é o que me vem a mente quando estou no computador, ou seja, quase sempre. É incrível o quanto em me sinto como se desperdiçasse o tempo que tenho pelo fato de não ter nada de concreto que possa fazer.&lt;/p&gt;
+
+&lt;p&gt;Por esse motivo e pelo fato que querer melhorar minhas skills, resolvi buscar blogs para acompanhar, pessoas para seguir no twitter. Tudo relacionado a design e desenvolvimento web.&lt;/p&gt;
+
+&lt;p&gt;Estou também fazendo listas de alguns livros para adquirir, entretanto não sei quando poderei obtê-los, mas espero que seja em breve. Praticamente todos os livros são técnicos, e, se não são, estou relacionados ao trabalho. Sinceramente, gosto mais de livros técnicos que de outros gêneros, pois vão de encontro ao meu objetivo que é me tornar um ótimo desenvolvedor/designer (não sei como definir isso ainda) voltado para web.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 15 Jan 2013 00:00:00 -0200</pubDate>
+				<link>/2013/01/ociosidade</link>
+				<guid isPermaLink="true">/2013/01/ociosidade</guid>
+			</item>
+		
+			<item>
+				<title>Tá pra mudar</title>
+				<description>&lt;p&gt;Este ano, as coisas vão ficar bastante diferentes pra mim, vou morar fora de casa, em outro estado, além disso, terei um novo emprego como Analista de TI.&lt;/p&gt;
+
+&lt;p&gt;Essa mudança, apesar de que será dura, vai ser muito boa, pois estarei lutando pelo que é meu do meu jeito. Poderei investir mais em coisas que gosto, como camisetas geek e tecnologia.&lt;/p&gt;
+
+&lt;p&gt;Outra ponto excelente é que estarei junto de bons amigos e minha namorada, já que todos vamos para o mesmo lugar. Será uma “bagunça divertida” =P&lt;/p&gt;
+
+&lt;p&gt;Algumas das coisas que quero adquirir esse são na área tecnológica são, um Macbook e se possível um iPhone. Vou usar o Macbook pra codar em rails e também aprender sobre a plataforma, ideologia e tudo mais do mundo Apple.&lt;/p&gt;
+
+&lt;p&gt;Bem, essas são mudanças no quesito externo, no interno, terá muito mais.&lt;/p&gt;
+
+&lt;p&gt;Espero blogar mais esse ano!&lt;/p&gt;
+</description>
+				<pubDate>Tue, 08 Jan 2013 00:00:00 -0200</pubDate>
+				<link>/2013/01/ta-pra-mudar</link>
+				<guid isPermaLink="true">/2013/01/ta-pra-mudar</guid>
+			</item>
+		
+			<item>
+				<title>Meu smartphone: O que aprendi</title>
+				<description>&lt;p&gt;É interessante o quanto você é ignorante sobre determinada assunto/objeto até tê-lo. Isso acontece com todos, nos baseamos nas experiências dos outros para nos guiarmos, mas nem sempre isso ajuda.&lt;/p&gt;
+
+&lt;p&gt;Vou contar o que acho que um smartphone deve ter. Comprei um Galaxy Y, um dos smartphones de entrada da Samsung. Um aparelho com design “inspirado” no iPhone 3GS.&lt;/p&gt;
+
+&lt;p&gt;Pra mim, duas coisas devem ser fundamentais para se ter um aparelho bom.&lt;/p&gt;
+
+&lt;h2&gt;1 - &lt;b&gt;Memória Interna&lt;/b&gt;&lt;/h2&gt;
+
+&lt;p&gt;Aqui é onde fica o sistema operacional e alguns aplicativos. O problema está em alguns aplicativos que não podem ser movidos para o cartão de memória. Como ela tem menor capacidade que o cartão acaba enchendo rápido, e por vezes diminuindo o desempenho.&lt;/p&gt;
+
+&lt;p&gt;Quanto maior a memória interna melhor!&lt;/p&gt;
+
+&lt;h2&gt;2 - &lt;b&gt;Memória Ram&lt;/b&gt;&lt;/h2&gt;
+
+&lt;p&gt;290mb não são suficientes! Acredite! Se possível compre um com mais memória. Em determinados momentos, você terá varias aplicações rodando, alguns em segundo plano. Tudo vai ficar mais lento do que já é. Aparelhos com android precisam de ainda mais memória para rodar tão bem como um Windows Phone ou iPhone.&lt;/p&gt;
+
+&lt;p&gt;--&lt;/p&gt;
+
+&lt;p&gt;O processador do Galaxy Y é razoavelmente bom, e creio que os dois fatores acima são os que deixam o celular lá em baixo. Quando não se conhece, parece ser um ótimo custo X benefício, mas depois que se tem o aparelho, vê-se que foi uma perda de dinheiro, e que podia ter aguardado para comprar algo melhor.&lt;/p&gt;
+
+&lt;p&gt;É isso!&lt;/p&gt;
+</description>
+				<pubDate>Sat, 21 Apr 2012 00:00:00 -0300</pubDate>
+				<link>/2012/04/meu-smartphone-o-que-aprendi</link>
+				<guid isPermaLink="true">/2012/04/meu-smartphone-o-que-aprendi</guid>
+			</item>
+		
+			<item>
+				<title>Foco: Concurso</title>
+				<description>&lt;p&gt;Atualmente estou me dedicando aos estudos para concurso, pois quero mudar de vida, de cidade, ter estabilidade e mais aqueles benefícios de ser um servidor público.
+No primeiro concurso que fiz, para o Ministério Público do Piauí, obtive uma boa classificação, acho que.. 13, por aí. Após o concurso que estou me preparando no momento, irei estudar focando no cargo de Analista de Sistemas, cujo me identifiquei em relação ao conteúdo pedido e tal.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 01 Mar 2012 00:00:00 -0300</pubDate>
+				<link>/2012/03/foco-concurso</link>
+				<guid isPermaLink="true">/2012/03/foco-concurso</guid>
+			</item>
+		
+	</channel>
+</rss>
