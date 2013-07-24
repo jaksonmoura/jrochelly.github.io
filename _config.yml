@@ -3,5 +3,5 @@ server: true
 future: false
 markdown: rdiscount
 pygments: true
-permalink: /:year/:month/:title
+permalink: /post/:year/:month/:title
 paginate: 20
