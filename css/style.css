@@ -289,8 +289,12 @@ footer a {
   .post, .post_index {
     font-size: 1rem;
     width: 100%; }
-    .post h1, .post_index h1 {
-      text-align: center; }
+
+  .post h1, .post_info, .post_index h1, .nav_pagination {
+    text-align: center; }
+
+  .nav_pagination {
+    width: 100%; }
 
   .post_info {
     clear: both;
