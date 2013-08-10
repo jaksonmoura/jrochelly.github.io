@@ -262,7 +262,7 @@ footer a {
       text-align: center; } }
 @media all and (min-width: 480px) and (max-width: 800px) {
   .post h2 {
-    font-size: 1.1rem; }
+    font-size: 1.4rem; }
 
   header {
     float: left;
@@ -316,6 +316,8 @@ footer a {
 
   .post {
     width: 100%; }
+    .post h2 {
+      font-size: 1.4rem; }
 
   header {
     width: 250px; }

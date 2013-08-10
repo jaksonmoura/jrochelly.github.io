@@ -40,7 +40,7 @@ Now you can just Unicorn as a Deamon:
 
 The last thing to do, and the one I dug the most is to add a scope for your rails routes file, like this:
 
-<pre>
+<pre rel="Ruby">
 MyApp::Application.routes.draw do
   scope '/myapp' do
     root :to => 'welcome#home'
@@ -58,7 +58,7 @@ This way, your app will map a link `/myapp/welcome`, intead of just `/welcome`
 
 So, you need to create a new module that we are going to put at `lib/route_scoper.rb` and in your routes.rb do this:
 
-<pre>
+<pre rel="Ruby">
 require_relative '../lib/route_scoper'
  
 MyApp::Application.routes.draw do
@@ -72,7 +72,7 @@ end
 </pre>
 On the module we've created, put the following lines:
 
-<pre>
+<pre rel="Ruby">
 require 'rails/application'
  
 module RouteScoper
@@ -86,7 +86,7 @@ end
 
 What we are doing is to see if the root directory is specified, if so use it, otherwise, got to "/". Now we just need to point the root directory on <code>config/enviroments/production.rb</code>:
 
-<pre>
+<pre rel="Ruby">
 MyApp::Application.configure do
   # Contains configurations for the production environment
   # ...
