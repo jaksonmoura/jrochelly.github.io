@@ -56,7 +56,21 @@ This way, your app will map a link `/myapp/welcome`, intead of just `/welcome`
 ##But there's a even better way
 ###Well, the above will work on production server, but what about development? Are you going to develop normally then on deployment you change your rails config? For every single app? That's not needed.
 
-So, you need to create a new module that we are going to put at `lib/route_scoper.rb` and in your routes.rb do this:
+So, you need to create a new module that we are going to put at `lib/route_scoper.rb`:
+
+<pre rel="Ruby">
+require 'rails/application'
+ 
+module RouteScoper
+  def self.root
+    Rails.application.config.root_directory
+  rescue NameError
+    '/'
+  end
+end
+</pre>
+
+After that, in your `routes.rb` do this:
 
 <pre rel="Ruby">
 require_relative '../lib/route_scoper'
@@ -67,19 +81,6 @@ MyApp::Application.routes.draw do
     
     # other routes are always inside this block
     # ...
-  end
-end
-</pre>
-On the module we've created, put the following lines:
-
-<pre rel="Ruby">
-require 'rails/application'
- 
-module RouteScoper
-  def self.root
-    Rails.application.config.root_directory
-  rescue NameError
-    '/'
   end
 end
 </pre>
