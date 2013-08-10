@@ -6,6 +6,8 @@ title: Nginx, Unicorn and multiple Rails apps
 
 ###It's really easy to make a rails app run using [unicorn](http://unicorn.bogomips.org/) + [nginx](http://nginx.org/en/), but when it comes to multiple apps, things get a lot harder, well, at least that's what I thought.
 
+![image](/img/posts/unicorn.png)
+
 What I want is to make the root (*"/"*) folder a place on the server where you can put **HTML** or **PHP** and use subdirectories like *"/app1"*, for exemple, to provide a rails app. Doing this correctly, makes a lot easier for me to deploy others apps using folders instead of http ports. It was really hard to find this better/easier way to run multiple rails applications and that's what makes me want to share with you.
 
 In this post I'm going to show you how to make your server run rails on subdirectory. For this tutorial, I'm using **Ruby 2.0 **and** Rails 4.0**. I suppose you already have nginx and unicorn installed. So, let's get started!
