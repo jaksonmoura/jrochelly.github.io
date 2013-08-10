@@ -6,11 +6,25 @@ pre {
   font-family: "BitStream Vera Sans Mono", Inconsolata, Monaco, Consolas, "Currier new", Currier, monospace;
   overflow: auto; }
 
+pre:before {
+  content: attr(rel);
+  margin: -10px -15px 0 0;
+  float: right;
+  background: #CCC;
+  padding: 0 5px;
+  color: #DB3434;
+  opacity: .7;
+  border-radius: 0 0 0 3px; }
+
+pre:before:hover {
+  opacity: 1; }
+
 code {
   background: #DDF2FF;
   padding: 3px 5px;
   border: 1px solid #9BCEDF;
-  border-radius: 3px; }
+  border-radius: 3px;
+  text-align: center; }
 
 blockquote {
   border-left: 8px solid #e5e5e5;
