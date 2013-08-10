@@ -1,11 +1,17 @@
 pre{
-	background: #333;
-	border-radius: 5px;
-	box-shadow: 0 -5px 15px #222 inset;
-	color: #f1f1f1;
+	font-size: 14px;
+	background: #4E4E4E;
+	color: #F1F1F1;
 	padding: 10px 15px;
-	font-family: Inconsolata, Monaco, Consolas, "Currier new", Currier, monospace;
-	overflow:auto;
+	font-family: "BitStream Vera Sans Mono", Inconsolata, Monaco, Consolas, "Currier new", Currier, monospace;
+	overflow: auto;
+}
+
+code{
+	background: #DDF2FF;
+	padding: 3px 5px;
+	border: 1px solid #9BCEDF;
+	border-radius: 3px;
 }
 
 blockquote{
