@@ -53,58 +53,22 @@ end
 
 This way, your app will map a link `/myapp/welcome`, intead of just `/welcome`
 
-##But there's a even better way
-###Well, the above will work on production server, but what about development? Are you going to develop normally then on deployment you change your rails config? For every single app? That's not needed.
+<div class="update"><b>Update 20013-08-13:</b> Better solution; </div>
 
-So, you need to create a new module that we are going to put at `lib/route_scoper.rb`:
-
-<pre rel="Ruby">
-require 'rails/application'
- 
-module RouteScoper
-  def self.root
-    Rails.application.config.root_directory
-  rescue NameError
-    '/'
-  end
-end
-</pre>
-
-After that, in your `routes.rb` do this:
+Also, we need to make rails see his in a subdirectory. At the end of your `production.rb` file, add: 
 
 <pre rel="Ruby">
-require_relative '../lib/route_scoper'
- 
-MyApp::Application.routes.draw do
-  scope RouteScoper.root do
-    root :to => 'welcome#home'
-    
-    # other routes are always inside this block
-    # ...
-  end
-end
+config.relative_url_root = "/myapp"
 </pre>
 
-What we are doing is to see if the root directory is specified, if so use it, otherwise, got to "/". Now we just need to point the root directory on <code>config/enviroments/production.rb</code>:
+So now our app opens using "/myapp" subdirectory, but, hey! Where's my assets? Well, rails still believe your assets are at "/assets" when they should be at "/myapp/assets". Let's solve this:
+
+Into your `config/applcation.rb` file add:
 
 <pre rel="Ruby">
-MyApp::Application.configure do
-  # Contains configurations for the production environment
-  # ...
-  
-  # Serve the application at /myapp
-  config.root_directory = '/myapp'
-end
+config.assets.prefix = "/myapp/assets"
 </pre>
 
-In <code>config/enviroments/development.rb</code> I do not specify the <code>config.root_directory</code>. This way it uses the normal url root.
+Now we're done. :) 
 
 That was possible using this [source](http://coffeencoke.github.io/blog/2012/12/31/serving-rails-with-a-subdirectory-root-path/)
-
-
-
-
-
-
-
-
