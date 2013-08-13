@@ -458,3 +458,17 @@ footer a{
 	}
 
 }
+
+// Notice, updates, info, etc
+.alert{
+	border: 1px solid #FFB800;
+	padding: 10px;
+	background: papayawhip;
+}
+
+.warning{
+	border: 1px solid #7E0E0E;
+	padding: 10px;
+	background: #C04747;
+	color: #FFF;
+}

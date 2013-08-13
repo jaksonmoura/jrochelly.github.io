@@ -53,8 +53,6 @@ end
 
 This way, your app will map a link `/myapp/welcome`, intead of just `/welcome`
 
-<div class="update"><b>Update 20013-08-13:</b> Better solution; </div>
-
 Also, we need to make rails see his in a subdirectory. At the end of your `production.rb` file, add: 
 
 <pre rel="Ruby">
@@ -70,5 +68,7 @@ config.assets.prefix = "/myapp/assets"
 </pre>
 
 Now we're done. :) 
+
+<div class="alert"><b>Update 20013-08-13:</b> Better solution; Easier way to make assets visible; </div>
 
 That was possible using this [source](http://coffeencoke.github.io/blog/2012/12/31/serving-rails-with-a-subdirectory-root-path/)
