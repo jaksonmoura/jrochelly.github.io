@@ -53,6 +53,8 @@ end
 
 This way, your app will map a link `/myapp/welcome`, intead of just `/welcome`
 
+<div class="alert"><b>Update 2013-08-13:</b> Better solution; Easier way to make assets visible; </div>
+
 Also, we need to make rails see his in a subdirectory. At the end of your `production.rb` file, add: 
 
 <pre rel="Ruby">
@@ -67,8 +69,10 @@ Into your `config/applcation.rb` file add:
 config.assets.prefix = "/myapp/assets"
 </pre>
 
-Now we're done. :) 
+<div class="alert"><b>Update 2013-08-14:</b> Solution for assets to work when in production </div>
 
-<div class="alert"><b>Update 20013-08-13:</b> Better solution; Easier way to make assets visible; </div>
+If in production environment your css or js are not being found, maybe `bundle exec rake assets:precompile RAILS_RELATIVE_URL_ROOT=/mypapp` solves the problem.
+
+Now we're done. :) 
 
 That was possible using this [source](http://coffeencoke.github.io/blog/2012/12/31/serving-rails-with-a-subdirectory-root-path/)
