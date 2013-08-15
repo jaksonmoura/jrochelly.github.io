@@ -69,7 +69,7 @@ Into your `config/applcation.rb` file add:
 config.assets.prefix = "/myapp/assets"
 </pre>
 
-<div class="alert"><b>Update 2013-08-14:</b> Solution for assets to work when in production </div>
+<div class="alert"><b>Update 2013-08-14:</b> Solution for assets to work when in production; </div>
 
 If in production environment your css or js are not being found, maybe `bundle exec rake assets:precompile RAILS_RELATIVE_URL_ROOT=/mypapp` solves the problem.
 
