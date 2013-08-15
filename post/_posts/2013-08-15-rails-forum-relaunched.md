@@ -2,7 +2,6 @@
 comments: true
 layout: post
 title: Rails Forum Relaunched
-date: 2013-08-15 15:48:00
 ---
 
 It's great to see again a forum that was huge coming back. This days we have [stack overflow](http://stackoverflow.com) which is great, but it has a limitation that forums are built for: ***discuss***. Discuss is a key for keeping moving forward.
