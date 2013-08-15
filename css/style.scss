@@ -143,8 +143,14 @@ nav{
 
 	figure{
 		display: block;
-		margin: 10px 0 10px -40px;
-		width: calc(100% + 80px);
+		margin: 0 auto;
+		width: 100%;
+
+		figcaption{
+			text-align: center;
+			font-size: 12px;
+			color: #666;
+		}
 	}
 
 	li{
@@ -381,6 +387,11 @@ footer a{
 		width: 100%;
 	}
 
+	.post figure{
+		margin: 0 auto;
+		width: 100%;
+	}
+
 	.post h1, .post_info, .post_index h1, .nav_pagination{
 		text-align: center;
 	}
@@ -412,10 +423,12 @@ footer a{
 		width: 95%;
 	}
 
-	.post{
-		width: 100%;
-
-		 h2{
+	.post {
+		figure{
+			margin: 0 0 0 -10%;
+			width: 120%;
+		}
+		h2{
 			font-size: 1.4rem;
 		}
 	}
@@ -440,6 +453,11 @@ footer a{
 
 	#wrapper{
 		width: 1100px;
+	}
+
+	.post figure{
+		margin: 10px 0 10px -10%;
+		width: 120%;
 	}
 
 	.post_info, .post_index .post_info{
