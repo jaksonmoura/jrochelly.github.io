@@ -108,8 +108,12 @@ nav {
     max-width: 100%; }
   .post figure {
     display: block;
-    margin: 10px 0 10px -40px;
-    width: calc(100% + 80px); }
+    margin: 0 auto;
+    width: 100%; }
+    .post figure figcaption {
+      text-align: center;
+      font-size: 12px;
+      color: #666; }
   .post li {
     padding-bottom: 10px; }
   .post iframe {
@@ -293,6 +297,10 @@ footer a {
     font-size: 1rem;
     width: 100%; }
 
+  .post figure {
+    margin: 0 auto;
+    width: 100%; }
+
   .post h1, .post_info, .post_index h1, .nav_pagination {
     text-align: center; }
 
@@ -314,10 +322,11 @@ footer a {
   #wrapper {
     width: 95%; }
 
-  .post {
-    width: 100%; }
-    .post h2 {
-      font-size: 1.4rem; }
+  .post figure {
+    margin: 0 0 0 -10%;
+    width: 120%; }
+  .post h2 {
+    font-size: 1.4rem; }
 
   header {
     width: 250px; }
@@ -332,6 +341,10 @@ footer a {
 @media all and (min-width: 1200px) {
   #wrapper {
     width: 1100px; }
+
+  .post figure {
+    margin: 10px 0 10px -10%;
+    width: 120%; }
 
   .post_info, .post_index .post_info {
     text-align: left;
