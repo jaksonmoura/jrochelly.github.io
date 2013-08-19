@@ -31,6 +31,10 @@ a{
 	color: $blue_1;
 }
 
+a:visited, h1 a:visited, .post a:visited, .post_index a:visited{
+	color: #6084BB;
+}
+
 #wrapper{
 	width: 96%;
 	font-size: 1.6em;
