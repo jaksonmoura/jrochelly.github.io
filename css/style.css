@@ -21,7 +21,7 @@ h2 {
 a {
   color: #3498db; }
 
-a:visited, h1 a:visited, .post a:visited, .post_index a:visited {
+h1 a:visited, .post a:visited, .post_index a:visited {
   color: #6084BB; }
 
 #wrapper {
