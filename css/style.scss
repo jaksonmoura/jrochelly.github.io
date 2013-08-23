@@ -91,6 +91,10 @@ h1 a:visited, .post a:visited, .post_index a:visited{
 			color:$blue_dark;
 			text-decoration: none;
 			display: inline-block;
+			opacity: .4;
+		}
+		a:hover{
+			opacity: .6;
 		}
 	}
 
