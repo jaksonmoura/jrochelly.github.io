@@ -41,7 +41,7 @@ h1 a:visited, .post a:visited, .post_index a:visited{
 	overflow: visible;
 }
 
-header{
+#wrapper > header{
 	text-align: center;
 	position: fixed;
 	top: calc(50% - 150px);
@@ -405,7 +405,7 @@ blockquote{
 }
 
 @media all and (max-width: 480px){
-	header{
+	#wrapper > header{
 		width: 100%;
 		position: inherit;
 
@@ -470,7 +470,7 @@ blockquote{
 		font-size: 1.4rem;
 	}
 
-	header{
+	#wrapper > header{
 		float: left;
 		position: inherit;
 		width: 100%;
@@ -558,7 +558,7 @@ blockquote{
 		}
 	}
 
-	header{
+	#wrapper > header{
 		width: 250px;
 	}
 
