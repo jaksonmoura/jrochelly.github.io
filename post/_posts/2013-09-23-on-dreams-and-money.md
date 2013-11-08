@@ -4,7 +4,7 @@ layout: post
 title: On dreams and money
 ---
 
-###It's very common here where I live people talking about work less or not even work and get money for this. Government all-life-jobs are seen exactly this way and more, you can hardly get fired, so why worry about to work after all this?
+It's very common here where I live people talking about work less or not even work and get money for this. Government all-life-jobs are seen exactly this way and more, you can hardly get fired, so why worry about to work after all this?
 
 I work for the government (not for very long, I hope) but I want to make some difference, develop some useful tools, create good apps that can lead to a better work. Right now it's really hard to find someone else here that have this vision since it seems everyone is blinded for the "easy" money that come in the end of the month. There's lack of initiative, people talk about money like they were dreams.
 
