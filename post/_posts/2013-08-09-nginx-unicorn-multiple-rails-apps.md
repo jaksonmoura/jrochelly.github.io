@@ -4,7 +4,7 @@ layout: post
 title: Nginx, Unicorn and multiple Rails apps
 ---
 
-###It's really easy to make a rails app run using [unicorn](http://unicorn.bogomips.org/) + [nginx](http://nginx.org/en/), but when it comes to multiple apps, things get a lot harder, well, at least that's what I thought.
+It's really easy to make a rails app run using [unicorn](http://unicorn.bogomips.org/) + [nginx](http://nginx.org/en/), but when it comes to multiple apps, things get a lot harder, well, at least that's what I thought.
 
 ![image](/img/posts/unicorn.png)
 

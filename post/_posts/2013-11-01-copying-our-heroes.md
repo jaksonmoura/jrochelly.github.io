@@ -4,7 +4,7 @@ layout: post
 title: "Copying our heroes: A (slightly) different way of learning"
 ---
 
-###There's always blog posts, talks, etc, about how to become a great developer/designer showing you tons of lists with sites and books to guide you, which is also really good. I want to show you a different approach for getting good at something.
+There's always blog posts, talks, etc, about how to become a great developer/designer showing you tons of lists with sites and books to guide you, which is also really good. I want to show you a different approach for getting good at something.
 
 Recently I read a book by Austin Kleon, **[Steal Like an Artist: 10 Things Nobody Told You About Being Creative](http://www.amazon.com/Steal-Like-Artist-Things-Creative/dp/0761169253/ref=sr_1_1?s=books&ie=UTF8&qid=1377275103&sr=1-1&keywords=Steal+Like+an+Artist%3A+10+Things+Nobody+Told+You+About+Being+Creative)**, a really nice book with great advices. As the title says, it is about creativity, but a part of the book really touched me, it shows a path for learning.
 
