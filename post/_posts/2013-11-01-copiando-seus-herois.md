@@ -3,9 +3,10 @@ comments: true
 layout: post
 date: 2013-11-01 18:35:00
 title: "Copiando seus heróis: Uma maneira (ligeiramente) diferente de aprendizado"
+tags: Opinioes Aprendizado
 ---
 
-Sempre há por aí blogs, palestrar, entre outros, falando sobre como se tornar um excelente desenvolvedor/designer mostrando várias listas com sites e livros para guiá-lo, o que às vezes são realmente boas fontes. Mas eu quero falar sobre uma forma diferente para você se tornar bom em algo.
+Sempre há por aí blogs, palestras, entre outros, falando sobre como se tornar um excelente desenvolvedor/designer mostrando várias listas com sites e livros para guiá-lo, o que às vezes são realmente boas fontes. Mas eu quero falar sobre uma forma diferente para você se tornar bom em algo.
 
 Recentemente eu li um livro de Austin Kleon, **[Steal Like an Artist: 10 Things Nobody Told You About Being Creative](http://www.amazon.com/Steal-Like-Artist-Things-Creative/dp/0761169253/ref=sr_1_1?s=books&ie=UTF8&qid=1377275103&sr=1-1&keywords=Steal+Like+an+Artist%3A+10+Things+Nobody+Told+You+About+Being+Creative)**, um livro muito bom com bons conselhos. Como o próprio título mostra, é sobre criatividade, porém uma parte do livro me tocou de verdade, ele mostrou um caminho para o aprendizado.
 
