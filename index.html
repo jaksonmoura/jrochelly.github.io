@@ -10,10 +10,7 @@ title: Home
 				    <div class="post_info">
                         <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%B %d, %Y" }}</time>
                     </div>
-                    <div class="post_excerpt">{{ post.excerpt }}</div>
-			    </div>
-                <div class="keep_reading"><a href="{{ post.url }}">Keep reading »</a></div>
-			</article>
+		</article>
         {% endfor %}
 
 <ol class="nav_pagination">
