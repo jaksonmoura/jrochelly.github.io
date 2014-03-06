@@ -329,9 +329,9 @@ footer a{
 	width: 100px;
 	height: 100px;
 	margin: 0 20px 0 10px; }
-	.app .logo a > img {
+	.app .logo > img {
 	  width: 100px;
-	  margin: 0 auto;
+	  margin: 0px auto;
 	  height: 100px; }
   .app .info {
 	width: 75%;
@@ -358,10 +358,10 @@ footer a{
 	padding: 5px;
 	color: #aaa;
 	font-style: italic;
-	font-family: georgia; 
+	font-family: georgia;
 }
 
-.firefox, .chrome{
+.firefox, .chrome, .amazon{
 	display: inline-block;
 }
 
@@ -373,6 +373,12 @@ footer a{
 
 .chrome{
 	background: url('../img/sprite.png') no-repeat -20px -85px;
+	width: 16px;
+	height: 16px;
+}
+
+.amazon{
+	background: url('../img/sprite.png') no-repeat -40px -85px;
 	width: 16px;
 	height: 16px;
 }
@@ -630,7 +636,7 @@ blockquote{
 		text-align: left;
 	}
 
-	footer{ 
+	footer{
 		margin-left: 5%;
 		width: 95%;
 
