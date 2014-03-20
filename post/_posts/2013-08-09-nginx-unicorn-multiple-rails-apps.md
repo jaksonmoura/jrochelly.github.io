@@ -24,7 +24,7 @@ Then, with your server listening to port 80, add a location block that points to
  location /myapp/ {
     try_files $uri @unicorn_proxy;
   }
- 
+
   location @unicorn_proxy {
     proxy_pass http://unix:/home/coffeencoke/apps/myapp/current/tmp/sockets/unicorn.sock;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -40,39 +40,39 @@ Now you can just Unicorn as a Deamon:
 
 The last thing to do, and the one I dug the most is to add a scope for your rails routes file, like this:
 
-<pre rel="Ruby">
+{% highlight ruby linenos %}
 MyApp::Application.routes.draw do
   scope '/myapp' do
     root :to => 'welcome#home'
-    
+
     # other routes are always inside this block
     # ...
   end
 end
-</pre>
+{% endhighlight %}
 
 This way, your app will map a link `/myapp/welcome`, intead of just `/welcome`
 
 <div class="alert"><b>Update 2013-08-13:</b> Better solution; Easier way to make assets visible; </div>
 
-Also, we need to make rails see his in a subdirectory. At the end of your `production.rb` file, add: 
+Also, we need to make rails see his in a subdirectory. At the end of your `production.rb` file, add:
 
-<pre rel="Ruby">
+{% highlight ruby linenos %}
 config.relative_url_root = "/myapp"
-</pre>
+{% endhighlight %}
 
 So now our app opens using "/myapp" subdirectory, but, hey! Where's my assets? Well, rails still believe your assets are at "/assets" when they should be at "/myapp/assets". Let's solve this:
 
 Into your `config/applcation.rb` file add:
 
-<pre rel="Ruby">
+{% highlight ruby linenos %}
 config.assets.prefix = "/myapp/assets"
-</pre>
+{% endhighlight %}
 
 <div class="alert"><b>Update 2013-08-14:</b> Solution for assets to work when in production; </div>
 
 If in production environment your css or js are not being found, maybe `bundle exec rake assets:precompile RAILS_RELATIVE_URL_ROOT=/mypapp` solves the problem.
 
-Now we're done. :) 
+Now we're done. :)
 
 That was possible using this [source](http://coffeencoke.github.io/blog/2012/12/31/serving-rails-with-a-subdirectory-root-path/)
