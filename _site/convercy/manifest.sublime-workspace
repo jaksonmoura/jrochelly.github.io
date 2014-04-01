@@ -1,0 +1,612 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"trans",
+				"transition	CSS - transition: ;"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bo",
+				"both"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"down",
+				"download_options"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"aut",
+				"auto"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"ita",
+				"italic"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"c",
+				"click"
+			],
+			[
+				"slide",
+				"slideDown"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"dar",
+				"darker"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"we",
+				"font-weight"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"sae",
+				"saved"
+			],
+			[
+				"lin",
+				"links"
+			],
+			[
+				"link",
+				"link_name"
+			],
+			[
+				"get",
+				"getOptions"
+			],
+			[
+				"lis",
+				"lists"
+			],
+			[
+				"list",
+				"lists"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"save",
+				"saved_list"
+			],
+			[
+				"add",
+				"add_form"
+			],
+			[
+				"the",
+				"theValue"
+			],
+			[
+				"op",
+				"openOrFocusOptionsPage"
+			],
+			[
+				"oncl",
+				"onclick"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"ly",
+				"list-style-type"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"resul",
+				"result_value"
+			],
+			[
+				"fnt",
+				"font-size"
+			],
+			[
+				"s",
+				"small"
+			],
+			[
+				"click_",
+				"click_from"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"amout",
+				"amount"
+			],
+			[
+				"cal",
+				"calc_btn"
+			],
+			[
+				"ca",
+				"calc_btn"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ta",
+				"table-cell"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: html5",
+				"Snippet: HTML - HTML5 shiv"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: r",
+				"Snipt Snippet Fetcher: Insert Public snippet"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Build: Cancel"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jrochelly/Projects/jrochelly.github.com/README.md",
+		"/Users/jrochelly/Projects/jrochelly.github.com/layout.css",
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/User/html5.sublime-snippet",
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/HTML Snippets/html5.sublime-snippet",
+		"/Users/jrochelly/Projects/jrochelly.github.com/index.html",
+		"/Users/jrochelly/Projects/Multilink page/layout.css",
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/Users/jrochelly/Projects/jrochelly.github.com/_layouts/default.html",
+		"/Volumes/MARGARIDA/serial.txt",
+		"/Users/jrochelly/Projects/jrochelly.github.com/img/logo.svg",
+		"/Users/jrochelly/Projects/Convercy/manifest.webapp",
+		"/Users/jrochelly/Projects/CurrencyConverter/layout.css",
+		"/Users/jrochelly/Projects/CurrencyConverter/manifest.webapp",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/css/layout.css",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/css/layout.scss",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/manifest.json",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/options.html",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/js/options.js",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/README.md",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/js/background.js",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/popup.html",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/js/popup.js",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/option.html",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/layout.scss",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/popup.js",
+		"/Users/jrochelly/Desktop/basic/popup.js",
+		"/Users/jrochelly/Desktop/CurrencyConverter/index.html",
+		"/Users/jrochelly/Desktop/basic/popup.html",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/jquery.js",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/add.html",
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/Prefixr/Default (OSX).sublime-keymap",
+		"/Users/jrochelly/Projects/MultiLinks Shortcuts/layout.css",
+		"/Users/jrochelly/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jrochelly/Desktop/CurrencyConverter/README.md",
+		"/Users/jrochelly/Desktop/CurrencyConverter/manifest.webapp",
+		"/Users/jrochelly/Desktop/Calculator/manifest.webapp",
+		"/Users/jrochelly/Desktop/Calculator/test.scss",
+		"/Users/jrochelly/Desktop/Calculator/jk.sass",
+		"/Users/jrochelly/Desktop/Calculator/untitled",
+		"/Users/jrochelly/Desktop/Calculator/layout.css",
+		"/Users/jrochelly/Desktop/Calculator/jquery.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_icon",
+			"20",
+			"128px",
+			"5",
+			"50",
+			"rotateY",
+			"{\n",
+			"required pattern=\"https?://.+\"",
+			"text",
+			"w...\"",
+			" name\"",
+			"name\"",
+			"png",
+			"required",
+			"images",
+			"_url\" type=\"text\"",
+			"URL",
+			"1",
+			"15px",
+			"for=\"\"",
+			"'+i+'",
+			"saved_list",
+			"'+i+'",
+			"'i'",
+			"i",
+			"+",
+			"'i'",
+			"theValue",
+			"#",
+			"id",
+			"list",
+			"get",
+			"tab",
+			"swit",
+			"#result div",
+			"result div p",
+			"div",
+			"				\n",
+			"height",
+			"\"",
+			"fitin",
+			"USD",
+			"result",
+			".then(showConvertion)",
+			"makeSelectsRight(this);",
+			"from",
+			"#to",
+			"getRate().then(showConvertion);",
+			"#to",
+			"o",
+			"\"",
+			"remove",
+			"US ",
+			"<option value=\"BGN\">Bulgaria Leva - BGN</option>\n			<option value=\"CLP\">Chile Pesos - CLP</option>\n			<option value=\"CNY\">China Yuan Renminbi - CNY</option>\n			<option value=\"CNY\">RMB (China Yuan Renminbi) - CNY</option>\n			<option value=\"COP\">Colombia Pesos - COP</option>\n			<option value=\"CRC\">Costa Rica Colones - CRC</option>\n			<option value=\"HRK\">Croatia Kuna - HRK</option>\n			<option value=\"CZK\">Czech Republic Koruny - CZK</option>\n			<option value=\"DKK\">Denmark Kroner - DKK</option>\n			<option value=\"DOP\">Dominican Republic Pesos - DOP</option>\n			<option value=\"EGP\">Egypt Pounds - EGP</option>\n			<option value=\"EEK\">Estonia Krooni - EEK</option>",
+			"<option value=\"BGN\">Bulgaria Leva - BGN</option>\n			<option value=\"CLP\">Chile Pesos - CLP</option>\n			<option value=\"CNY\">China Yuan Renminbi - CNY</option>\n			<option value=\"CNY\">RMB (China Yuan Renminbi) - CNY</option>\n			<option value=\"COP\">Colombia Pesos - COP</option>\n			<option value=\"CRC\">Costa Rica Colones - CRC</option>\n			<option value=\"HRK\">Croatia Kuna - HRK</option>\n			<option value=\"CZK\">Czech Republic Koruny - CZK</option>\n			<option value=\"DKK\">Denmark Kroner - DKK</option>\n			<option value=\"DOP\">Dominican Republic Pesos - DOP</option>\n			<option value=\"EGP\">Egypt Pounds - EGP</option>\n			<option value=\"EEK\">Estonia Krooni - EEK</option>\n			<option value=\"EUR\">Euro - EUR</option>",
+			"<option value=\"CAD\">Canada Dollars - CAD</option>\n			<option value=\"AUD\">Australia Dollars - AUD</option>",
+			"United States",
+			"<option value=\"FJD\">Fiji Dollars - FJD</option>",
+			"India ",
+			"<option value=\"NZD\">New Zealand Dollars - NZD</option>\n			<option value=\"CHF\">Switzerland Francs - CHF</option>\n			<option value=\"ZAR\">South Africa Rand - ZAR</option>\n			<option value=\"DZD\">Algeria Dinars - DZD</option>\n			<option value=\"ARS\">Argentina Pesos - ARS</option>\n			<option value=\"AUD\">Australia Dollars - AUD</option>\n			<option value=\"BHD\">Bahrain Dinars - BHD</option>",
+			"Japan ",
+			"New Zealand",
+			"India ",
+			"Japan ",
+			"United Kingdom",
+			"United States",
+			"rate = getRate();\n				showConvertion();",
+			"7",
+			"amout",
+			"button",
+			"appearance",
+			"amount",
+			"select",
+			"          <option value=\"VEB\">Venezuela Bolivares - VEB</option>\n          <option value=\"VND\">Vietnam Dong - VND</option>\n          <option value=\"ZMK\">Zambia Kwacha - ZMK</option>",
+			"<option value=\"CHF\">Switzerland Francs - CHF</option>\n          <option value=\"ZAR\">South Africa Rand - ZAR</option>\n          <option value=\"DZD\">Algeria Dinars - DZD</option>\n          <option value=\"ARS\">Argentina Pesos - ARS</option>",
+			"<option value=\"GBP\">United Kingdom Pounds - GBP</option>",
+			"value",
+			"from",
+			"()",
+			"from",
+			"flickerAPI",
+			"from",
+			"value",
+			"this",
+			"onlick",
+			"7",
+			"px",
+			"10",
+			"5",
+			"id",
+			"8",
+			"10",
+			"9"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"op",
+				"js/options.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true
+}

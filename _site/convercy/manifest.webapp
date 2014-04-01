@@ -1,0 +1,54 @@
+{
+	"default_locale": "en",
+	"name": "Convercy",
+	"description": "A simple currency converter",
+	"type": "privileged",
+	"version": "0.2.1",
+	"developer":
+	{
+		"name": "Jakson Rochelly",
+		"url": "http://jrochelly.com"
+	},
+	"icons":
+	{
+		"128": "/img/icon128.png",
+		"16": "/img/icon16.png",
+		"48": "/img/icon48.png",
+		"60": "/img/icon60.png"
+	},
+	"installs_allowed_from":
+	[
+		"*"
+	],
+	"launch_path": "/index.html",
+	"locales":
+	{
+		"es":
+		{
+			"name": "Convercy",
+			"description": "Un simple conversor de monedas"
+		},
+		"it":
+		{
+			"name": "Convercy",
+			"description": "Un semplice convertitore di valuta"
+		},
+		"pt":
+		{
+			"name": "Convercy",
+			"description": "Um simples conversor de moedas"
+		},
+		"pt-br":
+		{
+			"name": "Convercy",
+			"description": "Um simples conversor de moedas"
+		}
+	},
+	"permissions":
+	{
+		"systemXHR":
+		{
+			"description": " allow by default to access currency values"
+		}
+	}
+}
