@@ -459,6 +459,10 @@ blockquote{
 	border-radius: 5px;
 }
 
+.next_post, .previous_post{
+	display: none;
+}
+
 @media all and (max-width: 480px){
 	#wrapper > header{
 		width: 100%;
@@ -508,6 +512,10 @@ blockquote{
 		width: 100%;
 		height: 300px;
 		overflow: hidden;
+	}
+
+	.next_post, .previous_post{
+		display: none;
 	}
 
 }
@@ -599,6 +607,13 @@ blockquote{
 			margin: 0 auto;
 		}
 	}
+
+	.next_post, .previous_post{
+		float: right;
+		width: 100%;
+		display: block;
+	}
+
 }
 
 @media all and (min-width: 800px) and (max-width: 1200px){
@@ -635,6 +650,12 @@ blockquote{
 		margin-left: 2.5%;
 	}
 
+	.next_post, .previous_post{
+		float: right;
+		width: 100%;
+		display: block;
+	}
+
 }
 
 @media all and (min-width: 1200px){
@@ -664,6 +685,30 @@ blockquote{
 		p{
 			width: 95%;
 			margin: 0 auto;
+		}
+	}
+
+	.read_more{
+		float: left;
+		margin: 10px 0;
+		width: 100%;
+		.next_post, .previous_post{
+			display: block;
+			background: #FFF;
+			width: 40%;
+			height: 50px;
+			border: 1px solid #F1F1F1;
+			border-radius: 5px;
+			line-height: 50px;
+			text-align: center;
+		}
+
+		.next_post{
+			float: left;
+		}
+
+		.previous_post{
+			float: right;
 		}
 	}
 
