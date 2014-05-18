@@ -22,9 +22,9 @@
 	  <meta content="website" property="og:type">
 	{% endif %}
 	{% if page.url %}
-	<meta content="{{ post.content | strip_html | truncatewords:75}}" property="og:description">
 	<meta content="{{ site.url }}{{ page.url }}" property="og:url">
 	{% endif %}
+	<meta content="{{ page.content | strip_html | truncatewords:75}}" property="og:description">
 	{% if page.date %}
 	  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
 	  <meta content="{{ site.url }}/about/" property="article:author">
