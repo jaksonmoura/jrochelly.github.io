@@ -51,7 +51,7 @@ By <%= book.authors.map { |a| link_to a.name, author_path(a.id) }.join(', ').htm
 A de chamada autores acima traria o problema de queries N + 1, que é o que queremos evitar.
 
 <figure>
-![image](../../img/posts/queries_n_1/rails_c_queries_n_1.png)
+![image](/img/posts/queries_n_1/rails_c_queries_n_1.png)
 <figcaption>Rails console: Problema de queries N + 1</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ Também, não precisamos mais fazer o elasticsearch carregar a partir do banco (
 Reidexamos tudo com o comando `rake environment tire:import CLASS='Book' FORCE=true`. E ao recarregar a página:
 
 <figure>
-![image](../../img/posts/queries_n_1/rails_c_ok.png)
+![image](/img/posts/queries_n_1/rails_c_ok.png)
 <figcaption>Rails console: No loadings! Yay!</figcaption>
 </figure>
 
