@@ -13,8 +13,10 @@
 	<meta content="{{ site.title }}" property="og:site_name">
 	<meta content="Jakson Rochelly" property="article:author">
 	<meta content="{{ site.url }}/img/thumbnail.jpg" property="og:image">
-	{% if page.title %}
+	{% if page.is_post? %}
 	<meta content="{{ page.content | strip_html | truncatewords:75}}" property="og:description">
+	{% endif %}
+	{% if page.title %}
 	<meta content="{{ page.title }}" property="og:title">
 	<meta content="article" property="og:type">
 	{% else %}
