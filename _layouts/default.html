@@ -10,9 +10,10 @@
 	<!--[if IE]> <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="image_src" href="/img/logo.png">
 	<meta content="{{ site.title }}" property="og:site_name">
 	<meta content="Jakson Rochelly" property="article:author">
-	<meta content="{{ site.url }}/img/thumbnail.jpg" property="og:image">
+	<meta content="{{ site.url }}/img/logo.png" property="og:image">
 	{% if page.is_post? %}
 	<meta content="{{ page.content | strip_html | truncatewords:75}}" property="og:description">
 	<meta content="article" property="og:type">
@@ -23,9 +24,6 @@
 	<meta content="{{ page.title }}" property="og:title">
 	{% else %}
 	<meta content="{{ site.title }}" property="og:title">
-	{% endif %}
-	{% if page.url %}
-	<meta content="{{ site.url }}{{ page.url }}" property="og:url">
 	{% endif %}
 	{% if page.date %}
 	<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
