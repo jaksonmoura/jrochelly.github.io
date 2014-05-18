@@ -4,7 +4,7 @@ layout: post
 date: 2014-05-17 22:06:00
 title: "Elasticsearch: Busca e problemas de queries N + 1"
 ---
-<link rel=”image_src” href=”/img/posts/queries_n_1/rails_c_queries_n_1.png” />
+<link rel="image_src"  href="/img/posts/queries_n_1/rails_c_queries_n_1.png" />
 
 Geralmente quando temos alguma aplicação que precisa de busca, ela contem relacionamentos entre tabelas, como por exemplo uma App de Loja, onde você tem produto relacionado com categoria, fabricante, etc. Se usarmos o Elasticsearch na aplicação, é possível que o banco de dados sofra com **queries N + 1**. Podemos acabar com isso definindo alguns índices.
 
