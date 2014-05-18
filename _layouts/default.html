@@ -22,13 +22,14 @@
 	  <meta content="website" property="og:type">
 	{% endif %}
 	{% if page.url %}
-	  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+	<meta content="{{ post.content | strip_html | truncatewords:75}}" property="og:description">
+	<meta content="{{ site.url }}{{ page.url }}" property="og:url">
 	{% endif %}
 	{% if page.date %}
 	  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
 	  <meta content="{{ site.url }}/about/" property="article:author">
 	{% endif %}
-	<meta content="{{ site.url }}/assets/img/thumbnail.jpg" property="og:image">
+	<meta content="{{ site.url }}/img/thumbnail.jpg" property="og:image">
 	<meta content="Jakson Rochelly" property="article:author">
 	<title>Jakson Rochelly &ndash; {{ page.title }}</title>
 </head>
