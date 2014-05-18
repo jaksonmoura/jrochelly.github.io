@@ -10,7 +10,26 @@
 	<!--[if IE]> <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="/css/style.css"/>
-	<link rel="image_src"  href="/img/thumbnail.jpg" />
+	<meta content="{{ site.title }}" property="og:site_name">
+	{% if page.title %}
+	  <meta content="{{ page.title }}" property="og:title">
+	{% else %}
+	  <meta content="{{ site.title }}" property="og:title">
+	{% endif %}
+	{% if page.title %}
+	  <meta content="article" property="og:type">
+	{% else %}
+	  <meta content="website" property="og:type">
+	{% endif %}
+	{% if page.url %}
+	  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+	{% endif %}
+	{% if page.date %}
+	  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+	  <meta content="{{ site.url }}/about/" property="article:author">
+	{% endif %}
+	<meta content="{{ site.url }}/assets/img/thumbnail.jpg" property="og:image">
+	<meta content="Jakson Rochelly" property="article:author">
 	<title>Jakson Rochelly &ndash; {{ page.title }}</title>
 </head>
 <body>
