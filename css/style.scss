@@ -13,7 +13,7 @@ body{
 }
 
 html{
-	border-top: 7px solid $blue_1;
+	border-top: 4px solid $blue_1;
 }
 
 h1{
@@ -91,10 +91,10 @@ h1 a:visited, .post a:visited, .post_index a:visited{
 			color:$blue_dark;
 			text-decoration: none;
 			display: inline-block;
-			opacity: .4;
+			opacity: .7;
 		}
 		a:hover{
-			opacity: .6;
+			opacity: 1;
 		}
 	}
 
@@ -103,8 +103,15 @@ h1 a:visited, .post a:visited, .post_index a:visited{
 		width: 30px;
 		height: 30px;
 	}
+
 	.facebook{
 		background: url('../img/sprite.png') no-repeat -68px -52px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.feed{
+		background: url('../img/sprite.png') no-repeat -136px -52px;
 		width: 30px;
 		height: 30px;
 	}
@@ -222,7 +229,7 @@ nav{
 
 .post_index h1{
 	margin: -5px 0 0 0;
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
 .post h1 a, .post_index h1 a{
@@ -483,7 +490,7 @@ blockquote{
 		}
 
 		.post h1, .post_index h1{
-			font-size: 1.6rem;
+			font-size: 1.3rem;
 		}
 
 		.post img, .post iframe{
