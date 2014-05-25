@@ -4,4 +4,4 @@ future: false
 markdown: rdiscount
 pygments: true
 permalink: /post/:year/:month/:title
-paginate: 20
+paginate: 7

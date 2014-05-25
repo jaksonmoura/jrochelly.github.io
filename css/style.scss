@@ -174,8 +174,12 @@ nav{
 	font-size: 1rem;
 	font-family: 'Open Sans', Arial, Helvetica, serif;
 
-	img, iframe{
+	img, iframe, pre{
 		max-width: 100%;
+	}
+
+	pre{
+		overflow-x: hidden;
 	}
 }
 
@@ -227,12 +231,12 @@ nav{
 }
 
 .post_index{
-	margin: 0 0 60px 0;
+	margin-bottom: 120px;
 }
 
 .post_index h1{
 	margin: -5px 0 0 0;
-	font-size: 1.3em;
+	font-size: 1.9em;
 }
 
 .post h1 a, .post_index h1 a{
@@ -496,13 +500,13 @@ blockquote{
 			font-size: 1.3rem;
 		}
 
-		.post img, .post iframe{
+		.post img, .post iframe, .post pre, .post_index img, .post_index iframe, .post_index pre{
 			max-width: 100%;
 		}
 
-		.post h1, .post_info, .post_index h1, .nav_pagination{
-			text-align: center;
-		}
+		// .post h1, .post_info, .post_index h1, .nav_pagination{
+		// 	text-align: center;
+		// }
 
 	}
 
@@ -554,7 +558,7 @@ blockquote{
 		}
 
 		#about{
-			text-align: center;
+			text-align: right;
 			margin: 10px 0;
 
 			p{
@@ -562,12 +566,15 @@ blockquote{
 				margin: 1px;
 			}
 		}
+		#social_links{
+			text-align: right;
+		}
 	}
 
 	.blog_posts{
 		width: 100%;
 
-		.post img, .post iframe{
+		.post img, .post iframe, .post pre{
 			max-width: 100%;
 		}
 	}

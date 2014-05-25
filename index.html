@@ -4,14 +4,16 @@ title: Home
 ---
 
     {% for post in paginator.posts %}
-          <article class="post_index">
-          <div class="content">
-            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-            <div class="post_info">
-                        <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%B %d, %Y" }}</time>
-                    </div>
-    </article>
-        {% endfor %}
+        <article class="post_index">
+            <div class="content">
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <div class="post_info">
+                    <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                </div>
+                {{ post.content }}
+            </div>
+        </article>
+    {% endfor %}
 
 <ol class="nav_pagination">
     <li class="pagination_prev">
