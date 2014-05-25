@@ -15,7 +15,7 @@
 	<meta content="Jakson Rochelly" property="article:author">
 	<meta content="http://jrochelly.com/img/logo.png" property="og:image">
 	{% if page.path contains '_posts' %}
-	<meta content="{{ page.content | strip_html | truncatewords:75}}" property="og:description">
+	<meta content="{{ page.content | escape | truncatewords:75}}" property="og:description">
 	<meta content="article" property="og:type">
 	{% else %}
 	<meta content="website" property="og:type">
