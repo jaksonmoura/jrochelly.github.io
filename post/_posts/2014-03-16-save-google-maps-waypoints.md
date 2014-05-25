@@ -9,7 +9,7 @@ Currently I'm building an app that shows bus routes and it's important for the p
 
 So, let's see the basic code.
 
-{% highlight html linenos %}d<div class="map">
+{% highlight html linenos %}<div class="map">
   <div id="map-canvas"/>
 </div>
 <!-- footer -->
@@ -23,8 +23,6 @@ So, let's see the basic code.
     calcRoute();
   })
 </script>
-
-
 {% endhighlight %}
 
 The above code is used to create a new one, it allows you to edit the route and save it. To be clear I'm using google maps V3.
@@ -168,4 +166,4 @@ Loading the route is basically the inverse of saving, so you need to get the str
 
 As you can see I use Ruby to pass the values.
 
-Well, after all this you can save/load you waypoints.%}
+Well, after all this you can save/load you waypoints.
