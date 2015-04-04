@@ -33,24 +33,25 @@
 <body>
 	<div id="wrapper">
 		<header>
-			<a href="/" id="logo"></a>
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/about/">About</a></li>
+			<div class="content">
+				<a href="/" id="logo"></a>
+				<nav>
+					<ul>
+						<li><a href="/">Início</a></li>
+						<li><a href="/about/">Sobre</a></li>
+					</ul>
+				</nav>
+				<div id="about">
+					<p>Sou um desenvolvedor web que gosta de criar coisas usando Ruby/Rails.</p>
+				</div>
+				<ul id="social_links">
+					<li><a href="http://twitter.com/jrochelly" title="Twitter"><div class="icon twitter"></div>Twitter</a></li>
+					<li><a href="http://facebook.com/jrochelly" title="Facebook"><div class="icon facebook"></div>Facebook</a></li>
+					<li><a href="http://github.com/jrochelly" title="Github"><div class="icon github"></div>Github</a></li>
+					<li><a href="https://plus.google.com/101809280544649964042?rel=author" title="Google +"><div class="icon gplus"></div>Google +</a></li>
+					<li><a href="http://feeds.feedburner.com/jrochelly" title="Feed RSS"><div class="icon feed"></div>Feed RSS</a></li>
 				</ul>
-			</nav>
-			<div id="about">
-				<!-- <p>Hi, I'm Jakson Rochelly, a web developer who likes to write ruby code and always tries to build good apps.</p> -->
-				<p>Mail me on <a href="mailto:jrochelly@gmail.com">jrochelly@gmail.com</a></p>
 			</div>
-			<ul id="social_links">
-				<li><a class="twitter" href="http://twitter.com/jrochelly" title="Twitter"></a></li>
-				<li><a class="facebook" href="http://facebook.com/jrochelly" title="Facebook"></a></li>
-				<li><a class="github" href="http://github.com/jrochelly" title="Github"></a></li>
-				<li><a class="gplus" href="https://plus.google.com/101809280544649964042?rel=author" title="Google +"></a></li>
-				<li><a class="feed" href="http://feeds.feedburner.com/jrochelly" title="Subscribe in a reader"></a></li>
-			</ul>
 		</header>
 
 		<section class="blog_posts">
@@ -60,9 +61,9 @@
 
 	<footer>
 		<p>&copy; {{ site.time | date: "%Y" }} <a href="http://twitter.com/jrochelly">Jakson Rochelly</a>.
-       Built with <a href="https://github.com/mojombo/jekyll/">Jekyll</a>.
-       The source of this blog is <a href="https://github.com/jrochelly/jrochelly.github.com/">on GitHub</a>.<br>
-       You can <a href="http://feeds.feedburner.com/jrochelly">grab the RSS feed</a> and maybe <a href="http://twitter.com/jrochelly">follow me on Twitter</a>.</p>
+       Feito com <a href="https://github.com/mojombo/jekyll/">Jekyll</a>.
+       O código-fonte do blog está <a href="https://github.com/jrochelly/jrochelly.github.com/">no GitHub</a>.<br>
+       Você pode <a href="http://feeds.feedburner.com/jrochelly">assinar o feed RSS</a> e talvez <a href="http://twitter.com/jrochelly">me seguir no Twitter</a>.</p>
 	</footer>
 	<script>
 	  var _gaq = _gaq || [];
