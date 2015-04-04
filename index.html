@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Início
 ---
 
     {% for post in paginator.posts %}
@@ -8,7 +8,7 @@ title: Home
             <div class="content">
                 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 <div class="post_info">
-                    <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                    <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">Publicado no dia {{ post.date | date: "%d/%m/%Y" }}</time>
                 </div>
                 {{ post.content }}
             </div>
@@ -19,19 +19,19 @@ title: Home
     <li class="pagination_prev">
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-            <a href="/">« Newer</a>
+            <a href="/">« Próximo</a>
         {% else %}
-            <a href="/page{{paginator.previous_page}}">« Newer</a>
+            <a href="/page{{paginator.previous_page}}">« Próximo</a>
         {% endif %}
         {% else %}
-            « Newer
+            <div class="no_link">« Próximo</div>
         {% endif %}
     </li>
     <li class="pagination_next">
         {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Older »</a>
+            <a href="/page{{paginator.next_page}}">Anterior »</a>
         {% else %}
-            Older »
+            <div class="no_link">Anterior »</div>
         {% endif %}
     </li>
 </ol>
