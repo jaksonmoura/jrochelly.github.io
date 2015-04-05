@@ -18,6 +18,8 @@ body{
 
 html{
 	// border-top: 4px solid $blue_1;
+	padding: 0;
+	margin: 0;
 }
 
 h1{
@@ -508,6 +510,9 @@ blockquote{
 }
 
 @media all and (max-width: 480px){
+	#wrapper{
+		width: 100%;
+	}
 	#wrapper > header{
 		float: left;
 		width: 100%;
@@ -524,11 +529,11 @@ blockquote{
 	}
 
 	.blog_posts{
-		width: 100%;
+		width: 97%;
 		margin-top: 20px;
 
 		.post, .post_index, .nav_pagination{
-			width: 100%;
+			width: 97%;
 
 		}
 
@@ -575,6 +580,10 @@ blockquote{
 		font-size: 1.4rem;
 	}
 
+	#wrapper{
+		width: 100%;
+	}
+
 	#wrapper > header{
 		float: left;
 		position: inherit;
@@ -615,6 +624,7 @@ blockquote{
 		}
 		#social_links{
 			width: 200px;
+			margin-top: 0;
 			margin-bottom: 10px;
 			margin-left: calc(70% - 200px);
 			li{	
@@ -628,7 +638,7 @@ blockquote{
 	}
 
 	.blog_posts{
-		width: 100%;
+		width: 97%;
 
 		.post img, .post iframe, .post pre{
 			max-width: 100%;
@@ -637,7 +647,7 @@ blockquote{
 
 	.post, .post_index{
 		font-size: 1rem;
-		width: 100%;
+		width: 97%;
 	}
 
 	.post_excerpt, .post_excerpt *{
