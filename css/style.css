@@ -14,16 +14,13 @@ html {
 
 h1 {
   font-weight: normal;
-  color: #1F8585; }
+  color: #292C30; }
 
 h2 {
   color: #4EBDBD; }
 
 a {
   color: #28A6A6; }
-
-h1 a:visited, .post a:visited, .post_index a:visited {
-  color: #77C2BC; }
 
 #wrapper {
   width: 96%;
@@ -186,11 +183,11 @@ nav {
   font-size: 1.9em; }
 
 .post h1 a, .post_index h1 a {
-  color: #1F8585;
+  color: #292C30;
   text-decoration: none; }
 
 .post h1 a:hover, .post_index h1 a:hover {
-  color: #4EBDBD; }
+  color: #1F8585; }
 
 .post_info {
   color: #666;
