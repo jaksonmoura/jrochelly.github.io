@@ -8,6 +8,10 @@ body {
   background: #fff;
   -webkit-font-smoothing: antialiased; }
 
+html {
+  padding: 0;
+  margin: 0; }
+
 h1 {
   font-weight: normal;
   color: #1F8585; }
@@ -437,6 +441,9 @@ blockquote {
   border-radius: 5px; }
 
 @media all and (max-width: 480px) {
+  #wrapper {
+    width: 100%; }
+
   #wrapper > header {
     float: left;
     width: 100%;
@@ -448,10 +455,10 @@ blockquote {
       display: none; }
 
   .blog_posts {
-    width: 100%;
+    width: 97%;
     margin-top: 20px; }
     .blog_posts .post, .blog_posts .post_index, .blog_posts .nav_pagination {
-      width: 100%; }
+      width: 97%; }
     .blog_posts .post h1, .blog_posts .post_index h1 {
       font-size: 1.3rem; }
     .blog_posts .post img, .blog_posts .post iframe, .blog_posts .post pre, .blog_posts .post_index img, .blog_posts .post_index iframe, .blog_posts .post_index pre {
@@ -474,6 +481,9 @@ blockquote {
 @media all and (min-width: 480px) and (max-width: 800px) {
   .post h2 {
     font-size: 1.4rem; }
+
+  #wrapper {
+    width: 100%; }
 
   #wrapper > header {
     float: left;
@@ -503,6 +513,7 @@ blockquote {
         margin: 1px; }
     #wrapper > header #social_links {
       width: 200px;
+      margin-top: 0;
       margin-bottom: 10px;
       margin-left: calc(70% - 200px); }
       #wrapper > header #social_links li {
@@ -513,13 +524,13 @@ blockquote {
         overflow: hidden; }
 
   .blog_posts {
-    width: 100%; }
+    width: 97%; }
     .blog_posts .post img, .blog_posts .post iframe, .blog_posts .post pre {
       max-width: 100%; }
 
   .post, .post_index {
     font-size: 1rem;
-    width: 100%; }
+    width: 97%; }
 
   .post_excerpt, .post_excerpt * {
     font-size: 14px; }
