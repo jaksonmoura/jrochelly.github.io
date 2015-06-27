@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name="Description" CONTENT="Personal site of Jakson Rochelly, web developer.">
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+  <link href="https://plus.google.com/101809280544649964042" rel="publisher" />
+  <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
+  <!--[if IE]> <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+  <link rel="image_src" href="/assets/img/logo.png">
+  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="Jakson Rochelly" property="article:author">
+  <meta content="http://jrochelly.com/img/logo.png" property="og:image">
+  {% if page.path contains '_posts' %}
+  <meta content="{{ page.content | escape | truncatewords:75}}" property="og:description">
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  {% endif %}
+  {% if page.title %}
+  <title>{{ page.title }} &ndash; Jakson Rochelly</title>
+  {% else %}
+  <title>Jakson Rochelly</title>
+  {% endif %}
+</head>
+<body>
+  {% include sidebar.html %}
+
+  <div id="wrapper">
+
+    <section class="archive_posts">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+  </div>
+
+
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23777483-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="/assets/js/jquery.min.js"></script>
+  <!--[if lte IE 9]>
+  <script src="/assets/js/masonry.min.js"></script>
+  <script>
+    $('.blog_posts').masonry({
+      // options
+      percentPosition: true,
+      itemSelector: '.post_index',
+      columnWidth: 250
+    });
+  </script>
+  <![endif]-->
+</body>
+</html>
