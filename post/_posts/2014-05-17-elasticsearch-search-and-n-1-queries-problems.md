@@ -50,7 +50,7 @@ By <%= book.authors.map { |a| link_to a.name, author_path(a.id) }.join(', ').htm
 The above author call result in a N+1 queries we want to avoid.
 
 <figure>
-![image](/img/posts/queries_n_1/rails_c_queries_n_1.png)
+![image](/assets/img/posts/queries_n_1/rails_c_queries_n_1.png)
 <figcaption>Rails console: N+1 queries issue</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ Also, there's no need to make elasticsearch load from the db anymore. Then let's
 Reindex everything using the command `rake environment tire:import CLASS='Book' FORCE=true`. After reloading the page::
 
 <figure>
-![image](/img/posts/queries_n_1/rails_c_ok.png)
+![image](/assets/img/posts/queries_n_1/rails_c_ok.png)
 <figcaption>Rails console: No loadings! Yay!</figcaption>
 </figure>
 

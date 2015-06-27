@@ -5,7 +5,7 @@ date: 2011-06-07 07:40:02
 title: Não há código mais flexível que nenhum código
 ---
 
-<img src="/img/posts/codigo_flexivel.gif">
+<img src="assets/img/posts/codigo_flexivel.gif">
 
 Essa postagem é tirada do blog do Brad Appleton, pois achei o texto bastande interessante e importante de ser repassado. Vale a pena a leitura!
 

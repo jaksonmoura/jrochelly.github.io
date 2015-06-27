@@ -7,7 +7,7 @@ title: Simplicidade é tudo!
 Esse ditado é meio antigo mais reflete bem o que vou lhes passar hoje.
 Atualmente estamos sendo “informados demais”, não que a gente tenha muito conteúdo para ler ou saber, mas que apenas temos muito conteúdo e esse conteúdo nem sempre é aproveitado ou aproveitável.
 
-<img src="/img/posts/onde_x.png">
+<img src="assets/img/posts/onde_x.png">
 
 A partir desta linha de raciocínio o que mais precisamos é menos coisas sendo jogadas na nossa cara, certo?
 
