@@ -3,18 +3,37 @@ layout: default
 ---
 
     {% for post in paginator.posts %}
+        {% if post.cover %}
+        <article class="post_index_cover">
+            <div class="content">
+                <a href="{{ post.url }}"><img src="{{ post.cover }}" alt="{{ post.title }}"/></a>
+                <div class="post-caption">
+                    <h2 class="title">{{ post.title }}</h2>
+                    <span class="summary">{{ post.summary }}</span>
+                </div>
+
+            </div>
+        </article>
+        {% else %}
         <article class="post_index">
             <div class="content">
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <div class="post_info">
                     <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">Published at {{ post.date | date: "%d/%m/%Y" }}</time>
                 </div>
-                {{ post.content }}
+                {% if post.summary %}
+                {{ post.summary }}
+                {% else %}
+                {{ post.excerpt | truncatewords: 27 }}
+                {% endif %}
             </div>
         </article>
+        {% endif %}
     {% endfor %}
 
-<ol class="nav_pagination">
+    <a href="/archive" class="all-posts">See more posts<img class="btn-next" src="/assets/img/next.png"></a>
+
+<!-- <ol class="nav_pagination">
     <li class="pagination_prev">
         {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
@@ -33,4 +52,4 @@ layout: default
             <div class="no_link">Previous »</div>
         {% endif %}
     </li>
-</ol>
+</ol> -->

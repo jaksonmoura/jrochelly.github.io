@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="129.89999"
+   height="129.89999"
+   viewBox="0 0 129.9 129.9"
+   id="svg4188"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs4190" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.2340264"
+     inkscape:cx="99.196359"
+     inkscape:cy="64.949997"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4193">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-922.46216)">
+    <path
+       style="fill:#6462aa;fill-opacity:1"
+       d="m 41.088914,940.67343 0,38.47841 0,38.47846 6.0053,0 6.00531,0 0,-10.0089 0,-10.00881 2.83494,0 2.835,0 3.2433,7.67341 c 1.78345,4.2204 3.69901,8.7244 4.25723,10.0089 l 1.01476,2.3354 6.68647,0 6.68561,0 -0.38314,-1.0009 c -1.98234,-5.1711 -8.03314,-19.60806 -9.18434,-21.5303 -1.15119,-1.92227 -3.06391,-4.8504 -6.42406,-5.75075 0,-0.14181 3.26225,-4.19543 7.24946,-9.00796 l 8.04008,-9.86983 -6.80726,0.0142 -6.69511,-0.008 -6.5657,8.74992 -6.56483,8.74991 -0.11558,-23.65197 -0.11469,-23.65195 -6.00185,0 -6.00093,0 z m -16.42423,5.23465 a 7.339814,7.339814 0 0 0 -7.33982,7.33981 7.339814,7.339814 0 0 0 7.33982,7.33982 7.339814,7.339814 0 0 0 7.33981,-7.33982 7.339814,7.339814 0 0 0 -7.33981,-7.33981 z m -5.77074,24.56943 -0.13469,28.80322 c -0.11827,25.22677 -0.22304,28.99657 -0.84448,30.36017 -1.03434,2.2695 -1.99589,2.865 -5.02617,3.1138 l -2.70897,0.2225 -0.2789102,2.0017 c -0.15347,1.101 -0.41993,3.3439 -0.59251,4.9836 l -0.31451,2.9809 1.4787302,0.4266 c 1.97863,0.57 7.32567,0.607 9.27904,0.064 4.93676,-1.4938 10.882,-7.4913 10.882,-13.1261 l 0.13198,-29.9154 0.13297,-29.91526 -6.00272,0 -6.00184,0 z"
+       id="path3422"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\jaksonrochelly\Desktop\favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       y="924.55231"
+       x="2.090126"
+       height="125.71974"
+       width="125.71974"
+       id="rect3431"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#6462aa;stroke-width:4.17999983;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\jaksonrochelly\Desktop\favicon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
