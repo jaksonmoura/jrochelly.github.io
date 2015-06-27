@@ -4,8 +4,6 @@ layout: post
 date: 2014-05-17 22:06:00
 
 title: "Elasticsearch"
-cover: /assets/img/posts/cinnamon.png
-summary: "Well, it works!"
 ---
 
 Geralmente quando temos alguma aplicação que precisa de busca, ela contem relacionamentos entre tabelas, como por exemplo uma App de Loja, onde você tem produto relacionado com categoria, fabricante, etc. Se usarmos o Elasticsearch na aplicação, é possível que o banco de dados sofra com **queries N + 1**. Podemos acabar com isso definindo alguns índices.
@@ -54,7 +52,7 @@ By <%= book.authors.map { |a| link_to a.name, author_path(a.id) }.join(', ').htm
 A de chamada autores acima faz N + 1 queries, e é isso que queremos evitar:
 
 <figure>
-![image](/img/posts/queries_n_1/rails_c_queries_n_1.png)
+![image](/assets/img/posts/queries_n_1/rails_c_queries_n_1.png)
 <figcaption>Rails console: Problema de queries N + 1</figcaption>
 </figure>
 
@@ -90,7 +88,7 @@ Também, não precisamos mais fazer o elasticsearch carregar a partir do banco (
 Reidexamos tudo com o comando `rake environment tire:import CLASS='Book' FORCE=true`. E ao recarregar a página:
 
 <figure>
-![image](/img/posts/queries_n_1/rails_c_ok.png)
+![image](/assets/img/posts/queries_n_1/rails_c_ok.png)
 <figcaption>Rails console: No loadings! Yay!</figcaption>
 </figure>
 

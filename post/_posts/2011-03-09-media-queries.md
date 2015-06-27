@@ -7,7 +7,7 @@ date: 2011-03-09 14:39:00
 
 Bem, esse assunto não é muito novo, mas gostaria de compartilhar com vocês.
 
-<img src="/img/posts/mediaquery.png">
+<img src="assets/img/posts/mediaquery.png">
 
 Nas minhas navegadas pela net encontrei uma apresentação em slides muito boa sobre Media Queries no CSS3 e resolvi postar sobre o assunto.
 

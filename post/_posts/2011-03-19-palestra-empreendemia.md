@@ -4,9 +4,9 @@ layout: post
 title: Palestra Empreendemia
 ---
 
-<img src="/img/posts/empreendemia_1.jpg">
+<img src="assets/img/posts/empreendemia_1.jpg">
 
-<img src="/img/posts/empreendemia_2.jpg">
+<img src="assets/img/posts/empreendemia_2.jpg">
 
 Ontem às 18h aconteceu um palestra no IFPI do [Marcus Linhares](http://marcuslinhares.blogspot.com/) de Picos, a palestra foi muito boa! Ele abordou sobre as encubadoras e empresas júnior, um passo muito bom pra quem quer começar. Claro que eu marquei presença, afinal estou montando minha empresa (juntamente com o [Fernando](http://www.twitter.com/valterlles) e o [Rennê](http://www.twitter.com/oRenne)), a Conptus.
 
