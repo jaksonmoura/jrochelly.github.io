@@ -1256,6 +1256,7 @@ blockquote{
 	#wrapper{
 		float: right;
 		width: calc(100% - 180px);
+		max-width: 1200px;
 	}
 
 	.blog_posts{
