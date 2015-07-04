@@ -659,7 +659,7 @@ footer{
 		ul{
 			margin: 0 auto;
 			padding: 0;
-			width: 150px;
+			width: 160px;
 			display: block;
 			text-align: center;
 
@@ -703,27 +703,27 @@ footer{
 			}
 
 			.twitter{
-				background: url('../img/sprite.png') no-repeat -35px -52px;
-				width: 30px;
-				height: 30px;
-			}
-
-			.email{
-				background: url('../img/sprite.png') no-repeat -68px -52px;
-				width: 30px;
-				height: 30px;
-			}
-
-			.feed{
-				background: url('../img/sprite.png') no-repeat -136px -52px;
-				width: 30px;
-				height: 30px;
+				background: url('../img/sprite_social.svg') no-repeat 0 0;
+				width: 32px;
+				height: 32px;
 			}
 
 			.github{
-				background: url('../img/sprite.png') no-repeat -1px -52px;
-				width: 30px;
-				height: 30px;
+				background: url('../img/sprite_social.svg') no-repeat -35px 0;
+				width: 32px;
+				height: 32px;
+			}
+
+			.email{
+				background: url('../img/sprite_social.svg') no-repeat -69px 0;
+				width: 32px;
+				height: 32px;
+			}
+
+			.feed{
+				background: url('../img/sprite_social.svg') no-repeat -104px 0;
+				width: 32px;
+				height: 32px;
 			}
 		}
 		}
@@ -783,19 +783,19 @@ footer{
 }
 
 .firefox{
-	background: url('../img/sprite.png') no-repeat 0 -85px;
+	background: url('../img/sprite_social.svg') no-repeat 0 -85px;
 	width: 16px;
 	height: 16px;
 }
 
 .chrome{
-	background: url('../img/sprite.png') no-repeat -20px -85px;
+	background: url('../img/sprite_social.svg') no-repeat -20px -85px;
 	width: 16px;
 	height: 16px;
 }
 
 .amazon{
-	background: url('../img/sprite.png') no-repeat -40px -85px;
+	background: url('../img/sprite_social.svg') no-repeat -40px -85px;
 	width: 16px;
 	height: 16px;
 }
@@ -1274,8 +1274,10 @@ blockquote{
 @media all and (min-width: 1200px){
 
 	#wrapper{
-		float: right;
+		float: left;
 		width: calc(100% - 180px);
+		margin-left: 180px;
+		max-width: 1100px;
 
 		.blog_posts{
 			width: 100%;
