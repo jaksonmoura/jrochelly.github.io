@@ -1,0 +1,172 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800,400italic);
+
+$main: #00AE92;
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+	color: #333;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+	border: none;
+}
+
+#wrapper{
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+
+#content{
+	width: 80%;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+
+h1{
+	font:{
+		size: 40px;
+	}
+	margin: 0;
+}
+
+#info{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	// -webkit-flex-direction: row;
+	// flex-direction: row;
+	// -webkit-justify-content: flex-start;
+	// justify-content: flex-start;
+}
+
+#details{
+	width: 60%;
+	margin: 80px 0 20px 0;
+	color: #444;
+
+	ul{
+		padding: 0;
+		clear: both;
+		margin: 10px auto;
+		text-align: left;
+		list-style-type: none;
+		float: left;
+		width: 95%;
+
+		li{
+			background: #ccc;
+			border-radius: 3px;
+			color: $main;
+			margin-bottom: 10px;
+			padding: 10px 20px;
+		}
+	}
+}
+
+#screenshot{
+	width: 40%;
+	margin: 20px 0 20px 0;
+}
+
+#about{
+	float: left;
+	width: 100%;
+	color: #777;
+	margin-top: 20px;
+
+	a{
+		color: $main;
+		font-style: italic;
+	}
+}
+
+/* Default class for an overlay */
+#download_options {
+	float: left;
+  margin: 40px 0 40px 0;
+	height: 40px;
+  width: 250px;
+  border-radius: 5px;
+
+	a{
+		color: #333;
+	}
+
+  img{
+  	margin-bottom: -16px;
+  }
+}
+
+/* Default class for modal window */
+.modal {
+  left: 50%;
+  top: 50px;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+}
+
+@media all and (max-width:950px){
+	body{
+		overflow: auto;
+	}
+
+	#content{
+		width: 100%;
+	}
+	#info{
+		flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+	}
+
+	#details, #screenshot{
+		width: 100% !important;
+	}
+
+	#screenshot{
+		img{
+			width: 100%;
+		}
+	}
+
+	#details{
+		margin-top: 0px;
+		text-align: center;
+
+		ul{
+			width: 100%;
+
+			li{
+				text-align: center;
+			}
+		}
+
+		#download_options{
+			width: 100%;
+			margin: 20px auto;
+		}
+	}
+
+
+
+}
