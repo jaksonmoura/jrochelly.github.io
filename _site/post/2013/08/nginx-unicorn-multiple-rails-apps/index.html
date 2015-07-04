@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8' />
+    <meta name="Description" CONTENT="Personal site of Jakson Rochelly, web developer.">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://plus.google.com/101809280544649964042" rel="publisher" />
+    <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
+    <!--[if IE]> <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="image_src" href="/assets/img/logo.png">
+    <meta content="" property="og:site_name">
+    <meta content="Jakson Rochelly" property="article:author">
+    <meta content="http://jrochelly.com/img/logo.png" property="og:image">
+    
+    <meta content="It&#39;s really easy to make a rails app run using [unicorn](http://unicorn.bogomips.org/) + [nginx](http://nginx.org/en/), but when it comes to multiple apps, things get a lot harder, well, at least that&#39;s what I thought. ![image](/img/posts/unicorn.png) What I want is to make the root (*&quot;/&quot;*) folder a place on the server where you can put **HTML** or **PHP** and use subdirectories like *&quot;/app1&quot;*, for exemple, to provide a rails app. Doing this correctly, makes a lot easier for..." property="og:description">
+    <meta content="article" property="og:type">
+    
+    
+    <meta content="Nginx, Unicorn and multiple Rails apps" property="og:title">
+    
+    
+    <meta content="2013-08-09T00:00:00-03:00" property="article:published_time">
+    
+    
+    <title>Nginx, Unicorn and multiple Rails apps @ Jakson Rochelly</title>
+    
+</head>
+<body>
+    <header class="sidebar">
+  <div class="content">
+    <a href="/" id="logo"></a>
+    <nav class="menu">
+      <ul>
+        <li><a id="link-posts" href="/#Posts">Posts</a></li>
+        <li><a id="link-projects" href="/#Projects">Projects</a></li>
+        <li><a id="link-contact" href="/#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div id="wrapper">
+        <article class="post">
+            
+            <div class="post__body">
+                <header>
+                    
+                    <h1>Nginx, Unicorn and multiple Rails apps</h1>
+                    <div class="post_info">
+                        <time datetime="2013-08-09T00:00:00">August 09, 2013</time>
+                    </div>
+                    
+                </header>
+                <p>It's really easy to make a rails app run using <a href="http://unicorn.bogomips.org/">unicorn</a> + <a href="http://nginx.org/en/">nginx</a>, but when it comes to multiple apps, things get a lot harder, well, at least that's what I thought.</p>
+
+<p><img src="/img/posts/unicorn.png" alt="image" /></p>
+
+<p>What I want is to make the root (<em>"/"</em>) folder a place on the server where you can put <strong>HTML</strong> or <strong>PHP</strong> and use subdirectories like <em>"/app1"</em>, for exemple, to provide a rails app. Doing this correctly, makes a lot easier for me to deploy others apps using folders instead of http ports. It was really hard to find this better/easier way to run multiple rails applications and that's what makes me want to share with you.</p>
+
+<p>In this post I'm going to show you how to make your server run rails on subdirectory. For this tutorial, I'm using <strong>Ruby 2.0 </strong>and<strong> Rails 4.0</strong>. I suppose you already have nginx and unicorn installed. So, let's get started!</p>
+
+<p>In you nginx.conf file we are going to make nginx point to a unicorn socket:</p>
+
+<pre>
+upstream unicorn_socket_for_myapp {
+  server unix:/home/coffeencoke/apps/myapp/current/tmp/sockets/unicorn.sock fail_timeout=0;
+}
+</pre>
+
+
+<p>Then, with your server listening to port 80, add a location block that points to the subdirectory your rails app is (this code, must be inside server block):</p>
+
+<pre>
+ location /myapp/ {
+    try_files $uri @unicorn_proxy;
+  }
+
+  location @unicorn_proxy {
+    proxy_pass http://unix:/home/coffeencoke/apps/myapp/current/tmp/sockets/unicorn.sock;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+    proxy_set_header X-Forwarded-Proto $scheme;
+  }
+</pre>
+
+
+<p>Now you can just Unicorn as a Deamon:</p>
+
+<p><code>sudo unicorn_rails -c config/unicorn.rb -D</code></p>
+
+<p>The last thing to do, and the one I dug the most is to add a scope for your rails routes file, like this:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="no">MyApp</span><span class="o">::</span><span class="no">Application</span><span class="o">.</span><span class="n">routes</span><span class="o">.</span><span class="n">draw</span> <span class="k">do</span>
+<span class="lineno">2</span>   <span class="n">scope</span> <span class="s1">&#39;/myapp&#39;</span> <span class="k">do</span>
+<span class="lineno">3</span>     <span class="n">root</span> <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="s1">&#39;welcome#home&#39;</span>
+<span class="lineno">4</span> 
+<span class="lineno">5</span>     <span class="c1"># other routes are always inside this block</span>
+<span class="lineno">6</span>     <span class="c1"># ...</span>
+<span class="lineno">7</span>   <span class="k">end</span>
+<span class="lineno">8</span> <span class="k">end</span></code></pre></div>
+
+
+<p>This way, your app will map a link <code>/myapp/welcome</code>, intead of just <code>/welcome</code></p>
+
+<div class="alert"><b>Update 2013-08-13:</b> Better solution; Easier way to make assets visible; </div>
+
+
+<p>Also, we need to make rails see his in a subdirectory. At the end of your <code>production.rb</code> file, add:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="n">config</span><span class="o">.</span><span class="n">relative_url_root</span> <span class="o">=</span> <span class="s2">&quot;/myapp&quot;</span></code></pre></div>
+
+
+<p>So now our app opens using "/myapp" subdirectory, but, hey! Where's my assets? Well, rails still believe your assets are at "/assets" when they should be at "/myapp/assets". Let's solve this:</p>
+
+<p>Into your <code>config/applcation.rb</code> file add:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="n">config</span><span class="o">.</span><span class="n">assets</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="s2">&quot;/myapp/assets&quot;</span></code></pre></div>
+
+
+
+
+<div class="alert"><b>Update 2013-08-14:</b> Solution for assets to work when in production; </div>
+
+
+<p>If in production environment your css or js are not being found, maybe <code>bundle exec rake assets:precompile RAILS_RELATIVE_URL_ROOT=/mypapp</code> solves the problem.</p>
+
+<p>Now we're done. :)</p>
+
+<p>That was possible using this <a href="http://coffeencoke.github.io/blog/2012/12/31/serving-rails-with-a-subdirectory-root-path/">source</a></p>
+
+            </div>
+        </article>
+
+        
+        <div id="disqus">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'jrochelly'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+
+        <!-- <footer id="Contact">
+  <div class="footer__stuff">
+    <div id="about">
+      <img src="/assets/img/me.jpg" alt="Me" id="me">
+      <p>Hi, my name is Jakson Rochelly, I'm a <b>passionate front-end developer</b> who likes to create stuff for people to use.</p>
+    </div>
+    <div id="social_links">
+      <ul>
+        <li><a href="http://twitter.com/jrochelly" title="Twitter"><div class="icon twitter"></div></a></li>
+        <li><a href="http://github.com/jrochelly" title="Github"><div class="icon github"></div></a></li>
+        <li><a href="mailto:://jrochelly@gmail.com?subject='Hey Jakson!'" title="Contact me!"><div class="icon email"></div></a></li>
+        <li><a href="http://feeds.feedburner.com/jrochelly" title="Feed RSS"><div class="icon feed"></div></a></li>
+      </ul>
+    </div>
+  </div>
+</footer> -->
+    </div>
+
+
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23777483-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="/assets/js/masonry.min.js"></script>
+    <script>
+        $('.blog_posts').masonry({
+          // options
+          percentPosition: true,
+          itemSelector: '.post_index',
+          columnWidth: 250
+        });
+    </script>
+    <![endif]-->
+</body>
+</html>
