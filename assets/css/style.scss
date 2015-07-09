@@ -57,11 +57,11 @@ $h_links_h1: #292C30;
 body{
 	width: 100%;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 62.5%;
+	font-size: 20px;
 	margin: 0 auto;
 	padding: 0;
 	color: #333;
-	background: #f1f1f1;
+	background: #f9f9f9;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -71,20 +71,21 @@ html{
 }
 
 h1, h2{
-	color: $purple_dark;
-	font-family: "Roboto";
-	text-transform: uppercase;
-	font-weight: bold;
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans", serif;
 }
 
 h1{
-  font-size: 1.8rem;
-  line-height: 35px;
+  color: $purple_dark;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 h2{
-  font-size: 1.6rem;
-	line-height: 30px;
+  color: #888;
+  font-size: 35px;
+	line-height: 35px;
+  font-weight: 300;
 }
 
 a{
@@ -94,7 +95,6 @@ a{
 #wrapper{
 	float: left;
 	width: 100%;
-	font-size: 1.7em;
 	line-height: 1.6em;
 	margin: 0 auto;
 	padding: 0;
@@ -237,7 +237,7 @@ a{
 
 	.all-posts{
 		float: right;
-		margin: 20px 10px 40px auto;
+		margin: 20px 10px -60px auto;
 		padding: 10px 20px;
 		text-decoration: none;
 		@include ghost-btn($purple_dark);
@@ -281,7 +281,6 @@ a{
       text-align: center;
       color: #fff !important;
       h1{
-        font-size: 2rem;
         margin: 0 auto;
         width: 65%;
         color: #fff !important;
@@ -293,6 +292,8 @@ a{
 
   .post__body{
     padding: 0;
+    width: 85%;
+    margin: 0 auto;
   }
 
 	img{
@@ -327,6 +328,10 @@ a{
 	margin: 0 auto;
 }
 
+.post_index h2, .post_index_cover h2{
+  font-size: 28px;
+}
+
 // .post_index, .post_index_cover{
 //   h1, h2{
 //     text-transform: none;
@@ -337,13 +342,15 @@ a{
 	text-align: left;
 	font-style: normal;
 	padding-bottom: 0px;
-	margin: -8px 0 0 0;
-	font-weight: bold;
+}
+
+.post_index h2{
+  margin: -8px 0 0 0;
 }
 
 .post_index, .post_index_cover{
 	display: inline-block;
-	margin: 0 0 20px 20px;
+	margin: 0 0 20px 10px;
 	background: #fff;
 	min-height: 200px;
 	box-shadow: 1px 1px 3px #ccc;
@@ -614,7 +621,7 @@ a{
       @include transition(all, .3s, ease-in-out);
 
       &:hover{
-        background: #f1f1f1;
+        background: #f9f9f9;
       }
     }
 	}
@@ -623,9 +630,9 @@ a{
 footer{
 	float: left;
 	width: 100%;
-	color: #f1f1f1;
+	color: #f9f9f9;
 	font-size: 1rem;
-	padding: 40px 100px;
+	padding: 40px;
 	background: #333;
 
 	.footer__stuff{
@@ -933,6 +940,10 @@ blockquote{
 		overflow: hidden;
 	}
 
+  .post_index, .post_index_cover{
+    margin: 0 0 20px 20px;
+  }
+
   .header__cover{
     img{
       width: 100%;
@@ -1223,10 +1234,6 @@ blockquote{
 
   .post{
 
-    .post__body{
-        padding: 40px 80px 0 80px;
-    }
-
     .header__cover{
       width: 100% !important;
       margin-left: 0px;
@@ -1256,7 +1263,7 @@ blockquote{
 	#wrapper{
 		float: right;
 		width: calc(100% - 180px);
-		max-width: 1200px;
+		// max-width: 1200px;
 	}
 
 	.blog_posts{
@@ -1269,19 +1276,27 @@ blockquote{
 		  width: 98%;
 	}
 
+  .post__body{
+    width: 70% !important;
+  }
+
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 1000px){
 
 	#wrapper{
 		float: left;
 		width: calc(100% - 180px);
 		margin-left: 180px;
-		max-width: 1100px;
+		// max-width: 1100px;
+
+    section .container, footer .container, .blog_posts{
+      max-width: 1100px;
+    }
 
 		.blog_posts{
 			width: 100%;
-			background: #f1f1f1;
+			background: #f9f9f9;
 			-moz-column-count: 2;
 		  -moz-column-gap: 5px;
 		  -webkit-column-count: 2;
@@ -1304,6 +1319,10 @@ blockquote{
 	.post_info, .post_index .post_info{
 		text-align: left;
 	}
+
+  .post__body{
+    width: 70% !important;
+  }
 
 	.highlight{
 		width: 100%;
