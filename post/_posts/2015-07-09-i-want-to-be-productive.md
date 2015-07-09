@@ -1,7 +1,7 @@
 ---
 comments: true
 layout: post
-date: 2014-05-17 22:06:00
+date: 2015-07-09 02:42:00
 title: "I want to be productive!"
 cover: /assets/img/posts/productive-cover.svg
 summary: "If you don't have focus, this extra time you got, is useless."
