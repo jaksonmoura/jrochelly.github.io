@@ -17,12 +17,8 @@
 	<meta content="{{ site.title }}" property="og:site_name">
 	<meta content="Jakson Rochelly" property="article:author">
 	<meta content="http://jrochelly.com/assets/img/logo.png" property="og:image">
-	{% if page.path contains '_posts' %}
 	<meta content="{{ page.content | escape | truncatewords:75}}" property="og:description">
-	<meta content="article" property="og:type">
-	{% else %}
 	<meta content="website" property="og:type">
-	{% endif %}
 	{% if page.title %}
 	<meta content="{{ page.title }}" property="og:title">
 	{% else %}
