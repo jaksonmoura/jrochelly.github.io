@@ -5,4 +5,3 @@ markdown: rdiscount
 pygments: true
 permalink: /post/:year/:month/:title
 paginate: 4
-fb_admins: http://facebook.com/jrochelly
