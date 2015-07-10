@@ -363,13 +363,6 @@ a{
 
 	&:hover{
 
-		img{
-			-webkit-transform: scale(1.05);
-			transform: scale(1.05);
-			-moz-transform: scale(1.05);
-			overflow: hidden;
-		}
-
 		h2 a{
 			color: $purple_darker;
 		}
@@ -383,17 +376,16 @@ a{
 }
 
 .post_index_cover{
-	padding: 5px;
+	padding: 0px;
 
 	img{
-		margin-bottom: -7px;
+		margin-bottom: -12px;
 	}
 
 	.post-caption{
 		position: relative;
 		float: left;
-		margin-top: -22%;
-		margin-left: -10px;
+		margin: -23% 0 0 -10px;
 		color: #fff;
 		padding: 10px 25px;
 		background: rgba(black, .8);
@@ -1288,14 +1280,10 @@ blockquote{
 		float: left;
 		width: calc(100% - 180px);
 		margin-left: 180px;
-		// max-width: 1100px;
-
-    section .container, footer .container, .blog_posts{
-      max-width: 1100px;
-    }
+		max-width: 1100px;
 
 		.blog_posts{
-			width: 100%;
+			width: 99%;
 			background: #f9f9f9;
 			-moz-column-count: 2;
 		  -moz-column-gap: 5px;
