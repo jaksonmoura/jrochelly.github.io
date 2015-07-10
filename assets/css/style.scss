@@ -377,22 +377,27 @@ a{
 .post_index_cover{
 	padding: 0px;
 
+  .cover__img{
+    float: left;
+    max-height: 200px;
+    overflow: hidden;
+
+  }
+
 	img{
 		margin-bottom: -12px;
 	}
 
 	.post-caption{
-		position: relative;
+		// position: relative;
 		float: left;
-		margin: -23% 0 0 -10px;
-		color: #fff;
+		// color: #fff;
 		padding: 10px 25px;
-		background: rgba(black, .8);
 
 		h2{
+      color: $purple_dark;
 			margin: 0;
 			padding: 0;
-			color: #fff;
 			line-height: 1.2em;
 		}
 	}
