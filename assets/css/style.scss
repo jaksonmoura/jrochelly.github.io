@@ -36,7 +36,6 @@ $h_links_h1: #292C30;
 	}
 }
 
-
 *, *:before, *:after{
 	box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -56,7 +55,7 @@ $h_links_h1: #292C30;
 body{
 	width: 100%;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 100%;
 	margin: 0 auto;
 	padding: 0;
 	color: #333;
@@ -76,13 +75,13 @@ h1, h2{
 h1{
   color: $purple_dark;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 1.9rem;
   line-height: 36px;
 }
 
 h2{
   color: #888;
-  font-size: 35px;
+  font-size: 1.8rem;
 	line-height: 35px;
   font-weight: 300;
 }
@@ -94,7 +93,7 @@ a{
 #wrapper{
 	float: left;
 	width: 100%;
-	line-height: 1.6em;
+	line-height: 1.8em;
 	margin: 0 auto;
 	padding: 0;
 	min-height: 100%;
@@ -147,7 +146,6 @@ a{
 		}
 
 		li{
-			// float: left;
 			width: 30%;
 			display: inline-block;
 			text-align: center;
@@ -157,14 +155,11 @@ a{
 			a{
 				float: none;
 				padding: 0 20px;
-				// width: 0 !important;
 				text-align: center;
-				font-size: 15px;
+				font-size: 1rem;
 				font-weight: bold;
 				text-decoration: none;
 				color: #999;
-
-
 			}
 
 			a:hover, a:active{
@@ -173,12 +168,6 @@ a{
 
 		}
 	}
-}
-
-/* brandico */
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-  font-size: 20px;
 }
 
 .archive_posts{
@@ -260,15 +249,12 @@ a{
     overflow: hidden;
 
     img{
-      // position: absolute;
       opacity: .6;
       margin-top: 0;
-      // top: 0;
       left: 0;
       height: 100%;
       max-width: 200% !important;
       margin-bottom: -100px;
-
     }
 
     .header__info{
@@ -286,11 +272,11 @@ a{
         margin-bottom: 0px;
       }
     }
-
   }
 
   .post__body{
     padding: 0;
+    font-size: 1.2rem;
     width: 85%;
     margin: 0 auto;
   }
@@ -328,14 +314,8 @@ a{
 }
 
 .post_index h2, .post_index_cover h2{
-  font-size: 28px;
+  font-size: 1.8rem;
 }
-
-// .post_index, .post_index_cover{
-//   h1, h2{
-//     text-transform: none;
-//   }
-// }
 
 .post h2, .post_index h2{
 	text-align: left;
@@ -361,13 +341,10 @@ a{
 	}
 
 	&:hover{
-
 		h2 a{
 			color: $purple_darker;
 		}
-
 	}
-
 }
 
 .post_index{
@@ -381,7 +358,6 @@ a{
     float: left;
     max-height: 200px;
     overflow: hidden;
-
   }
 
 	img{
@@ -389,11 +365,12 @@ a{
 	}
 
 	.post-caption{
-		// position: relative;
 		float: left;
-		// color: #fff;
 		padding: 10px 25px;
 
+    a{
+      text-decoration: none;
+    }
 		h2{
       color: $purple_dark;
 			margin: 0;
@@ -426,7 +403,7 @@ a{
 	display: inline-block;
 	padding: 4px 12px;
 	margin-bottom: 0;
-	font-size: 14px;
+	font-size: 1rem;
 	text-align: center;
 	cursor: pointer;
 	color: #333;
@@ -547,19 +524,13 @@ a{
       .project__info{
         float: left;
         width: 100%;
-        // background: $purple_darker;
         color: $purple_darker;
-
-
 
         .project__title{
           padding: 5px;
           margin: 0;
         }
 
-        .project__subtitle{
-
-        }
       }
 
       a.project--img{
@@ -569,22 +540,14 @@ a{
         float: left;
         padding: 2px;
         width: 100%;
-
       }
-
-      // a.project--img:hover, a.project--info:hover a.project--img{
-      //   opacity: .9;
-      // }
 
       img{
         width: auto;
         width: 100%;
         @include border-radius(5px);
-        // opacity: .9;
       }
-
 		}
-
 	}
 
   .more--up{
@@ -685,7 +648,6 @@ footer{
 					opacity: .9;
 					@include transition(all, .2s, ease-in-out);
 
-
 					&:hover{
 						-webkit-transform: rotate(-25deg);
 						-moz-transform: rotate(-25deg);
@@ -732,53 +694,7 @@ footer{
 		}
 }
 
-#apps_list {
-  margin-top: 10px; }
 
-.app {
-  width: 100%;
-  float: left;
-  margin: 0 0 20px 0;
-  background: #ECF0F1;
-  padding: 10px 0;
-  @include border-radius(3px);
-  box-shadow: 0 -3px 0px #BDC3C7 inset; }
-  .app .logo {
-	float: left;
-	width: 100px;
-	height: 100px;
-	margin: 0 20px 0 10px; }
-	.app .logo > img {
-	  width: 100px;
-	  margin: 0px auto;
-	  height: 100px; }
-  .app .info {
-	width: 75%;
-	float: left;
-	margin: 0; }
-	.app .info h3, .app .info p {
-	  margin: 0;
-	  padding: 0; }
-	 .app .info h3 img{
-	 	display: inline;
-		margin: 0 auto;
-	 }
-	.app .info p {
-	  line-height: 20px; }
-.app .info h3 {
-	margin: 0 0 10px 0;
-}
-
- .app .note {
-	background: #eee;
-	width: 50%;
-	margin: 5px 0;
-	@include border-radius(5px);
-	padding: 5px;
-	color: #aaa;
-	font-style: italic;
-	font-family: georgia;
-}
 
 .firefox, .chrome, .amazon{
 	display: inline-block;
@@ -824,7 +740,7 @@ footer{
 	margin: 0;
 	@include border-radius(5px);
 	pre{
-		font-size: 14px;
+		font-size: 1rem;
 		padding: 10px 5px;
 		font-family: "BitStream Vera Sans Mono", Inconsolata, Monaco, Consolas, "Currier new", Currier, monospace;
 		overflow: auto;
@@ -905,20 +821,15 @@ blockquote{
 
 		.post, .post_index, .nav_pagination{
 			width: 97%;
-
 		}
 
 		.post h2, .post_index h2{
-			font-size: 1.3rem;
+			font-size: 1.8rem;
 		}
 
 		.post img, .post iframe, .post pre, .post_index img, .post_index iframe, .post_index pre{
 			max-width: 100%;
 		}
-
-		// .post h2, .post_info, .post_index h2, .nav_pagination{
-		// 	text-align: center;
-		// }
 
 	}
 
@@ -996,21 +907,21 @@ blockquote{
 	}
 
 	.post h2{
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 	}
 
 	h1{
-		font-size: 30px !important;
+		font-size: 1.9rem !important;
 	}
 
 	h2{
-		font-size: 27px !important;
+		font-size: 1.8rem !important;
 	}
 
 	#wrapper{
 		float: right;
 		width: 100%;
-		font-size: 1rem;
+		font-size: 1.6rem;
 	}
 
 	#wrapper > header{
@@ -1054,17 +965,12 @@ blockquote{
 	  column-count: 2;
 	  column-gap: 5px;
 	  width: 98%;
-
 	}
 
 	.post, .post_index{
 		font-size: 1rem;
 		width: 95%;
 	}
-
-  // .post{
-  //   width: 50% !important;
-  // }
 
 	.post_index, .post_index_cover{
 		width: 95%;
@@ -1110,7 +1016,7 @@ blockquote{
       padding-left: 20px;
       margin-top: 10%;
       h2{
-        font-size: 30px;
+        font-size: 1.8rem;
       }
     }
     ul{
@@ -1128,9 +1034,6 @@ blockquote{
       }
 
       .project--img{
-        // filter: blur(0px);
-        // -webkit-filter: blur(0px);
-        // -moz-filter: blur(0px);
         @include transition(all, .3s, ease-in-out);
       }
 
@@ -1168,7 +1071,6 @@ blockquote{
 		nav.menu{
 			width: 100%;
 			margin: 10px 0 15px 0;
-			// margin: 10px 0 40px 0;
 			float: left;
 
 			ul{
@@ -1229,14 +1131,12 @@ blockquote{
 	}
 
   .post{
-
     .header__cover{
       width: 100% !important;
       margin-left: 0px;
 
       .header__info{
         width: calc(100% - 180px) !important;
-        // margin-left: 180px !important;
         top: 250px !important;
       }
     }
@@ -1259,7 +1159,6 @@ blockquote{
 	#wrapper{
 		float: right;
 		width: calc(100% - 180px);
-		// max-width: 1200px;
 	}
 
 	.blog_posts{
@@ -1295,7 +1194,6 @@ blockquote{
 		  -webkit-column-gap: 5px;
 		  column-count: 2;
 		  column-gap: 5px;
-
 
 			.post_index, .post_index_cover{
 				width: 95%;
