@@ -1,0 +1,241 @@
+header{
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+
+  a{
+    color: #333;
+  }
+
+  .content{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+    // flex-direction: row;
+  }
+
+  #logo{
+    float: left;
+    margin: 20px 0 20px 5%;
+    background: url('../img/logo.svg') no-repeat 0 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu__btn{
+    float: right;
+    width: 94px;
+    margin-top: 25px;
+    text-transform: uppercase;
+
+    img{
+      width: 32px;
+      margin-bottom: -10px;
+      filter: invert(100%);
+      opacity: .8;
+    }
+
+    a{
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid rgba(white, .8);
+      padding: 10px 5px;
+      @include border-radius(2px);
+    }
+    &:hover img, &:hover a{
+      opacity: 1 !important;
+    }
+    &:hover a{
+      border-color: #fff;
+    }
+  }
+
+  .show_menu{
+    margin-top: 0 !important;
+  }
+
+  nav.mobile-menu{
+    float: left;
+    width: 100%;
+    margin-top: -100%;
+    background: #fff;
+    transition: all .5s ease;
+
+    ul{
+      line-height: 80px;
+      margin: 0 auto !important;
+      padding: 0;
+      display: inline-block;
+      text-align: center !important;
+      white-space:nowrap;
+      width: 80%;
+    }
+
+    li{
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      float: left;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #eef2f3;
+
+      &:last-child{
+        border: none;
+        margin-bottom: -15px;
+        a{
+          padding-right: 0 !important;
+        }
+      }
+
+
+      a{
+        // float: left;
+        display: block;
+        padding: 0;
+        text-align: center;
+        font-size: .9rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgba(black, .8);
+        // background: red;
+        // height: 100%;
+      }
+
+      a:hover, a:active{
+        color: rgba(black, 1);
+        background: #eef2f3;
+      }
+    }
+  }
+
+  nav.menu{
+    padding: 0;
+    margin: 0 5% 0 0;
+    float: right;
+
+    ul{
+      line-height: 80px;
+      margin: 0 auto !important;
+      padding: 0;
+      display: none !important;
+      text-align: center !important;
+      white-space:nowrap;
+      width: 80%;
+    }
+
+    li{
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      float: left;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #eef2f3;
+
+      &:last-child{
+        border: none;
+        margin-bottom: -15px;
+        a{
+          padding-right: 0 !important;
+        }
+      }
+
+
+      a{
+        // float: left;
+        display: block;
+        padding: 0;
+        text-align: center;
+        font-size: .9rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgba(black, .8);
+        // background: red;
+        // height: 100%;
+      }
+
+      a:hover, a:active{
+        color: rgba(black, 1);
+        background: #eef2f3;
+      }
+    }
+  }
+}
+
+@media (min-width: 750px){
+  header{
+    margin-top: 10px;
+    margin-bottom: 80px;
+    height: 80px !important;
+
+    .content{
+      width: 95% !important;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    #logo{
+      float: left;
+      margin: 15px 0 !important;
+      order: 1;
+    }
+
+    nav{
+      order: 2;
+      background: none !important;
+      ul{
+        width: 100% !important;
+      }
+      li{
+        width: auto !important;
+        border: none !important;
+        height: 80px !important;
+        line-height: 80px !important;
+      }
+      a{
+        color: rgba(white, .8) !important;
+        margin: 0 !important;
+        padding: 0 20px !important;
+
+      }
+      a:hover, a:active{
+        color: rgba(white, 1) !important;
+        background: none !important;
+      }
+      // display: none;
+    }
+
+    nav.mobile-menu{
+      display: none;
+    }
+
+    nav.menu{
+      margin: 0;
+      ul{
+        display: block !important;
+      }
+
+      .menu__btn{
+        display: none;
+      }
+    }
+
+  }
+}
+
+@media all and (max-width: 1000px){
+  .header__cover{
+    img{
+      height: 100%;
+      width: auto !important;
+    }
+  }
+}

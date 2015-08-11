@@ -1,0 +1,190 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #333;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+}
+.room {
+  width: 900px;
+  margin: 0 auto ;
+}
+.suspend {
+  float: left;
+  width: 100%;
+  margin-top: 200px;
+}
+.suspend .lamp {
+  float: left;
+  width: 90px;
+  height: 270px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  background: url('/assets/img/404/lamp.png') no-repeat;
+  opacity: .2;
+}
+.info {
+  float: right;
+  width: 70%;
+  color: #11A7DD;
+  cursor: default;
+}
+.info h1 {
+  font-size: 25vw;
+  margin: 0 0 130px 0;
+  line-height: 100px;
+  height: calc(120px);
+}
+.info a {
+  color: #fff;
+}
+.info p {
+  text-align: center;
+  font-size: 20px;
+}
+.floor {
+  float: left;
+  width: 30%;
+  margin-top: -40px;
+}
+.floor .door {
+  float: left;
+  height: 321px;
+  width: 184px;
+}
+.floor .door .front {
+  height: 321px;
+  width: 184px;
+  background: url('/assets/img/404/front_door.png') no-repeat;
+  margin-bottom: -321px;
+  position: relative;
+  z-index: 12;
+  -webkit-transform-origin: 0% 30%;
+  -webkit-animation: open 5s forwards;
+  animation: open 5s forwards;
+}
+.floor .door .front .leftbar {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 321px;
+  margin-right: -200px;
+  background: #333;
+  -webkit-animation: leftbar 5s forwards;
+  -moz--animation: leftbar 5s forwards;
+  animation: leftbar 5s forwards;
+}
+.floor .door .front:after {
+  position: relative;
+  float: left;
+  content: "";
+  background: #333;
+  width: 184px;
+  height: 200px;
+  top: 321px;
+  -webkit-animation: light 5s forwards;
+  -moz-animation: light 5s forwards;
+  animation: light 5s forwards;
+}
+.floor .door .front:before {
+  position: relative;
+  float: left;
+  content: "";
+  background: #333;
+  width: 184px;
+  height: 200px;
+  top: 321px;
+  left: 42px;
+  margin-bottom: -321px;
+  transform: skewX(22deg);
+  -webkit-animation: light 5s forwards;
+  -moz-animation: light 5s forwards;
+  animation: light 5s forwards;
+}
+.floor .door .back {
+  height: 321px;
+  width: 184px;
+  background: url('/assets/img/404/back_door.png') no-repeat;
+  z-index: 10;
+  position: relative;
+}
+.floor .door .light {
+  height: 238px;
+  width: 305px;
+  background: url('/assets/img/404/door_light.png') no-repeat;
+  background-position: top right;
+  position: relative;
+  margin: -1px 0 0 7px;
+  z-index: 10;
+  -webkit-animation: door_light 5s forwards;
+  -moz-animation: door_light 5s forwards;
+  animation: door_light 5s forwards;
+}
+@keyframes door_light {
+  0% {
+    width: 240px;
+    margin: -1px 0 0 5px;
+  }
+  68.8% {
+    width: 240px;
+    margin: -1px 0 0 5px;
+  }
+  100% {
+    width: 305px;
+    margin: -1px 0 0 -60px;
+  }
+}
+@keyframes open {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000) rotateY(-95.6deg);
+    -moz-transform: perspective(1000) rotateY(-95.6deg);
+    transform: perspective(1000) rotateY(-95.6deg);
+  }
+}
+@keyframes light {
+  0% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes leftbar {
+  0% {
+    opacity: 0;
+  }
+  68.8% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

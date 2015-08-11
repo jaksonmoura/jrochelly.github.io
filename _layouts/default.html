@@ -4,7 +4,6 @@
 	<meta charset='utf-8' />
 	<meta name="Description" CONTENT="Personal site of Jakson Rochelly, web developer.">
 	<link rel="icon" type="image/png" href="/favicon.png"/>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<link href="https://plus.google.com/101809280544649964042" rel="publisher" />
 	<!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
@@ -34,15 +33,18 @@
 	{% endif %}
 </head>
 <body>
-	{% include sidebar.html %}
-
 	<div id="wrapper">
+		<div class="landing">
+			{% include header.html %}
 
-		<section class="blog_posts" id="Posts">
-				{{ content }}
-		</section>
+			<section class="hero">
+					{{ content }}
+			</section>
+		</div>
 
 		{% include projects.html %}
+
+		{% include posts.html %}
 
 		{% include footer.html %}
 	</div>
@@ -61,27 +63,20 @@
 	<script src="/assets/js/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			function scrollToAnchor(aid){
-		    var aTag = $("#"+ aid);
-		    $('html,body').animate({scrollTop: (aTag.offset().top - 10)},'slow');
-			}
-			$("#link-posts, #link-projects, #link-contact").on("click", function(){
-				var anchor = $(this).html();
-				scrollToAnchor(anchor);
+
+			$('.menu__btn a').on('click', function(e){
+				$('.mobile-menu').toggleClass('show_menu');
+				return false;
+			});
+
+			$('a[href^="/#"]').on("click", function(e){
+				var href = $(this).attr("href");
+				var href = href.slice(1, href.length);
+				var anchor = $( href );
+				$('html,body').animate({scrollTop: (anchor.offset().top)},'slow');
 				return false;
 			});
 		});
 	</script>
-	<!--[if lte IE 9]>
-	<script src="/assets/js/masonry.min.js"></script>
-	<script>
-		$('.blog_posts').masonry({
-		  // options
-		  percentPosition: true,
-		  itemSelector: '.post_index',
-		  columnWidth: 250
-		});
-	</script>
-	<![endif]-->
 </body>
 </html>

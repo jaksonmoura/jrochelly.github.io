@@ -3,7 +3,7 @@ comments: true
 layout: post
 date: 2014-05-17 22:06:00
 
-title: "Elasticsearch"
+title: "Elasticsearch: Busca e problemas com queries N+1"
 ---
 
 Geralmente quando temos alguma aplicação que precisa de busca, ela contem relacionamentos entre tabelas, como por exemplo uma App de Loja, onde você tem produto relacionado com categoria, fabricante, etc. Se usarmos o Elasticsearch na aplicação, é possível que o banco de dados sofra com **queries N + 1**. Podemos acabar com isso definindo alguns índices.

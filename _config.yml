@@ -1,7 +1,11 @@
-auto: true
-server: true
 future: false
 markdown: rdiscount
-pygments: true
+highlighter: true
 permalink: /post/:year/:month/:title
-paginate: 4
+paginate: 3
+
+sass:
+  sass_dir: assets/css
+  style: :nested
+
+exclude: ["node_modules", "README.md", "package.json", ".gitignore", "gulpfile.js"]
