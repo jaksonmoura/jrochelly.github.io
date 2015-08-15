@@ -1,11 +1,18 @@
 future: false
 markdown: rdiscount
 highlighter: true
-permalink: /post/:year/:month/:title
+permalink:  /:categories/posts/:year/:month/:title
 paginate: 3
+paginate_path: "/page:num"
+paginate_per_category: true
+default_category: "en"
 
 sass:
   sass_dir: assets/css
   style: :nested
 
 exclude: ["node_modules", "README.md", "package.json", ".gitignore", "gulpfile.js"]
+
+url: http://jrochelly.com
+default_locale:     "en"
+authorized_locales: ["en", "br"]

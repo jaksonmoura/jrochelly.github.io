@@ -1,36 +1,27 @@
 <section class="projects" id="Projects">
   <div class="project__body">
     <div class="projects__head">
-      <h2>Projects</h2>
-      <p>This are some of the projects I built on my free time.</p>
+      <h2>{{ data.projects }}</h2>
+      <p>{{ data.projects_blurb }}</p>
 
       <!-- <div id="more__projects" class="more--up">
         <a href="/projects">Se more projects</a>
       </div> -->
     </div>
     <ul>
+      {% for p in data.projects_list %}
       <li>
         <a class="project__link project--info" href="/projects/multilinks">
           <div class="project__info">
-            <h3 class="project__title">Multilink Shortcut</h3>
-            <span class="project__subtitle">Open your daily common pages at once with this extension</span>
+            <h3 class="project__title">{{ p.title }}</h3>
+            <span class="project__subtitle">{{ p.description }}</span>
           </div>
         </a>
         <a class="project__link project--img" href="/projects/multilinks">
-          <img src="/assets/img/projects/project_multilinks.png" alt="Multilinks logo" class="cover">
+          <img src="{{ p.img }}" alt="{{ p.title }} logo" class="cover">
         </a>
       </li>
-      <li>
-        <a class="project__link project--info" href="/projects/convercy">
-          <div class="project__info">
-            <h3 class="project__title">Convercy</h3>
-            <span class="project__subtitle">Yet another currency converter</span>
-          </div>
-        </a>
-        <a class="project__link project--img" href="/projects/convercy">
-          <img src="/assets/img/projects/project_convercy.png" alt="Convercy logo" class="cover">
-        </a>
-      </li>
+      {% endfor %}
     </ul>
     <!-- <div id="more__projects" class="more--down">
       <a href="/projects">Se more projects</a>

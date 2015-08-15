@@ -5,10 +5,10 @@ footer{
   float: left;
   width: 100%;
   line-height: 1.8rem;
-  color: #f9f9f9;
+  color: #888 !important;
   font-size: 1rem;
   padding: 60px 10px;
-  background: #eef2f3;
+  background: #E6E6E6;
   text-align: center;
 
   .footer__stuff{
@@ -20,6 +20,9 @@ footer{
   #footer__logo{
     display: inline-block;
     // background: url('../img/logo.svg') no-repeat 0 0;
+    filter: invert(100%);
+    -moz-filter: invert(100%);
+    -webkit-filter: invert(100%);
     width: 100px;
     height: 100px;
     margin-top: 15px;
@@ -44,7 +47,7 @@ footer{
     width: 100%;
     margin-bottom: 40px;
     a{
-      color: #fff;
+      color: #888;
       text-decoration: none;
       font-size: 30px;
       text-align: center;
@@ -71,7 +74,6 @@ footer{
     text-align: center;
   }
 
-
   #social_links{
     float: left;
     width: 100%;
@@ -96,6 +98,9 @@ footer{
         }
 
         .icon{
+          filter: invert(50%);
+          -moz-filter: invert(50%);
+          -webkit-filter: invert(50%);
           float: left;
           margin-right: 10px;
           opacity: .9;

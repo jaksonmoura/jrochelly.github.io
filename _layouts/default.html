@@ -1,8 +1,13 @@
+{% capture locale %}{{ page.url | truncate: 3, "" | remove: "/" }}{% endcapture %}
+{% unless site.authorized_locales contains locale %}
+    {% assign locale = site.default_locale %}
+{% endunless %}
+{% assign data = site.data.locales[locale] %}
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='{{locale}}'>
 <head>
 	<meta charset='utf-8' />
-	<meta name="Description" CONTENT="Personal site of Jakson Rochelly, web developer.">
+	<meta name="Description" CONTENT="{{ site.data.locales[locale].description }}">
 	<link rel="icon" type="image/png" href="/favicon.png"/>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<link href="https://plus.google.com/101809280544649964042" rel="publisher" />
@@ -69,9 +74,13 @@
 				return false;
 			});
 
-			$('a[href^="/#"]').on("click", function(e){
+			$('a[href*="/#"]').on("click", function(e){
 				var href = $(this).attr("href");
-				var href = href.slice(1, href.length);
+				if (href.indexOf("/br/#") == -1) {
+					var href = href.slice(1, href.length);
+				} else {
+					var href = href.slice(4, href.length);
+				}
 				var anchor = $( href );
 				$('html,body').animate({scrollTop: (anchor.offset().top)},'slow');
 				return false;

@@ -1,5 +1,6 @@
 .hero{
   clear: both;
+
   .content{
     color: #fff;
     width: 90%;
@@ -40,7 +41,6 @@
       text-decoration: none;
       background: #0062d5;
       padding: 10px 25px;
-      @include border-radius(3px);
       width: 100%;
     }
   }

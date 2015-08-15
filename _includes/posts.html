@@ -1,8 +1,8 @@
 <section class="home-posts" id="Posts">
   <div class="content">
-    <h2>Latest posts</h2>
+    <h2>{{ data.posts }}</h2>
     <div class="posts__body">
-    {% for post in paginator.posts %}
+    {% for post in site.categories[locale] %}
       <article class="post_index">
           <div class="content">
             <div class="post_info">
@@ -15,7 +15,7 @@
     {% endfor %}
 
       <div class="more_posts--btn">
-        <a href="/archive">See more posts</a>
+        <a href="/archive">{{ data.posts_button }}</a>
       </div>
     </div>
 

@@ -399,7 +399,8 @@ a {
     height: auto;
     min-height: 550px;
     background: #6462AA url("/assets/img/hero21.jpg") no-repeat center bottom;
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
   #wrapper header h1 {
     margin-bottom: 5px; }
 
@@ -477,9 +478,6 @@ a {
       text-decoration: none;
       background: #0062d5;
       padding: 10px 25px;
-      border-radius: 3px;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
       width: 100%; }
 
 .hero {
@@ -638,7 +636,7 @@ section.home-posts {
     text-align: center;
     margin-bottom: 20px; }
     section.home-posts .more_posts--btn a {
-      background: #4EBDBD;
+      background: #6462AA;
       color: #fff;
       text-decoration: none;
       padding: 10px 15px; }
@@ -683,10 +681,10 @@ footer {
   float: left;
   width: 100%;
   line-height: 1.8rem;
-  color: #f9f9f9;
+  color: #888 !important;
   font-size: 1rem;
   padding: 60px 10px;
-  background: #eef2f3;
+  background: #E6E6E6;
   text-align: center; }
   footer .footer__stuff {
     width: 80%;
@@ -694,6 +692,9 @@ footer {
     margin: 0 auto; }
   footer #footer__logo {
     display: inline-block;
+    filter: invert(100%);
+    -moz-filter: invert(100%);
+    -webkit-filter: invert(100%);
     width: 100px;
     height: 100px;
     margin-top: 15px;
@@ -712,7 +713,7 @@ footer {
     width: 100%;
     margin-bottom: 40px; }
     footer .email a {
-      color: #fff;
+      color: #888;
       text-decoration: none;
       font-size: 30px;
       text-align: center;
@@ -748,6 +749,9 @@ footer {
         footer #social_links ul li:last-child {
           margin-right: 0; }
         footer #social_links ul li .icon {
+          filter: invert(50%);
+          -moz-filter: invert(50%);
+          -webkit-filter: invert(50%);
           float: left;
           margin-right: 10px;
           opacity: .9;
@@ -930,7 +934,7 @@ header {
 @media (min-width: 750px) {
   header {
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
     height: 80px !important; }
     header .content {
       width: 95% !important;
@@ -1150,7 +1154,7 @@ header {
   padding: 40px 80px; }
 
 .projects {
-  background: #eef2f3;
+  background: #E6E6E6;
   background-size: contain;
   float: left;
   width: 100%;
@@ -1186,16 +1190,12 @@ header {
       max-width: 800px;
       height: 300px;
       display: inline;
-      padding: 5px;
+      padding: 5px 0;
       list-style-type: none;
       text-align: center;
       overflow: hidden;
       margin-bottom: 20px;
-      background: #fff;
-      border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+      background: #fff; }
       .projects ul li:last-child {
         margin-bottom: 0px; }
       .projects ul li .project__link {
@@ -1214,14 +1214,11 @@ header {
         position: relative;
         z-index: 1;
         float: left;
-        padding: 2px;
+        padding: 0;
         width: 100%; }
       .projects ul li img {
         width: auto;
-        width: 100%;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px; }
+        width: 100%; }
   .projects .more--up {
     display: none !important;
     padding: 0; }
@@ -1269,7 +1266,7 @@ header {
     .projects li {
       width: 49% !important; }
       .projects li:first-of-type {
-        margin-right: 1%; }
+        margin-right: 2%; }
       .projects li .project--info {
         text-align: left;
         transition: all 0.3s ease-in-out;
