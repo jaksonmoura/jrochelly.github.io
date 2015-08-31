@@ -80,6 +80,7 @@ section.home-posts{
     h3{
       text-align: center;
       font-size: 1.4rem;
+      font-style: italic;
       margin: 0;
       padding: 0;
       a{
@@ -90,21 +91,34 @@ section.home-posts{
   }
 
   .more_posts--btn{
+    float: left;
     text-align: center;
+    width: 100%;
     margin-bottom: 20px;
     a{
+      float: left;
       background: $purple_dark;
       color: #fff;
       text-decoration: none;
       padding: 10px 15px;
+      width: 100%;
     }
   }
 
   @media (min-width: 750px){
+
+    .more_posts--btn{
+      text-align: center;
+      position: relative;
+      a{
+        float: none !important;
+        width: auto !important;
+      }
+    }
+
     .posts__body{
       float: none;
       width: 70%;
-      font-style: italic;
       margin: 0 auto;
 
       .content{

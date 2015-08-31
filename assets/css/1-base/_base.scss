@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 
 html{
   padding: 0;
@@ -40,7 +41,7 @@ body{
 }
 
 h1, h2{
-  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans", serif;
+  font-family: "Droid Sans","Lucida Sans Unicode","Lucida Sans", serif;
 }
 
 h1{
@@ -146,6 +147,13 @@ a{
     font-size: 1.2rem !important;
     line-height: 1.8rem !important;
   }
+}
+
+@media (min-width: 960px) {
+  body, html{
+    background: #333 !important;
+  }
+
 }
 
 @media (min-width: 977px){

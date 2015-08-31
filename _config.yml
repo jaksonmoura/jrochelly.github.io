@@ -2,7 +2,7 @@ future: false
 markdown: rdiscount
 highlighter: true
 permalink:  /:categories/posts/:year/:month/:title
-paginate: 3
+paginate: 20
 paginate_path: "/page:num"
 paginate_per_category: true
 default_category: "en"
