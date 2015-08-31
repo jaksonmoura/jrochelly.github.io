@@ -1,0 +1,162 @@
+// ******************************************
+// Footer
+// ******************************************
+footer{
+  float: left;
+  width: 100%;
+  line-height: 1.8rem;
+  color: #888 !important;
+  font-size: 1rem;
+  padding: 60px 10px;
+  background: #E6E6E6;
+  text-align: center;
+
+  .footer__stuff{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #footer__logo{
+    display: inline-block;
+    // background: url('../img/logo.svg') no-repeat 0 0;
+    filter: invert(100%);
+    -moz-filter: invert(100%);
+    -webkit-filter: invert(100%);
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    opacity: .4;
+    margin-bottom: 40px;
+    img{
+      width: 100%;
+    }
+  }
+
+  h2{
+    color: #888;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  h2, .email{
+    text-align: center;
+  }
+  .email{
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    a{
+      color: #888;
+      text-decoration: none;
+      font-size: 30px;
+      text-align: center;
+      float: left;
+      width: 100%;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  p{
+    width: 95%;
+    padding: 10px 0 20px 0;
+  }
+
+  a{
+    color: $main_color;
+    line-height: 30px;
+  }
+
+
+  #about{
+    text-align: center;
+  }
+
+  #social_links{
+    float: left;
+    width: 100%;
+    ul{
+      margin: 0 auto;
+      padding: 0;
+      width: 110px;
+      display: block;
+      text-align: center;
+
+      li{
+        float: left;
+        list-style: none;
+        position: relative;
+        width: 30px;
+        padding: 0;
+        margin-right: 10px;
+        margin-bottom: 8px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        .icon{
+          filter: invert(50%);
+          -moz-filter: invert(50%);
+          -webkit-filter: invert(50%);
+          float: left;
+          margin-right: 10px;
+          opacity: .9;
+          @include transition(all, .2s, ease-in-out)  ;
+
+          &:hover{
+            -webkit-transform: rotate(-25deg);
+            -moz-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+            opacity: .7;
+          }
+        }
+
+        a{
+          float: left;
+          color:$h_links;
+          text-decoration: none;
+          margin-bottom: 5px;
+          &:hover{
+            color: $main_color;
+          }
+        }
+      }
+
+      .twitter{
+        background: url('../img/sprite_social.svg') no-repeat 0 0;
+        width: 32px;
+        height: 32px;
+      }
+
+      .github{
+        background: url('../img/sprite_social.svg') no-repeat -35px 0;
+        width: 32px;
+        height: 32px;
+      }
+
+      .email{
+        background: url('../img/sprite_social.svg') no-repeat -69px 0;
+        width: 32px;
+        height: 32px;
+      }
+
+      .feed{
+        background: url('../img/sprite_social.svg') no-repeat -104px 0;
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px){
+  footer{
+
+    .email a{
+      font-size: 1.5rem;
+    }
+  }
+}

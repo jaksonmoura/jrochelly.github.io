@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include _locale.html %}
+
+  <div class="content">
+    <div class="hero--stuff">
+      <div class="me">
+        <img src="/assets/img/me.jpg" alt="Eu" id="me">
+        <p class="intro">{{ site.data.locales[locale].about_message }}</p>
+      </div>
+    </div>
+
+    <div class="hero--btn">
+        <a href="/br/#Contact">{{ site.data.locales[locale].about_button }}</a>
+    </div>
+
+  </div>

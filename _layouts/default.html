@@ -1,11 +1,14 @@
+{% capture locale %}{{ page.url | truncate: 3, "" | remove: "/" }}{% endcapture %}
+{% unless site.authorized_locales contains locale %}
+    {% assign locale = site.default_locale %}
+{% endunless %}
+{% assign data = site.data.locales[locale] %}
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='{{locale}}'>
 <head>
 	<meta charset='utf-8' />
-	<meta name="Description" CONTENT="Personal site of Jakson Rochelly, web developer.">
+	<meta name="Description" CONTENT="{{ site.data.locales[locale].description }}">
 	<link rel="icon" type="image/png" href="/favicon.png"/>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<link href="https://plus.google.com/101809280544649964042" rel="publisher" />
 	<!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
 	<!--[if IE]> <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
@@ -32,17 +35,49 @@
 	{% else %}
 	<title>Jakson Rochelly</title>
 	{% endif %}
+	<script src="/assets/js/jquery-2.1.4.min.js"></script>
+	<script>
+		$.get("http://ipinfo.io/json", function(response) {
+			var country = response.country;
+			if (country == "BR" && !isBr() && !isEnglish() ){
+				window.location.replace('/br');
+			}
+			if (country != "BR" && !isEnglish()) {
+				window.location.replace('/?lang=en');
+			}
+		}, "jsonp");
+
+		function isBr(){
+			return location.pathname.split("/")[1] == "br";
+		}
+
+		function isRedirect(){
+			return (location.search.split("rd=")[1] != undefined || location.search.split("rd=")[1] == "y");
+		}
+
+		function isEnglish(){
+			return (location.search.split("lang=")[1] != undefined || location.search.split("lang=")[1] == "en" );
+		}
+
+	</script>
 </head>
 <body>
-	{% include sidebar.html %}
-
+	<div class="langs">
+		<div class="br"><a href="/br"><img src="/assets/img/br_flag.png" alt="Idioma - Português"></a></div>
+		<div class="en"><a href="/?lang=en"><img src="/assets/img/en_flag.png" alt="Language - English"></a></div>
+	</div>
 	<div id="wrapper">
+		<div class="landing">
+			{% include header.html %}
 
-		<section class="blog_posts" id="Posts">
-				{{ content }}
-		</section>
+			<section class="hero">
+					{{ content }}
+			</section>
+		</div>
 
 		{% include projects.html %}
+
+		{% include posts.html %}
 
 		{% include footer.html %}
 	</div>
@@ -58,30 +93,28 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
-	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/parallax.js"></script>
 	<script>
 		$(document).ready(function(){
-			function scrollToAnchor(aid){
-		    var aTag = $("#"+ aid);
-		    $('html,body').animate({scrollTop: (aTag.offset().top - 10)},'slow');
-			}
-			$("#link-posts, #link-projects, #link-contact").on("click", function(){
-				var anchor = $(this).html();
-				scrollToAnchor(anchor);
+
+			$('.menu__btn a').on('click', function(e){
+				$('.mobile-menu').toggleClass('show_menu');
+				$('.langs').toggleClass('show_langs');
+				return false;
+			});
+
+			$('a[href*="/#"]').on("click", function(e){
+				var href = $(this).attr("href");
+				if (href.indexOf("/br/#") == -1) {
+					var href = href.slice(1, href.length);
+				} else {
+					var href = href.slice(4, href.length);
+				}
+				var anchor = $( href );
+				$('html,body').animate({scrollTop: (anchor.offset().top)},'slow');
 				return false;
 			});
 		});
 	</script>
-	<!--[if lte IE 9]>
-	<script src="/assets/js/masonry.min.js"></script>
-	<script>
-		$('.blog_posts').masonry({
-		  // options
-		  percentPosition: true,
-		  itemSelector: '.post_index',
-		  columnWidth: 250
-		});
-	</script>
-	<![endif]-->
 </body>
 </html>

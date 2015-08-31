@@ -1,0 +1,27 @@
+<section class="home-posts" id="Posts">
+  <div class="content">
+    <h2>{{ data.posts }}</h2>
+    <div class="posts__body">
+    {% for post in site.categories[locale] limit:3 %}
+      <article class="post_index">
+          <div class="content">
+            <div class="post_info">
+                {% assign words = post.content | number_of_words %}
+                {% if locale == "br" %}
+                <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%d/%m/%Y" }}</time> | <div class="reading-time">{% if words < 360 %} 1 minuto de leitura {% else %} {{ words | divided_by:180 }} minutos de leitura {% endif %}</div>
+                {% else %}
+                <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%m/%d/%Y" }}</time> | <div class="reading-time">{% if words < 360 %} 1 minute read {% else %} {{ words | divided_by:180 }} minute read {% endif %}</div>
+                {% endif %}
+            </div>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          </div>
+      </article>
+    {% endfor %}
+
+      <div class="more_posts--btn">
+        <a href="/archive">{{ data.posts_button }}</a>
+      </div>
+    </div>
+
+  </div>
+</section>

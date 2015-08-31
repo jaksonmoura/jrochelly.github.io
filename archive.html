@@ -5,18 +5,18 @@ permalink: /archive/
 ---
 <h1>Archive</h1>
 <section>
-	{% for post in site.posts %}
+  {% for post in site.posts %}
 
-        <article class="archive">
+    <article class="archive">
 
-		    <div class="archive_content">
-		    	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			    <div class="archive_info">
-                    <time datetime="{{ post.date | date: "%d %B, %Y" }}">Published at {{ post.date | date: "%d/%m/%Y" }}</time>
-                </div>
-		    </div>
+      <div class="archive_content">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="archive_info">
+          {% assign words = post.content | number_of_words %}
+          <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date: "%d/%m/%Y" }}</time> | <div class="reading-time">{% if words < 360 %} 1 minute read {% else %} {{ words | divided_by:180 }} minute read {% endif %}</div>
+        </div>
+      </div>
+    </article>
 
-		</article>
-
-    {% endfor %}
+  {% endfor %}
 </section>

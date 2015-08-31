@@ -2,54 +2,17 @@
 layout: default
 ---
 
-    {% for post in paginator.posts %}
-        {% if post.cover %}
-        <article class="post_index_cover">
-            <div class="content">
-                <a href="{{ post.url }}" class="cover__img"><img src="{{ post.cover }}" alt="{{ post.title }}"/></a>
-                <div class="post-caption">
-                    <a href="{{post.url}}"><h2 class="title">{{ post.title }}</h2></a>
-                    <span class="summary">{{ post.summary }}</span>
-                </div>
+{% include _locale.html %}
+  <div class="content">
+    <div class="hero--stuff">
+      <div class="me">
+        <img src="/assets/img/me.jpg" alt="Me" id="me">
+        <p class="intro">{{ site.data.locales[locale].about_message }}</p>
+      </div>
+    </div>
 
-            </div>
-        </article>
-        {% else %}
-        <article class="post_index">
-            <div class="content">
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="post_info">
-                    <time datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">Published at {{ post.date | date: "%d/%m/%Y" }}</time>
-                </div>
-                {% if post.summary %}
-                {{ post.summary }}
-                {% else %}
-                {{ post.excerpt | truncatewords: 27 }}
-                {% endif %}
-            </div>
-        </article>
-        {% endif %}
-    {% endfor %}
+    <div class="hero--btn">
+        <a href="#Contact">{{ site.data.locales[locale].about_button }}</a>
+    </div>
 
-    <a href="/archive" class="all-posts">See more posts<img class="btn-next" src="/assets/img/next.png"></a>
-
-<!-- <ol class="nav_pagination">
-    <li class="pagination_prev">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/">« Next</a>
-        {% else %}
-            <a href="/page{{paginator.previous_page}}">« Next</a>
-        {% endif %}
-        {% else %}
-            <div class="no_link">« Next</div>
-        {% endif %}
-    </li>
-    <li class="pagination_next">
-        {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Previous »</a>
-        {% else %}
-            <div class="no_link">Previous »</div>
-        {% endif %}
-    </li>
-</ol> -->
+  </div>

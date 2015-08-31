@@ -1,0 +1,20 @@
+<header>
+  <div class="content">
+    <nav class="mobile-menu">
+      <ul>
+        {% for li in data.nav %}
+        <li><a id="{{li.id}}" href="{{li.url}}">{{li.text}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <a href="/" id="logo"></a>
+    <nav class="menu">
+      <ul>
+        {% for li in data.nav %}
+        <li><a id="{{li.id}}" href="{{li.url}}">{{li.text}}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="menu__btn"><a href="#">menu <img src="/assets/img/menu.svg"></a></div>
+    </nav>
+  </div>
+</header>
