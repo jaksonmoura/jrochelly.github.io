@@ -112,6 +112,27 @@ a{
   .landing{
     min-height: 700px !important;
   }
+
+  .langs{
+    width: 95%;
+    max-width: 960px;
+    height: 24px;
+    margin: 10px auto !important;
+    display: block !important;
+    float: none;
+    clear: both;
+    .br, .en{
+      float: right;
+      margin-left: 10px;
+      opacity: .4;
+      transition: all ease-in-out .2s;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 680px){
@@ -137,7 +158,9 @@ a{
     width: 100%;
     max-width: 960px;
     height: 24px;
-    margin: 10px auto;
+    margin: 10px auto !important;
+    display: block !important;
+    float: none;
     clear: both;
     .br, .en{
       float: right;

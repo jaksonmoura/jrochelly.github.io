@@ -440,7 +440,23 @@ a {
 
 @media (min-width: 750px) {
   .landing {
-    min-height: 700px !important; } }
+    min-height: 700px !important; }
+  .langs {
+    width: 95%;
+    max-width: 960px;
+    height: 24px;
+    margin: 10px auto !important;
+    display: block !important;
+    float: none;
+    clear: both; }
+    .langs .br, .langs .en {
+      float: right;
+      margin-left: 10px;
+      opacity: .4;
+      -webkit-transition: all ease-in-out 0.2s;
+              transition: all ease-in-out 0.2s; }
+      .langs .br:hover, .langs .en:hover {
+        opacity: 1; } }
 
 @media (max-width: 680px) {
   #me {
@@ -459,7 +475,9 @@ a {
     width: 100%;
     max-width: 960px;
     height: 24px;
-    margin: 10px auto;
+    margin: 10px auto !important;
+    display: block !important;
+    float: none;
     clear: both; }
     .langs .br, .langs .en {
       float: right;
