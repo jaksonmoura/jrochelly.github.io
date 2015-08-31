@@ -2,7 +2,7 @@
   <div class="content">
     <h2>{{ data.posts }}</h2>
     <div class="posts__body">
-    {% for post in site.categories[locale] %}
+    {% for post in site.categories[locale] limit:3 %}
       <article class="post_index">
           <div class="content">
             <div class="post_info">

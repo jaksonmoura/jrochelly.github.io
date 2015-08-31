@@ -16,10 +16,18 @@
     margin: 0 auto;
   }
 
+  .projects__head--show{
+    margin: 0px auto 0px auto !important;
+    opacity: 1 !important;
+  }
+
   .projects__head{
     float: left;
     width: 100%;
+    margin: -100px auto 100px auto;
+    opacity: 0;
     text-align: center;
+    transition: all .4s ease-in-out;
     h2{
       color: #333;
       text-transform: uppercase;
@@ -32,12 +40,19 @@
     color: #333;
   }
 
+  ul.show{
+    margin-left: 0px;
+    opacity: 1;
+  }
+
   ul{
     float: left;
     margin-bottom: 0px;
     padding: 10px;
-    margin: 0;
+    margin: 0 0 0 -100px;
+    opacity: 0;
     width: 100%;
+    transition: all .7s ease-in-out;
     li{
 
       float: left;
@@ -158,11 +173,21 @@
     //     font-size: 1.8rem !important;
     //   }
     // }
-    ul{
+    ul.show{
       width: 100% !important;
+      margin-left: 0px;
+      opacity: 1;
+    }
+    ul{
+      width: 150% !important;
+      margin-left: -25%;
+      display: flex;
+      justify-content: space-between;
+      opacity: 0;
     }
     li{
       width: 49% !important;
+      max-width: 455px !important;
       &:first-of-type{
         margin-right: 2%;
       }
