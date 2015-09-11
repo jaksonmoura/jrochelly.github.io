@@ -11,6 +11,6 @@ It's great to see again a forum that was huge coming back. This days we have [st
 I really enjoy this return. I hope it can turns again into a place for great discussions and friendship.
 
 <figure>
-![image](/img/posts/railsforum.png)
+![image](/assets/img/posts/railsforum.png)
 <figcaption>The new Rails Forum</figcaption>
 </figure>

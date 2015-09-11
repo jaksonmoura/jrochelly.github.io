@@ -1,6 +1,6 @@
 future: false
 markdown: rdiscount
-highlighter: true
+highlighter: pygments
 permalink:  /:categories/posts/:year/:month/:title
 paginate: 20
 paginate_path: "/page:num"
