@@ -9,7 +9,7 @@ categories:
 - en
 ---
 
-I’ve been research a lot about design, processes, methods, approaches, psychology and other stuff that involves it the last month.
+I’ve been researching a lot about design, processes, methods, approaches, psychology and other stuff that involves it the last month.
 
 ###<center>The deeper I got the clear it was that we should design thinking first in people, make a product that fits the needs of its users.</center>
 
@@ -34,6 +34,8 @@ Let's agree on something, for basically every system the word "user" is pretty g
 
 It's really easy to lose yourself thinking about making a really beautiful and appealing app with the latest tech, great animated transitions, etc. **Deliver a good solution is hard work**. Don't let your sight get too narrow, always think on the people the product is made for, they are the goal, they need to get satisfied.
 
-[Human-Centered Design](http://www.designkit.org/human-centered-design) is a common approach that designers use for problem solving and a great subject to jump right in if you want to be closer to the user. Also a good process that you can look up is about the  [full process designer](http://fullprocessdesigner.com) where you can see what is a designer in this full process, you also can find about the full process on this [podcast episode](http://www.travandlos.com/29) (a great podcast btw).
+[Human-Centered Design](http://www.designkit.org/human-centered-design) is a common approach that designers use for problem solving and a great subject to jump right in if you want to be closer to the user. 
+
+Also a good process that you can look up is about the  [full process designer](http://fullprocessdesigner.com) where you can see what is a designer in this full process, you also can find about the full process on this [podcast episode](http://www.travandlos.com/29) (a great podcast btw).
 
 *Let me hear your thoughts on the subject. Please, comment! I'll be happy to discuss and learn about this topic.*
