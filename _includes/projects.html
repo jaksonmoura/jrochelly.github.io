@@ -11,13 +11,13 @@
     <ul>
       {% for p in data.projects_list %}
       <li>
-        <a class="project__link project--info" href="/projects/multilinks">
+        <a class="project__link project--info" href="{{ p.link }}">
           <div class="project__info">
             <h3 class="project__title">{{ p.title }}</h3>
             <span class="project__subtitle">{{ p.description }}</span>
           </div>
         </a>
-        <a class="project__link project--img" href="http://www.amazon.com/Jakson-Rochelly-Convercy-Currency-Converter/dp/B00IT7KTA2">
+        <a class="project__link project--img" href="{{ p.link }}">
           <img src="{{ p.img }}" alt="{{ p.title }} logo" class="cover">
         </a>
       </li>
