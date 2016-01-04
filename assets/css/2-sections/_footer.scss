@@ -19,12 +19,11 @@ footer{
 
   #footer__logo{
     display: inline-block;
-    // background: url('../img/logo.svg') no-repeat 0 0;
-    filter: invert(100%);
-    -moz-filter: invert(100%);
-    -webkit-filter: invert(100%);
-    width: 100px;
-    height: 100px;
+    // filter: invert(100%);
+    // -moz-filter: invert(100%);
+    // -webkit-filter: invert(100%);
+    width: 80px;
+    height: 80px;
     margin-top: 15px;
     opacity: .4;
     margin-bottom: 40px;
@@ -80,7 +79,7 @@ footer{
     ul{
       margin: 0 auto;
       padding: 0;
-      width: 110px;
+      width: 70px;
       display: block;
       text-align: center;
 
